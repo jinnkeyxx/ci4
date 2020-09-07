@@ -17,10 +17,10 @@ if (file_exists(SYSTEMPATH . 'Config/Routes.php'))
  * --------------------------------------------------------------------
  */
 $routes->setDefaultNamespace('App\Controllers');
-$routes->setDefaultController('Home');
+$routes->setDefaultController('Users');
 $routes->setDefaultMethod('index');
 $routes->setTranslateURIDashes(false);
-$routes->set404Override();
+$routes->set404Override('404');
 $routes->setAutoRoute(true);
 
 /**
@@ -31,24 +31,24 @@ $routes->setAutoRoute(true);
 
 // We get a performance increase by specifying the default
 // route since we don't have to scan directories.
-$routes->get('/', 'Home::index', ['filter' => 'noauth']);
+$routes->get('/', 'Users::index');
 $routes->get('admin', 'Users::index');
 $routes->get('logout', 'Users::logout');
-$routes->match(['get','post'],'register', 'Users::register', ['filter' => 'noauth']);
-$routes->match(['get','post'],'profile', 'Users::profile',['filter' => 'auth']);
-$routes->get('dashboard', 'Dashboard::index',['filter' => 'auth']);
-$routes->get('user', 'Dashboard::user',['filter' => 'auth'] ,['filter' => 'auth']);
-$routes->match(['get','post'],'user', 'Dashboard::adduser',['filter' => 'auth']);
-$routes->get('userdelete/(:num)', 'Dashboard::userdelete/$1',['filter' => 'auth']);
-$routes->match(['get','post'],'useredit/(:num)','Dashboard::useredit/$1' ,['filter' => 'auth']);
-$routes->get('vietbai', 'Dashboard::vietbai',['filter' => 'auth']);
-$routes->match(['get','post'],'vietbai/','Dashboard::vietbai',['filter' => 'auth']);
-$routes->get('useredit/(:num)', 'Dashboard::useredit/$1' ,['filter' => 'auth']);
-$routes->match(['get','post'],'post','Dashboard::post',['filter' => 'auth']);
-$routes->get('post', 'Dashboard::post' ,['filter' => 'auth']);
-$routes->get('postdelete/(:num)', 'Dashboard::postdelete/$1',['filter' => 'auth']);
-$routes->match(['get','post'],'postedit/(:num)','Dashboard::postedit/$1' ,['filter' => 'auth']);
-$routes->get('postedit/(:num)', 'Dashboard::postedit/$1' ,['filter' => 'auth']);
+$routes->match(['get','post'],'register', 'Users::register');
+$routes->match(['get','post'],'profile', 'Users::profile');
+$routes->get('dashboard', 'Dashboard::index');
+$routes->get('user', 'Dashboard::user');
+$routes->match(['get','post'],'user', 'Dashboard::adduser');
+$routes->get('userdelete/(:num)', 'Dashboard::userdelete/$1');
+$routes->match(['get','post'],'useredit/(:num)','Dashboard::useredit/$1');
+$routes->get('vietbai', 'Dashboard::vietbai');
+$routes->match(['get','post'],'vietbai/','Dashboard::vietbai');
+$routes->get('useredit/(:num)', 'Dashboard::useredit/$1');
+$routes->match(['get','post'],'post','Dashboard::post');
+$routes->get('post', 'Dashboard::post');
+$routes->get('postdelete/(:num)', 'Dashboard::postdelete/$1');
+$routes->match(['get','post'],'postedit/(:num)','Dashboard::postedit/$1');
+$routes->get('postedit/(:num)', 'Dashboard::postedit/$1');
 
 
 
