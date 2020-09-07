@@ -117,16 +117,10 @@
                 <button type="button" class="close" data-dismiss="modal" aria-label="Close">
                     <span aria-hidden="true">&times;</span>
                 </button>
-                <?php if (isset($validation)): ?>
-                <div class="col-12">
-                    <div class="alert alert-danger" role="alert">
-                        <?= $validation->listErrors() ?>
-                    </div>
-                </div>
-                <?php endif; ?>
+
             </div>
             <div class="modal-body">
-                <form action="/user" method="post">
+                <form action="#" method="post">
                     <div class="form-group">
                         <label>Họ</label>
                         <input class="form-control" type="text" required="" placeholder="" name=" firstname"

@@ -23,7 +23,7 @@ class Users extends BaseController
 	}
 	public function index()
 	{
-		if($this->checkAdmin() != NULL):
+		if($this->checkAdmin() !== NULL):
 			
 			return redirect()->to(base_url().'/dashboard');
 		endif;
@@ -139,12 +139,12 @@ class Users extends BaseController
 				$type = "admin";
 				
 			else:
-				$type = 1;
+				$type = NULL;
 				// var_dump($this->data['user']['role']);
 			endif;
 		
 		else :
-			$type = 2;
+			$type = NULL;
 		endif;
 		
 		return $type;

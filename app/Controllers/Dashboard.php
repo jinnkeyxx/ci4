@@ -16,10 +16,10 @@ class Dashboard extends BaseController
 		$this->UserModel = new UserModel();
 		$this->PostModel = new PostModel();
 		$this->data = [];
-		if($this->checkUser->checkAdmin() == NULL):
-			echo view('errors/html/error_404');
-			exit();
-		endif;
+		// if($this->checkUser->checkAdmin() == NULL):
+		// 	echo view('errors/html/error_404');
+		// 	exit();
+		// endif;
 		
 	} 
 	// Hiển thị 
@@ -61,6 +61,67 @@ class Dashboard extends BaseController
 
 		$this->data['title'] = 'Admin';
 		helper(['form']);
+		if ($this->request->getMethod() == 'post') :
+			if($this->checkUser->checkAdmin() == NULL || $this->checkUser->checkAdmin() == "mod"):
+			
+				exit();
+			endif;
+			
+			$rules = [
+				'firstname' => 'required|min_length[2]|max_length[20]',
+				'lastname' => 'required|min_length[2]|max_length[20]',
+				'email' => 'required|min_length[6]|max_length[50]|valid_email|is_unique[users.email]',
+				'password' => 'required|min_length[8]|max_length[255]',
+				'password_confirm' => 'matches[password]',
+			];
+			$errors = [
+				'firstname' => [
+					'required' => 'Họ tên không được bỏ trống',
+					'min_length' => 'Họ tên không được nhỏ hơn 2 kí tự',
+					'max_length' => 'Họ tên không được lớn hơn 20 kí tự',
+				],
+				'lastname' => [
+					'required' => 'Họ tên không được bỏ trống',
+					'min_length' => 'Họ tên không được nhỏ hơn 2 kí tự',
+					'max_length' => 'Họ tên không được lớn hơn 20 kí tự',
+				],
+				'email' => [
+					'required' => 'Email không được bỏ trống',
+					'min_length' => 'Email không được nhỏ hơn 6 kí tự',
+					'max_length' => 'Email quá dài',
+					'valid_email' => 'Email không hợp lệ',
+					'is_unique' => 'Email naỳ đã có người sử dụng',
+				],
+				'password' => [
+					'required' => 'Mật khẩu không được bỏ trống',
+					'min_length' => 'Mật khẩu không được nhỏ hơn 8 kí tự',
+					'max_length' => 'Mật khẩu quá dài',
+				],
+				'password_confirm' => [
+					'matches' => 'Mật khẩu không trùng nhau',
+				],
+
+				
+			];
+
+			if (! $this->validate($rules , $errors)) :
+			
+				$this->data['validation'] = $this->validator;
+			
+			else : 
+				$newData = [
+					'firstname' => $this->request->getVar('firstname'),
+					'lastname' => $this->request->getVar('lastname'),
+					'email' => $this->request->getVar('email'),
+					'password' => $this->request->getVar('password'),
+					'role' => $this->request->getvar('role'),
+				];
+				$this->UserModel->save($newData);
+				$session = session();
+				$session->setFlashdata('success', 'Thêm người dùng thành công ');
+				return redirect()->to('user');
+			endif;
+		endif;
 		$this->data['user'] = $this->UserModel->where('id', session()->get('id'))->first();
 		$this->data['users'] = $this->UserModel->orderBy('id', 'DESC')->findAll();
 		echo view('admin/templates/header',$this->data);
@@ -68,82 +129,7 @@ class Dashboard extends BaseController
 		echo view('admin/user' , $this->data);
 		echo view('admin/templates/footer');	
 	}
-	public function adduser()
-	{
-		if($this->checkUser->checkAdmin() == NULL):
-			$this->data['title'] = "Không có quyền truy cập";
-
-			exit();
-		endif;
-		if($this->checkAdmin() == NULL):
-		
-			return redirect()->to(base_url().'/dashbroad');
-		
-		else:
-		
-			if ($this->request->getMethod() == 'post') :
-			
-				$rules = [
-					'firstname' => 'required|min_length[2]|max_length[20]',
-					'lastname' => 'required|min_length[2]|max_length[20]',
-					'email' => 'required|min_length[6]|max_length[50]|valid_email|is_unique[users.email]',
-					'password' => 'required|min_length[8]|max_length[255]',
-					'password_confirm' => 'matches[password]',
-				];
-				$errors = [
-					'firstname' => [
-						'required' => 'Họ tên không được bỏ trống',
-						'min_length' => 'Họ tên không được nhỏ hơn 2 kí tự',
-						'max_length' => 'Họ tên không được lớn hơn 20 kí tự',
-					],
-					'lastname' => [
-						'required' => 'Họ tên không được bỏ trống',
-						'min_length' => 'Họ tên không được nhỏ hơn 2 kí tự',
-						'max_length' => 'Họ tên không được lớn hơn 20 kí tự',
-					],
-					'email' => [
-						'required' => 'Email không được bỏ trống',
-						'min_length' => 'Email không được nhỏ hơn 6 kí tự',
-						'max_length' => 'Email quá dài',
-						'valid_email' => 'Email không hợp lệ',
-					],
-					'password' => [
-						'required' => 'Mật khẩu không được bỏ trống',
-						'min_length' => 'Mật khẩu không được nhỏ hơn 8 kí tự',
-						'max_length' => 'Mật khẩu quá dài',
-					],
-					'password_confirm' => [
-						'matches' => 'Mật khẩu không trùng nhau',
-					],
-
-					
-				];
-
-				if (! $this->validate($rules)) :
-				
-					$this->data['validation'] = $this->validator;
-				
-				else : 
-				
-				
-					$newData = [
-						'firstname' => $this->request->getVar('firstname'),
-						'lastname' => $this->request->getVar('lastname'),
-						'email' => $this->request->getVar('email'),
-						'password' => $this->request->getVar('password'),
-						'role' => $this->request->getvar('role'),
-					];
-					$this->UserModel->save($newData);
-					$session = session();
-					$session->setFlashdata('success', 'Thêm người dùng thành công ');
-					return redirect()->to(base_url().'/user');
-
-				endif;
-			endif;
-		endif;
-		
-				
-	}
+	
 	
 	public function userdelete($id)
 	{
@@ -296,9 +282,9 @@ class Dashboard extends BaseController
 	{
 		if($this->checkUser->checkAdmin() == NULL):
 			$this->data['title'] = "Không có quyền truy cập";
-
+			return redirect()->to('admin');
 			exit();
-		endif;
+		else :
 		$this->data['title'] = "Admin";
 		$this->data['user'] = $this->UserModel->where('id', session()->get('id'))->first();
 		$this->data['post'] = $this->PostModel->orderBy('id', 'DESC')->findAll();
@@ -306,6 +292,7 @@ class Dashboard extends BaseController
 		echo view('admin/templates/navbar', $this->data);
 		echo view('admin/post' , $this->data);
 		echo view('admin/templates/footer');
+		endif;
 	}
 	public function postedit($id)
 	{
