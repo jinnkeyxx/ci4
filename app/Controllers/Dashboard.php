@@ -341,7 +341,9 @@ class Dashboard extends BaseController
 					$file_name = "";
 					$slug = $this->to_slug($this->request->getVar('title'));
 					$postEdit = explode('/' , $this->data['postedit']['images']);
-					$postEdit = $postEdit[5];
+					// die(var_dump($postEdit));
+
+					$postEdit = $postEdit[4];
 					
 					$images_title = $this->request->getfile('images');
 					if($this->request->getfile('images')->getPath() == ""){
