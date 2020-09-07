@@ -92,8 +92,8 @@
                                     <?php if($user['role'] == 0): ?>
                                     <td style="">
 
-                                        <a class="btn-danger btn" href="/public/userdelete/<?= $value['id']; ?>">Xóa</a>
-                                        <a class="btn-primary btn" href="/public/useredit/<?= $value['id']; ?>">Sửa</a>
+                                        <a class="btn-danger btn" href="/userdelete/<?= $value['id']; ?>">Xóa</a>
+                                        <a class="btn-primary btn" href="/useredit/<?= $value['id']; ?>">Sửa</a>
                                     </td>
                                     <?php endif; ?>
                                 </tr>
@@ -126,7 +126,7 @@
                 <?php endif; ?>
             </div>
             <div class="modal-body">
-                <form action="/public/user" method="post">
+                <form action="/user" method="post">
                     <div class="form-group">
                         <label>Họ</label>
                         <input class="form-control" type="text" required="" placeholder="" name=" firstname"

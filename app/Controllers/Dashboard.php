@@ -1,32 +1,39 @@
 <?php namespace App\Controllers;
+use App\Controllers\Users;
 use App\Models\UserModel;
 use App\Models\PostModel;
+
 class Dashboard extends BaseController
 {
 	public $UserModel;
 	public $PostModel;
 	public $data;
-	/**
-	 * Class constructor.
-	 */
+	public $checkUser;
 	public function __construct()
 	{
-		
+		helper(['url']);
+		$this->checkUser = new Users();
 		$this->UserModel = new UserModel();
 		$this->PostModel = new PostModel();
 		$this->data = [];
-		if($this->checkAdmin() == "admin" || $this->checkAdmin() == "mod"){
-			return redirect()->to(base_url().'/home');
-
-		}
+		if($this->checkUser->checkAdmin() == NULL):
+			echo view('errors/html/error_404');
+			exit();
+		endif;
+		
 	} 
 	// Hiển thị 
 	public function index()
 	{
+		if($this->checkUser->checkAdmin() == NULL):
+			
+			return redirect()->to(base_url().'/admin');
+		endif;
+		$this->data['title'] = 'Admin';
 		$this->data['user'] = $this->UserModel->where('id', session()->get('id'))->first();
 		$this->data['users'] = $this->UserModel->findAll();
 		$this->data['posts'] = $this->PostModel->findAll();
-		echo view('admin/templates/header');
+		echo view('admin/templates/header' , $this->data);
 		echo view('admin/templates/navbar',$this->data);
 		echo view('admin/dashboard', $this->data);
 		echo view('admin/templates/footer');
@@ -45,25 +52,36 @@ class Dashboard extends BaseController
 	
 	public function user()
 	{
+		if($this->checkUser->checkAdmin() == NULL):
+			$this->data['title'] = "Không có quyền truy cập";
+
+			exit();
+		endif;
+
+		$this->data['title'] = 'Admin';
 		helper(['form']);
 		$this->data['user'] = $this->UserModel->where('id', session()->get('id'))->first();
 		$this->data['users'] = $this->UserModel->orderBy('id', 'DESC')->findAll();
-		echo view('admin/templates/header');
-		echo view('admin/templates/navbar',$this->data);
+		echo view('admin/templates/header',$this->data);
+		echo view('admin/templates/navbar',$this->data );
 		echo view('admin/user' , $this->data);
 		echo view('admin/templates/footer');	
 	}
 	public function adduser()
 	{
+		if($this->checkUser->checkAdmin() == NULL):
+			$this->data['title'] = "Không có quyền truy cập";
+
+			exit();
+		endif;
+		if($this->checkAdmin() == NULL):
 		
-		if($this->checkAdmin() == "mod" || $this->checkAdmin() == "user")
-		{
 			return redirect()->to(base_url().'/dashbroad');
-		}
-		else 
-		{
-			if ($this->request->getMethod() == 'post') 
-			{
+		
+		else:
+		
+			if ($this->request->getMethod() == 'post') :
+			
 				$rules = [
 					'firstname' => 'required|min_length[2]|max_length[20]',
 					'lastname' => 'required|min_length[2]|max_length[20]',
@@ -100,12 +118,12 @@ class Dashboard extends BaseController
 					
 				];
 
-				if (! $this->validate($rules)) 
-				{
+				if (! $this->validate($rules)) :
+				
 					$this->data['validation'] = $this->validator;
-				}
-				else
-				{
+				
+				else : 
+				
 				
 					$newData = [
 						'firstname' => $this->request->getVar('firstname'),
@@ -119,54 +137,47 @@ class Dashboard extends BaseController
 					$session->setFlashdata('success', 'Thêm người dùng thành công ');
 					return redirect()->to(base_url().'/user');
 
-				}
-			}
-		}
+				endif;
+			endif;
+		endif;
 		
 				
 	}
 	
 	public function userdelete($id)
 	{
-		
-		if($this->checkAdmin() == "mod" || $this->checkAdmin() == "user")
-		{
-			echo "bạn không có quyền này";
-		}
-		else 
-		{
-			
-			$this->data = $this->UserModel->delete($id);
-			$session = session();
-			$session->setFlashdata('success', 'Xóa người dùng thành công');
-			return redirect()->to(base_url().'/user');
-		}
-			
-		
+		if($this->checkUser->checkAdmin() == NULL):
+			$this->data['title'] = "Không có quyền truy cập";
+
+			exit();
+		endif;
+		$this->data = $this->UserModel->delete($id);
+		$session = session();
+		$session->setFlashdata('success', 'Xóa người dùng thành công');
+		return redirect()->to(base_url().'/user');
 	}
 	public function useredit($id)
 	{
-		if($this->checkAdmin() == "mod" || $this->checkAdmin() == "user")
-		{
-			return redirect()->to(base_url().'/dashbroad');
-		}
-		else 
-		{
+		if($this->checkUser->checkAdmin() == NULL):
+			$this->data['title'] = "Không có quyền truy cập";
+			exit();
+		endif;
 			helper(['form']);
+			$this->data['title'] = "Admin";
 			$this->data['user'] = $this->UserModel->where('id', session()->get('id'))->first();
 			$this->data['useredit'] = $this->UserModel->where('id', $id)->first();
-			if ($this->request->getMethod() == 'post')
-			{
+			if ($this->request->getMethod() == 'post'):
+			
 				$rules = [
 					'firstname' => 'min_length[0]|max_length[20]',
 					'lastname' => 'min_length[0]|max_length[20]',
 				];
-					if (! $this->validate($rules))
-					{
+					if (! $this->validate($rules)):
+					
 						$data['validation'] = $this->validator;
-					}
-					else
-					{
+					
+					else:
+					
 
 						$newData = [
 							'id' => $id,
@@ -180,13 +191,11 @@ class Dashboard extends BaseController
 						$this->UserModel->save($newData);
 						session()->setFlashdata('success', 'Sửa người dùng thành công');
 						return redirect()->to(base_url().'/user');
-					}
-
-				
-			}
+					endif;
+			endif;
 	
-		}
-		echo view('admin/templates/header');
+		
+		echo view('admin/templates/header' , $this->data);
 		echo view('admin/templates/navbar', $this->data);
 		echo view('admin/useredit', $this->data);
 		echo view('admin/templates/footer');
@@ -197,28 +206,32 @@ class Dashboard extends BaseController
 	//---------------------------------------------------------
 	public function postdelete($id)
 	{
-		if($this->checkAdmin() == "mod" || $this->checkAdmin() == "user")
-		{
-			$session->setFlashdata('error', 'Bạn không có quyền xóa bài viết');
-			return redirect()->to(base_url().'/dashbroad');
-		}
-		else 
-		{
+		if($this->checkUser->checkAdmin() == NULL):
+			exit();
+		endif;
+		
+			
 			$this->PostModel->delete($id);
 			$session = session();
 			$session->setFlashdata('success', 'Xóa bài viết thành công');
-			return redirect()->to('/public/post');
-		}
+			return redirect()->to('/post');
+		
 		
 		
 	}
 	public function vietbai()
 	{
+		if($this->checkUser->checkAdmin() == NULL):
+			$this->data['title'] = "Không có quyền truy cập";
+
+			exit();
+		endif;
+		$this->data['title'] = "Admin";
 		helper(['form']);
 		$this->data['user'] = $this->UserModel->where('id', session()->get('id'))->first();
 		$user =  $this->UserModel->where('id', session()->get('id'))->first();
-		if ($this->request->getMethod() == 'post')
-		{
+		if ($this->request->getMethod() == 'post'):
+		
 			$rules = [
 			'content' => 'required|min_length[2]',
 			'title' => 'required|min_length[2]',
@@ -242,13 +255,13 @@ class Dashboard extends BaseController
 			];
 			
 		
-			if (! $this->validate($rules , $errors)) 
-			{
+			if (! $this->validate($rules , $errors)):
+			
 				$this->data['validation'] = $this->validator;
-			}
+			
 
-			else
-			{
+			else :
+			
 				$slug = $this->to_slug($this->request->getVar('title'));
 
 				$images_title = $this->request->getfile('images');
@@ -269,9 +282,9 @@ class Dashboard extends BaseController
 				$session = session();
 				$session->setFlashdata('success', 'Đăng bài thành công');
 				return redirect()->to(base_url().'/post');
-			}
-		}
-		echo view('admin/templates/header' );
+			endif;
+		endif;
+		echo view('admin/templates/header' ,$this->data);
 		echo view('admin/templates/navbar',$this->data);
 		echo view('admin/vietbai' , $this->data);
 		echo view('admin/templates/footer');
@@ -280,30 +293,33 @@ class Dashboard extends BaseController
 	}
 	public function post()
 	{
-		
+		if($this->checkUser->checkAdmin() == NULL):
+			$this->data['title'] = "Không có quyền truy cập";
+
+			exit();
+		endif;
+		$this->data['title'] = "Admin";
 		$this->data['user'] = $this->UserModel->where('id', session()->get('id'))->first();
 		$this->data['post'] = $this->PostModel->orderBy('id', 'DESC')->findAll();
-		echo view('admin/templates/header');
+		echo view('admin/templates/header' ,$this->data);
 		echo view('admin/templates/navbar', $this->data);
 		echo view('admin/post' , $this->data);
 		echo view('admin/templates/footer');
 	}
 	public function postedit($id)
 	{
-		
-		if($this->checkAdmin() == "mod" || $this->checkAdmin() == "user")
-		{
-			$session->setFlashdata('error', 'Bạn không được quyền sửa bài viết');
-			return redirect()->to(base_url().'/post');
-		}
-		else 
-		{
+		$this->data['title'] = "Admin";
+		if($this->checkUser->checkAdmin() == NULL):
+			$this->data['title'] = "Không có quyền truy cập";
+			exit();
+		endif;
+	
 			helper(['form']);
 			$user =  $this->UserModel->where('id', session()->get('id'))->first();
 			$this->data['user'] = $this->UserModel->where('id', session()->get('id'))->first();
 			$this->data['postedit'] = $this->PostModel->where('id', $id)->first();
-			if ($this->request->getMethod() == 'post')
-			{
+			if ($this->request->getMethod() == 'post'):
+			
 				$rules = [
 				'content' => 'required|min_length[2]',
 				'title' => 'required|min_length[2]',
@@ -328,14 +344,12 @@ class Dashboard extends BaseController
 				];
 			
 		
-				if (! $this->validate($rules , $errors)) 
-				{
+				if (! $this->validate($rules , $errors)) :
+				
 					$data['validation'] = $this->validator;
-				}
+				
 
-				else
-				{
-					
+				else :
 					$file_name = "";
 					$slug = $this->to_slug($this->request->getVar('title'));
 					$postEdit = explode('/' , $this->data['postedit']['images']);
@@ -364,10 +378,10 @@ class Dashboard extends BaseController
 					$session = session();
 					$session->setFlashdata('success', 'Sửa bài viết thành công');
 					return redirect()->to(base_url().'/post');
-				}
-			}
-		}
-		echo view('admin/templates/header');
+				endif;
+			endif;
+		
+		echo view('admin/templates/header' , $this->data);
 		echo view('admin/templates/navbar', $this->data);
 		echo view('admin/postedit', $this->data);
 		echo view('admin/templates/footer');
@@ -378,25 +392,7 @@ class Dashboard extends BaseController
 	// kiểm tra admin
 
 	//-------------------------------------------------------
-	public function checkAdmin()
-	{
-		$type = "";
-		if(session()){
-			
-			$this->data['user'] = $this->UserModel->where('id', session()->get('id'))->first();
-			$this->data['count'] = $this->UserModel->findAll();
-			if($this->data['user']['role'] == 1){
-				$type = "mod";
-			}
-			elseif($this->data['user']['role'] == 0) {
-				$type = "admin";
-			}
-			else {
-				$type = "user";
-			}
-		}
-		return $type;
-	}
+	
 
 	
 	//--------------------------------------------------------------------

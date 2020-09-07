@@ -3,7 +3,7 @@
 
 <head>
     <meta charset="utf-8">
-    <title>Register | Uplon - Responsive Bootstrap 4 Admin Dashboard</title>
+    <title><?= $title; ?></title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta content="Responsive bootstrap 4 admin template" name="description">
     <meta content="Coderthemes" name="author">
@@ -19,7 +19,7 @@
     <script src="<?= base_url(); ?>\assets\tinymce\tinymce.min.js" type="text/javascript" charset="utf-8"></script>
     <link href="<?= base_url(); ?>\assets\libs\datatables\dataTables.bootstrap4.min.css" rel="stylesheet"
         type="text/css">
-        <link href="<?= base_url(); ?>\assets\libs\dropify\dropify.min.css" rel="stylesheet" type="text/css">
+    <link href="<?= base_url(); ?>\assets\libs\dropify\dropify.min.css" rel="stylesheet" type="text/css">
 
     <link href="<?= base_url(); ?>\assets\libs\datatables\buttons.bootstrap4.min.css" rel="stylesheet" type="text/css">
     <link href="<?= base_url(); ?>\assets\libs\datatables\responsive.bootstrap4.min.css" rel="stylesheet"

@@ -103,9 +103,9 @@
                                     <?php if($user['role'] == 0): ?>
                                     <td style="">
 
-                                        <a class="btn-danger btn" href="/public/postdelete/<?= $value['id']; ?>">Xóa
+                                        <a class="btn-danger btn" href="/postdelete/<?= $value['id']; ?>">Xóa
                                         </a>
-                                        <a class="btn-primary btn" href="/public/postedit/<?= $value['id']; ?>">Sửa</a>
+                                        <a class="btn-primary btn" href="/postedit/<?= $value['id']; ?>">Sửa</a>
                                     </td>
                                     <?php endif; ?>
                                 </tr>

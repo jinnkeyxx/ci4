@@ -1,0 +1,1050 @@
+CRITICAL - 2020-09-07 02:40:58 --> Trying to access array offset on value of type null
+#0 /opt/lampp/htdocs/app/Controllers/Users.php(50): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Trying to acces...', '/opt/lampp/htdo...', 50, Array)
+#1 /opt/lampp/htdocs/vendor/codeigniter4/framework/system/CodeIgniter.php(910): App\Controllers\Users->index()
+#2 /opt/lampp/htdocs/vendor/codeigniter4/framework/system/CodeIgniter.php(398): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Users))
+#3 /opt/lampp/htdocs/vendor/codeigniter4/framework/system/CodeIgniter.php(306): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 /opt/lampp/htdocs/public/index.php(45): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2020-09-07 02:41:12 --> Trying to access array offset on value of type null
+#0 /opt/lampp/htdocs/app/Controllers/Users.php(50): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Trying to acces...', '/opt/lampp/htdo...', 50, Array)
+#1 /opt/lampp/htdocs/vendor/codeigniter4/framework/system/CodeIgniter.php(910): App\Controllers\Users->index()
+#2 /opt/lampp/htdocs/vendor/codeigniter4/framework/system/CodeIgniter.php(398): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Users))
+#3 /opt/lampp/htdocs/vendor/codeigniter4/framework/system/CodeIgniter.php(306): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 /opt/lampp/htdocs/public/index.php(45): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2020-09-07 02:41:27 --> Undefined variable: use
+#0 /opt/lampp/htdocs/app/Controllers/Users.php(50): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined varia...', '/opt/lampp/htdo...', 50, Array)
+#1 /opt/lampp/htdocs/vendor/codeigniter4/framework/system/CodeIgniter.php(910): App\Controllers\Users->index()
+#2 /opt/lampp/htdocs/vendor/codeigniter4/framework/system/CodeIgniter.php(398): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Users))
+#3 /opt/lampp/htdocs/vendor/codeigniter4/framework/system/CodeIgniter.php(306): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 /opt/lampp/htdocs/public/index.php(45): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2020-09-07 02:41:41 --> Undefined variable: use
+#0 /opt/lampp/htdocs/app/Controllers/Users.php(50): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined varia...', '/opt/lampp/htdo...', 50, Array)
+#1 /opt/lampp/htdocs/vendor/codeigniter4/framework/system/CodeIgniter.php(910): App\Controllers\Users->index()
+#2 /opt/lampp/htdocs/vendor/codeigniter4/framework/system/CodeIgniter.php(398): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Users))
+#3 /opt/lampp/htdocs/vendor/codeigniter4/framework/system/CodeIgniter.php(306): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 /opt/lampp/htdocs/public/index.php(45): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2020-09-07 02:43:51 --> Undefined variable: use
+#0 /opt/lampp/htdocs/app/Controllers/Users.php(50): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined varia...', '/opt/lampp/htdo...', 50, Array)
+#1 /opt/lampp/htdocs/vendor/codeigniter4/framework/system/CodeIgniter.php(910): App\Controllers\Users->index()
+#2 /opt/lampp/htdocs/vendor/codeigniter4/framework/system/CodeIgniter.php(398): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Users))
+#3 /opt/lampp/htdocs/vendor/codeigniter4/framework/system/CodeIgniter.php(306): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 /opt/lampp/htdocs/public/index.php(45): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2020-09-07 02:47:38 --> syntax error, unexpected '}'
+#0 /opt/lampp/htdocs/vendor/codeigniter4/framework/system/Router/Router.php(192): CodeIgniter\Router\Router->autoRoute('/')
+#1 /opt/lampp/htdocs/vendor/codeigniter4/framework/system/CodeIgniter.php(785): CodeIgniter\Router\Router->handle('/')
+#2 /opt/lampp/htdocs/vendor/codeigniter4/framework/system/CodeIgniter.php(358): CodeIgniter\CodeIgniter->tryToRouteIt(Object(CodeIgniter\Router\RouteCollection))
+#3 /opt/lampp/htdocs/vendor/codeigniter4/framework/system/CodeIgniter.php(306): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 /opt/lampp/htdocs/public/index.php(45): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2020-09-07 02:57:27 --> Trying to access array offset on value of type null
+#0 /opt/lampp/htdocs/app/Controllers/Users.php(50): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Trying to acces...', '/opt/lampp/htdo...', 50, Array)
+#1 /opt/lampp/htdocs/vendor/codeigniter4/framework/system/CodeIgniter.php(910): App\Controllers\Users->index()
+#2 /opt/lampp/htdocs/vendor/codeigniter4/framework/system/CodeIgniter.php(398): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Users))
+#3 /opt/lampp/htdocs/vendor/codeigniter4/framework/system/CodeIgniter.php(306): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 /opt/lampp/htdocs/public/index.php(45): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2020-09-07 02:57:52 --> Trying to access array offset on value of type null
+#0 /opt/lampp/htdocs/app/Controllers/Users.php(50): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Trying to acces...', '/opt/lampp/htdo...', 50, Array)
+#1 /opt/lampp/htdocs/vendor/codeigniter4/framework/system/CodeIgniter.php(910): App\Controllers\Users->index()
+#2 /opt/lampp/htdocs/vendor/codeigniter4/framework/system/CodeIgniter.php(398): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Users))
+#3 /opt/lampp/htdocs/vendor/codeigniter4/framework/system/CodeIgniter.php(306): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 /opt/lampp/htdocs/public/index.php(45): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2020-09-07 03:11:18 --> Trying to access array offset on value of type null
+#0 /opt/lampp/htdocs/app/Views/admin/templates/navbar.php(48): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Trying to acces...', '/opt/lampp/htdo...', 48, Array)
+#1 /opt/lampp/htdocs/vendor/codeigniter4/framework/system/View/View.php(236): include('/opt/lampp/htdo...')
+#2 /opt/lampp/htdocs/vendor/codeigniter4/framework/system/Common.php(1071): CodeIgniter\View\View->render('admin/templates...', Array, true)
+#3 /opt/lampp/htdocs/app/Controllers/Dashboard.php(30): view('admin/templates...', Array)
+#4 /opt/lampp/htdocs/vendor/codeigniter4/framework/system/CodeIgniter.php(910): App\Controllers\Dashboard->index()
+#5 /opt/lampp/htdocs/vendor/codeigniter4/framework/system/CodeIgniter.php(398): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Dashboard))
+#6 /opt/lampp/htdocs/vendor/codeigniter4/framework/system/CodeIgniter.php(306): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 /opt/lampp/htdocs/public/index.php(45): CodeIgniter\CodeIgniter->run()
+#8 {main}
+CRITICAL - 2020-09-07 03:11:18 --> Trying to access array offset on value of type null
+#0 /opt/lampp/htdocs/app/Views/admin/templates/navbar.php(48): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Trying to acces...', '/opt/lampp/htdo...', 48, Array)
+#1 /opt/lampp/htdocs/vendor/codeigniter4/framework/system/View/View.php(236): include('/opt/lampp/htdo...')
+#2 /opt/lampp/htdocs/vendor/codeigniter4/framework/system/Common.php(1071): CodeIgniter\View\View->render('admin/templates...', Array, true)
+#3 /opt/lampp/htdocs/app/Controllers/Dashboard.php(30): view('admin/templates...', Array)
+#4 /opt/lampp/htdocs/vendor/codeigniter4/framework/system/CodeIgniter.php(910): App\Controllers\Dashboard->index()
+#5 /opt/lampp/htdocs/vendor/codeigniter4/framework/system/CodeIgniter.php(398): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Dashboard))
+#6 /opt/lampp/htdocs/vendor/codeigniter4/framework/system/CodeIgniter.php(306): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 /opt/lampp/htdocs/public/index.php(45): CodeIgniter\CodeIgniter->run()
+#8 {main}
+CRITICAL - 2020-09-07 03:13:06 --> Trying to access array offset on value of type null
+#0 /opt/lampp/htdocs/app/Views/admin/templates/navbar.php(48): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Trying to acces...', '/opt/lampp/htdo...', 48, Array)
+#1 /opt/lampp/htdocs/vendor/codeigniter4/framework/system/View/View.php(236): include('/opt/lampp/htdo...')
+#2 /opt/lampp/htdocs/vendor/codeigniter4/framework/system/Common.php(1071): CodeIgniter\View\View->render('admin/templates...', Array, true)
+#3 /opt/lampp/htdocs/app/Controllers/Dashboard.php(30): view('admin/templates...', Array)
+#4 /opt/lampp/htdocs/vendor/codeigniter4/framework/system/CodeIgniter.php(910): App\Controllers\Dashboard->index()
+#5 /opt/lampp/htdocs/vendor/codeigniter4/framework/system/CodeIgniter.php(398): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Dashboard))
+#6 /opt/lampp/htdocs/vendor/codeigniter4/framework/system/CodeIgniter.php(306): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 /opt/lampp/htdocs/public/index.php(45): CodeIgniter\CodeIgniter->run()
+#8 {main}
+CRITICAL - 2020-09-07 03:13:42 --> Trying to access array offset on value of type null
+#0 /opt/lampp/htdocs/app/Views/admin/templates/navbar.php(48): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Trying to acces...', '/opt/lampp/htdo...', 48, Array)
+#1 /opt/lampp/htdocs/vendor/codeigniter4/framework/system/View/View.php(236): include('/opt/lampp/htdo...')
+#2 /opt/lampp/htdocs/vendor/codeigniter4/framework/system/Common.php(1071): CodeIgniter\View\View->render('admin/templates...', Array, true)
+#3 /opt/lampp/htdocs/app/Controllers/Dashboard.php(30): view('admin/templates...', Array)
+#4 /opt/lampp/htdocs/vendor/codeigniter4/framework/system/CodeIgniter.php(910): App\Controllers\Dashboard->index()
+#5 /opt/lampp/htdocs/vendor/codeigniter4/framework/system/CodeIgniter.php(398): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Dashboard))
+#6 /opt/lampp/htdocs/vendor/codeigniter4/framework/system/CodeIgniter.php(306): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 /opt/lampp/htdocs/public/index.php(45): CodeIgniter\CodeIgniter->run()
+#8 {main}
+CRITICAL - 2020-09-07 03:14:40 --> Trying to access array offset on value of type null
+#0 /opt/lampp/htdocs/app/Views/admin/templates/navbar.php(48): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Trying to acces...', '/opt/lampp/htdo...', 48, Array)
+#1 /opt/lampp/htdocs/vendor/codeigniter4/framework/system/View/View.php(236): include('/opt/lampp/htdo...')
+#2 /opt/lampp/htdocs/vendor/codeigniter4/framework/system/Common.php(1071): CodeIgniter\View\View->render('admin/templates...', Array, true)
+#3 /opt/lampp/htdocs/app/Controllers/Dashboard.php(30): view('admin/templates...', Array)
+#4 /opt/lampp/htdocs/vendor/codeigniter4/framework/system/CodeIgniter.php(910): App\Controllers\Dashboard->index()
+#5 /opt/lampp/htdocs/vendor/codeigniter4/framework/system/CodeIgniter.php(398): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Dashboard))
+#6 /opt/lampp/htdocs/vendor/codeigniter4/framework/system/CodeIgniter.php(306): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 /opt/lampp/htdocs/public/index.php(45): CodeIgniter\CodeIgniter->run()
+#8 {main}
+CRITICAL - 2020-09-07 03:16:38 --> Trying to access array offset on value of type null
+#0 /opt/lampp/htdocs/app/Views/admin/templates/navbar.php(48): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Trying to acces...', '/opt/lampp/htdo...', 48, Array)
+#1 /opt/lampp/htdocs/vendor/codeigniter4/framework/system/View/View.php(236): include('/opt/lampp/htdo...')
+#2 /opt/lampp/htdocs/vendor/codeigniter4/framework/system/Common.php(1071): CodeIgniter\View\View->render('admin/templates...', Array, true)
+#3 /opt/lampp/htdocs/app/Controllers/Dashboard.php(31): view('admin/templates...', Array)
+#4 /opt/lampp/htdocs/vendor/codeigniter4/framework/system/CodeIgniter.php(910): App\Controllers\Dashboard->index()
+#5 /opt/lampp/htdocs/vendor/codeigniter4/framework/system/CodeIgniter.php(398): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Dashboard))
+#6 /opt/lampp/htdocs/vendor/codeigniter4/framework/system/CodeIgniter.php(306): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 /opt/lampp/htdocs/public/index.php(45): CodeIgniter\CodeIgniter->run()
+#8 {main}
+CRITICAL - 2020-09-07 03:16:43 --> Argument 1 passed to session() must be of the type string or null, array given, called in /opt/lampp/htdocs/app/Controllers/Users.php on line 52
+#0 /opt/lampp/htdocs/app/Controllers/Users.php(52): session(Array)
+#1 /opt/lampp/htdocs/vendor/codeigniter4/framework/system/CodeIgniter.php(910): App\Controllers\Users->index()
+#2 /opt/lampp/htdocs/vendor/codeigniter4/framework/system/CodeIgniter.php(398): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Users))
+#3 /opt/lampp/htdocs/vendor/codeigniter4/framework/system/CodeIgniter.php(306): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 /opt/lampp/htdocs/public/index.php(45): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2020-09-07 03:17:20 --> Call to undefined function App\Controllers\setUserSession()
+#0 /opt/lampp/htdocs/vendor/codeigniter4/framework/system/CodeIgniter.php(910): App\Controllers\Users->index()
+#1 /opt/lampp/htdocs/vendor/codeigniter4/framework/system/CodeIgniter.php(398): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Users))
+#2 /opt/lampp/htdocs/vendor/codeigniter4/framework/system/CodeIgniter.php(306): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#3 /opt/lampp/htdocs/public/index.php(45): CodeIgniter\CodeIgniter->run()
+#4 {main}
+CRITICAL - 2020-09-07 03:19:54 --> Call to undefined function App\Controllers\setUserSession()
+#0 /opt/lampp/htdocs/vendor/codeigniter4/framework/system/CodeIgniter.php(910): App\Controllers\Users->index()
+#1 /opt/lampp/htdocs/vendor/codeigniter4/framework/system/CodeIgniter.php(398): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Users))
+#2 /opt/lampp/htdocs/vendor/codeigniter4/framework/system/CodeIgniter.php(306): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#3 /opt/lampp/htdocs/public/index.php(45): CodeIgniter\CodeIgniter->run()
+#4 {main}
+CRITICAL - 2020-09-07 03:20:50 --> Call to undefined function App\Controllers\setUserSession()
+#0 /opt/lampp/htdocs/vendor/codeigniter4/framework/system/CodeIgniter.php(910): App\Controllers\Users->index()
+#1 /opt/lampp/htdocs/vendor/codeigniter4/framework/system/CodeIgniter.php(398): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Users))
+#2 /opt/lampp/htdocs/vendor/codeigniter4/framework/system/CodeIgniter.php(306): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#3 /opt/lampp/htdocs/public/index.php(45): CodeIgniter\CodeIgniter->run()
+#4 {main}
+CRITICAL - 2020-09-07 03:22:05 --> Call to undefined function App\Controllers\setUserSession()
+#0 /opt/lampp/htdocs/vendor/codeigniter4/framework/system/CodeIgniter.php(910): App\Controllers\Users->index()
+#1 /opt/lampp/htdocs/vendor/codeigniter4/framework/system/CodeIgniter.php(398): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Users))
+#2 /opt/lampp/htdocs/vendor/codeigniter4/framework/system/CodeIgniter.php(306): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#3 /opt/lampp/htdocs/public/index.php(45): CodeIgniter\CodeIgniter->run()
+#4 {main}
+CRITICAL - 2020-09-07 03:22:31 --> Call to undefined function App\Controllers\setUserSession()
+#0 /opt/lampp/htdocs/vendor/codeigniter4/framework/system/CodeIgniter.php(910): App\Controllers\Users->index()
+#1 /opt/lampp/htdocs/vendor/codeigniter4/framework/system/CodeIgniter.php(398): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Users))
+#2 /opt/lampp/htdocs/vendor/codeigniter4/framework/system/CodeIgniter.php(306): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#3 /opt/lampp/htdocs/public/index.php(45): CodeIgniter\CodeIgniter->run()
+#4 {main}
+CRITICAL - 2020-09-07 03:24:21 --> Trying to access array offset on value of type null
+#0 /opt/lampp/htdocs/app/Views/admin/templates/navbar.php(48): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Trying to acces...', '/opt/lampp/htdo...', 48, Array)
+#1 /opt/lampp/htdocs/vendor/codeigniter4/framework/system/View/View.php(236): include('/opt/lampp/htdo...')
+#2 /opt/lampp/htdocs/vendor/codeigniter4/framework/system/Common.php(1071): CodeIgniter\View\View->render('admin/templates...', Array, true)
+#3 /opt/lampp/htdocs/app/Controllers/Dashboard.php(31): view('admin/templates...', Array)
+#4 /opt/lampp/htdocs/vendor/codeigniter4/framework/system/CodeIgniter.php(910): App\Controllers\Dashboard->index()
+#5 /opt/lampp/htdocs/vendor/codeigniter4/framework/system/CodeIgniter.php(398): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Dashboard))
+#6 /opt/lampp/htdocs/vendor/codeigniter4/framework/system/CodeIgniter.php(306): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 /opt/lampp/htdocs/public/index.php(45): CodeIgniter\CodeIgniter->run()
+#8 {main}
+CRITICAL - 2020-09-07 03:24:26 --> Trying to access array offset on value of type null
+#0 /opt/lampp/htdocs/app/Views/admin/templates/navbar.php(48): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Trying to acces...', '/opt/lampp/htdo...', 48, Array)
+#1 /opt/lampp/htdocs/vendor/codeigniter4/framework/system/View/View.php(236): include('/opt/lampp/htdo...')
+#2 /opt/lampp/htdocs/vendor/codeigniter4/framework/system/Common.php(1071): CodeIgniter\View\View->render('admin/templates...', Array, true)
+#3 /opt/lampp/htdocs/app/Controllers/Dashboard.php(31): view('admin/templates...', Array)
+#4 /opt/lampp/htdocs/vendor/codeigniter4/framework/system/CodeIgniter.php(910): App\Controllers\Dashboard->index()
+#5 /opt/lampp/htdocs/vendor/codeigniter4/framework/system/CodeIgniter.php(398): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Dashboard))
+#6 /opt/lampp/htdocs/vendor/codeigniter4/framework/system/CodeIgniter.php(306): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 /opt/lampp/htdocs/public/index.php(45): CodeIgniter\CodeIgniter->run()
+#8 {main}
+CRITICAL - 2020-09-07 03:25:10 --> Call to undefined function App\Controllers\setUserSession()
+#0 /opt/lampp/htdocs/vendor/codeigniter4/framework/system/CodeIgniter.php(910): App\Controllers\Users->index()
+#1 /opt/lampp/htdocs/vendor/codeigniter4/framework/system/CodeIgniter.php(398): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Users))
+#2 /opt/lampp/htdocs/vendor/codeigniter4/framework/system/CodeIgniter.php(306): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#3 /opt/lampp/htdocs/public/index.php(45): CodeIgniter\CodeIgniter->run()
+#4 {main}
+CRITICAL - 2020-09-07 03:25:52 --> Call to undefined function App\Controllers\setUserSession()
+#0 /opt/lampp/htdocs/vendor/codeigniter4/framework/system/CodeIgniter.php(910): App\Controllers\Users->index()
+#1 /opt/lampp/htdocs/vendor/codeigniter4/framework/system/CodeIgniter.php(398): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Users))
+#2 /opt/lampp/htdocs/vendor/codeigniter4/framework/system/CodeIgniter.php(306): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#3 /opt/lampp/htdocs/public/index.php(45): CodeIgniter\CodeIgniter->run()
+#4 {main}
+CRITICAL - 2020-09-07 03:26:05 --> Call to undefined function App\Controllers\setUserSession()
+#0 /opt/lampp/htdocs/vendor/codeigniter4/framework/system/CodeIgniter.php(910): App\Controllers\Users->index()
+#1 /opt/lampp/htdocs/vendor/codeigniter4/framework/system/CodeIgniter.php(398): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Users))
+#2 /opt/lampp/htdocs/vendor/codeigniter4/framework/system/CodeIgniter.php(306): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#3 /opt/lampp/htdocs/public/index.php(45): CodeIgniter\CodeIgniter->run()
+#4 {main}
+CRITICAL - 2020-09-07 03:27:35 --> Call to undefined function App\Controllers\setUserSession()
+#0 /opt/lampp/htdocs/vendor/codeigniter4/framework/system/CodeIgniter.php(910): App\Controllers\Users->index()
+#1 /opt/lampp/htdocs/vendor/codeigniter4/framework/system/CodeIgniter.php(398): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Users))
+#2 /opt/lampp/htdocs/vendor/codeigniter4/framework/system/CodeIgniter.php(306): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#3 /opt/lampp/htdocs/public/index.php(45): CodeIgniter\CodeIgniter->run()
+#4 {main}
+CRITICAL - 2020-09-07 03:29:22 --> Call to undefined function App\Controllers\setUserSession()
+#0 /opt/lampp/htdocs/vendor/codeigniter4/framework/system/CodeIgniter.php(910): App\Controllers\Users->index()
+#1 /opt/lampp/htdocs/vendor/codeigniter4/framework/system/CodeIgniter.php(398): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Users))
+#2 /opt/lampp/htdocs/vendor/codeigniter4/framework/system/CodeIgniter.php(306): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#3 /opt/lampp/htdocs/public/index.php(45): CodeIgniter\CodeIgniter->run()
+#4 {main}
+CRITICAL - 2020-09-07 03:30:45 --> Call to undefined function App\Controllers\setUserSession()
+#0 /opt/lampp/htdocs/vendor/codeigniter4/framework/system/CodeIgniter.php(910): App\Controllers\Users->index()
+#1 /opt/lampp/htdocs/vendor/codeigniter4/framework/system/CodeIgniter.php(398): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Users))
+#2 /opt/lampp/htdocs/vendor/codeigniter4/framework/system/CodeIgniter.php(306): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#3 /opt/lampp/htdocs/public/index.php(45): CodeIgniter\CodeIgniter->run()
+#4 {main}
+CRITICAL - 2020-09-07 04:06:21 --> Undefined variable: title
+#0 /opt/lampp/htdocs/app/Views/admin/templates/header.php(6): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined varia...', '/opt/lampp/htdo...', 6, Array)
+#1 /opt/lampp/htdocs/vendor/codeigniter4/framework/system/View/View.php(236): include('/opt/lampp/htdo...')
+#2 /opt/lampp/htdocs/vendor/codeigniter4/framework/system/Common.php(1071): CodeIgniter\View\View->render('admin/templates...', Array, true)
+#3 /opt/lampp/htdocs/app/Controllers/Dashboard.php(30): view('admin/templates...')
+#4 /opt/lampp/htdocs/vendor/codeigniter4/framework/system/CodeIgniter.php(910): App\Controllers\Dashboard->index()
+#5 /opt/lampp/htdocs/vendor/codeigniter4/framework/system/CodeIgniter.php(398): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Dashboard))
+#6 /opt/lampp/htdocs/vendor/codeigniter4/framework/system/CodeIgniter.php(306): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 /opt/lampp/htdocs/public/index.php(45): CodeIgniter\CodeIgniter->run()
+#8 {main}
+CRITICAL - 2020-09-07 04:11:18 --> Undefined variable: title
+#0 /opt/lampp/htdocs/app/Views/admin/templates/header.php(6): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined varia...', '/opt/lampp/htdo...', 6, Array)
+#1 /opt/lampp/htdocs/vendor/codeigniter4/framework/system/View/View.php(236): include('/opt/lampp/htdo...')
+#2 /opt/lampp/htdocs/vendor/codeigniter4/framework/system/Common.php(1071): CodeIgniter\View\View->render('admin/templates...', Array, true)
+#3 /opt/lampp/htdocs/app/Controllers/Dashboard.php(27): view('admin/templates...')
+#4 /opt/lampp/htdocs/vendor/codeigniter4/framework/system/CodeIgniter.php(910): App\Controllers\Dashboard->index()
+#5 /opt/lampp/htdocs/vendor/codeigniter4/framework/system/CodeIgniter.php(398): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Dashboard))
+#6 /opt/lampp/htdocs/vendor/codeigniter4/framework/system/CodeIgniter.php(306): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 /opt/lampp/htdocs/public/index.php(45): CodeIgniter\CodeIgniter->run()
+#8 {main}
+CRITICAL - 2020-09-07 04:11:22 --> Undefined variable: title
+#0 /opt/lampp/htdocs/app/Views/admin/templates/header.php(6): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined varia...', '/opt/lampp/htdo...', 6, Array)
+#1 /opt/lampp/htdocs/vendor/codeigniter4/framework/system/View/View.php(236): include('/opt/lampp/htdo...')
+#2 /opt/lampp/htdocs/vendor/codeigniter4/framework/system/Common.php(1071): CodeIgniter\View\View->render('admin/templates...', Array, true)
+#3 /opt/lampp/htdocs/app/Controllers/Users.php(64): view('admin/templates...')
+#4 /opt/lampp/htdocs/vendor/codeigniter4/framework/system/CodeIgniter.php(910): App\Controllers\Users->index()
+#5 /opt/lampp/htdocs/vendor/codeigniter4/framework/system/CodeIgniter.php(398): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Users))
+#6 /opt/lampp/htdocs/vendor/codeigniter4/framework/system/CodeIgniter.php(306): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 /opt/lampp/htdocs/public/index.php(45): CodeIgniter\CodeIgniter->run()
+#8 {main}
+CRITICAL - 2020-09-07 04:12:32 --> Undefined variable: title
+#0 /opt/lampp/htdocs/app/Views/admin/templates/header.php(6): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined varia...', '/opt/lampp/htdo...', 6, Array)
+#1 /opt/lampp/htdocs/vendor/codeigniter4/framework/system/View/View.php(236): include('/opt/lampp/htdo...')
+#2 /opt/lampp/htdocs/vendor/codeigniter4/framework/system/Common.php(1071): CodeIgniter\View\View->render('admin/templates...', Array, true)
+#3 /opt/lampp/htdocs/app/Controllers/Users.php(64): view('admin/templates...')
+#4 /opt/lampp/htdocs/vendor/codeigniter4/framework/system/CodeIgniter.php(910): App\Controllers\Users->index()
+#5 /opt/lampp/htdocs/vendor/codeigniter4/framework/system/CodeIgniter.php(398): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Users))
+#6 /opt/lampp/htdocs/vendor/codeigniter4/framework/system/CodeIgniter.php(306): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 /opt/lampp/htdocs/public/index.php(45): CodeIgniter\CodeIgniter->run()
+#8 {main}
+CRITICAL - 2020-09-07 04:12:49 --> Undefined variable: title
+#0 /opt/lampp/htdocs/app/Views/admin/templates/header.php(6): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined varia...', '/opt/lampp/htdo...', 6, Array)
+#1 /opt/lampp/htdocs/vendor/codeigniter4/framework/system/View/View.php(236): include('/opt/lampp/htdo...')
+#2 /opt/lampp/htdocs/vendor/codeigniter4/framework/system/Common.php(1071): CodeIgniter\View\View->render('admin/templates...', Array, true)
+#3 /opt/lampp/htdocs/app/Controllers/Dashboard.php(27): view('admin/templates...')
+#4 /opt/lampp/htdocs/vendor/codeigniter4/framework/system/CodeIgniter.php(910): App\Controllers\Dashboard->index()
+#5 /opt/lampp/htdocs/vendor/codeigniter4/framework/system/CodeIgniter.php(398): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Dashboard))
+#6 /opt/lampp/htdocs/vendor/codeigniter4/framework/system/CodeIgniter.php(306): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 /opt/lampp/htdocs/public/index.php(45): CodeIgniter\CodeIgniter->run()
+#8 {main}
+CRITICAL - 2020-09-07 04:12:50 --> Undefined variable: title
+#0 /opt/lampp/htdocs/app/Views/admin/templates/header.php(6): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined varia...', '/opt/lampp/htdo...', 6, Array)
+#1 /opt/lampp/htdocs/vendor/codeigniter4/framework/system/View/View.php(236): include('/opt/lampp/htdo...')
+#2 /opt/lampp/htdocs/vendor/codeigniter4/framework/system/Common.php(1071): CodeIgniter\View\View->render('admin/templates...', Array, true)
+#3 /opt/lampp/htdocs/app/Controllers/Dashboard.php(27): view('admin/templates...')
+#4 /opt/lampp/htdocs/vendor/codeigniter4/framework/system/CodeIgniter.php(910): App\Controllers\Dashboard->index()
+#5 /opt/lampp/htdocs/vendor/codeigniter4/framework/system/CodeIgniter.php(398): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Dashboard))
+#6 /opt/lampp/htdocs/vendor/codeigniter4/framework/system/CodeIgniter.php(306): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 /opt/lampp/htdocs/public/index.php(45): CodeIgniter\CodeIgniter->run()
+#8 {main}
+CRITICAL - 2020-09-07 04:23:40 --> Undefined variable: title
+#0 /opt/lampp/htdocs/app/Views/admin/templates/header.php(6): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined varia...', '/opt/lampp/htdo...', 6, Array)
+#1 /opt/lampp/htdocs/vendor/codeigniter4/framework/system/View/View.php(236): include('/opt/lampp/htdo...')
+#2 /opt/lampp/htdocs/vendor/codeigniter4/framework/system/Common.php(1071): CodeIgniter\View\View->render('admin/templates...', Array, true)
+#3 /opt/lampp/htdocs/app/Controllers/Dashboard.php(274): view('admin/templates...')
+#4 /opt/lampp/htdocs/vendor/codeigniter4/framework/system/CodeIgniter.php(910): App\Controllers\Dashboard->vietbai()
+#5 /opt/lampp/htdocs/vendor/codeigniter4/framework/system/CodeIgniter.php(398): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Dashboard))
+#6 /opt/lampp/htdocs/vendor/codeigniter4/framework/system/CodeIgniter.php(306): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 /opt/lampp/htdocs/public/index.php(45): CodeIgniter\CodeIgniter->run()
+#8 {main}
+CRITICAL - 2020-09-07 04:25:30 --> Undefined variable: title
+#0 /opt/lampp/htdocs/app/Views/admin/templates/header.php(6): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined varia...', '/opt/lampp/htdo...', 6, Array)
+#1 /opt/lampp/htdocs/vendor/codeigniter4/framework/system/View/View.php(236): include('/opt/lampp/htdo...')
+#2 /opt/lampp/htdocs/vendor/codeigniter4/framework/system/Common.php(1071): CodeIgniter\View\View->render('admin/templates...', Array, true)
+#3 /opt/lampp/htdocs/app/Controllers/Users.php(64): view('admin/templates...')
+#4 /opt/lampp/htdocs/vendor/codeigniter4/framework/system/CodeIgniter.php(910): App\Controllers\Users->index()
+#5 /opt/lampp/htdocs/vendor/codeigniter4/framework/system/CodeIgniter.php(398): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Users))
+#6 /opt/lampp/htdocs/vendor/codeigniter4/framework/system/CodeIgniter.php(306): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 /opt/lampp/htdocs/public/index.php(45): CodeIgniter\CodeIgniter->run()
+#8 {main}
+CRITICAL - 2020-09-07 04:26:22 --> Trying to access array offset on value of type null
+#0 /opt/lampp/htdocs/app/Views/admin/templates/navbar.php(48): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Trying to acces...', '/opt/lampp/htdo...', 48, Array)
+#1 /opt/lampp/htdocs/vendor/codeigniter4/framework/system/View/View.php(236): include('/opt/lampp/htdo...')
+#2 /opt/lampp/htdocs/vendor/codeigniter4/framework/system/Common.php(1071): CodeIgniter\View\View->render('admin/templates...', Array, true)
+#3 /opt/lampp/htdocs/app/Controllers/Dashboard.php(28): view('admin/templates...', Array)
+#4 /opt/lampp/htdocs/vendor/codeigniter4/framework/system/CodeIgniter.php(910): App\Controllers\Dashboard->index()
+#5 /opt/lampp/htdocs/vendor/codeigniter4/framework/system/CodeIgniter.php(398): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Dashboard))
+#6 /opt/lampp/htdocs/vendor/codeigniter4/framework/system/CodeIgniter.php(306): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 /opt/lampp/htdocs/public/index.php(45): CodeIgniter\CodeIgniter->run()
+#8 {main}
+CRITICAL - 2020-09-07 04:26:23 --> Trying to access array offset on value of type null
+#0 /opt/lampp/htdocs/app/Views/admin/templates/navbar.php(48): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Trying to acces...', '/opt/lampp/htdo...', 48, Array)
+#1 /opt/lampp/htdocs/vendor/codeigniter4/framework/system/View/View.php(236): include('/opt/lampp/htdo...')
+#2 /opt/lampp/htdocs/vendor/codeigniter4/framework/system/Common.php(1071): CodeIgniter\View\View->render('admin/templates...', Array, true)
+#3 /opt/lampp/htdocs/app/Controllers/Dashboard.php(28): view('admin/templates...', Array)
+#4 /opt/lampp/htdocs/vendor/codeigniter4/framework/system/CodeIgniter.php(910): App\Controllers\Dashboard->index()
+#5 /opt/lampp/htdocs/vendor/codeigniter4/framework/system/CodeIgniter.php(398): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Dashboard))
+#6 /opt/lampp/htdocs/vendor/codeigniter4/framework/system/CodeIgniter.php(306): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 /opt/lampp/htdocs/public/index.php(45): CodeIgniter\CodeIgniter->run()
+#8 {main}
+CRITICAL - 2020-09-07 04:27:07 --> Trying to access array offset on value of type null
+#0 /opt/lampp/htdocs/app/Views/admin/templates/navbar.php(48): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Trying to acces...', '/opt/lampp/htdo...', 48, Array)
+#1 /opt/lampp/htdocs/vendor/codeigniter4/framework/system/View/View.php(236): include('/opt/lampp/htdo...')
+#2 /opt/lampp/htdocs/vendor/codeigniter4/framework/system/Common.php(1071): CodeIgniter\View\View->render('admin/templates...', Array, true)
+#3 /opt/lampp/htdocs/app/Controllers/Dashboard.php(31): view('admin/templates...', Array)
+#4 /opt/lampp/htdocs/vendor/codeigniter4/framework/system/CodeIgniter.php(910): App\Controllers\Dashboard->index()
+#5 /opt/lampp/htdocs/vendor/codeigniter4/framework/system/CodeIgniter.php(398): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Dashboard))
+#6 /opt/lampp/htdocs/vendor/codeigniter4/framework/system/CodeIgniter.php(306): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 /opt/lampp/htdocs/public/index.php(45): CodeIgniter\CodeIgniter->run()
+#8 {main}
+CRITICAL - 2020-09-07 04:28:25 --> Trying to access array offset on value of type null
+#0 /opt/lampp/htdocs/app/Controllers/Dashboard.php(394): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Trying to acces...', '/opt/lampp/htdo...', 394, Array)
+#1 /opt/lampp/htdocs/app/Controllers/Dashboard.php(62): App\Controllers\Dashboard->checkAdmin()
+#2 /opt/lampp/htdocs/vendor/codeigniter4/framework/system/CodeIgniter.php(910): App\Controllers\Dashboard->adduser()
+#3 /opt/lampp/htdocs/vendor/codeigniter4/framework/system/CodeIgniter.php(398): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Dashboard))
+#4 /opt/lampp/htdocs/vendor/codeigniter4/framework/system/CodeIgniter.php(306): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#5 /opt/lampp/htdocs/public/index.php(45): CodeIgniter\CodeIgniter->run()
+#6 {main}
+CRITICAL - 2020-09-07 04:29:01 --> Trying to access array offset on value of type null
+#0 /opt/lampp/htdocs/app/Controllers/Dashboard.php(394): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Trying to acces...', '/opt/lampp/htdo...', 394, Array)
+#1 /opt/lampp/htdocs/app/Controllers/Dashboard.php(62): App\Controllers\Dashboard->checkAdmin()
+#2 /opt/lampp/htdocs/vendor/codeigniter4/framework/system/CodeIgniter.php(910): App\Controllers\Dashboard->adduser()
+#3 /opt/lampp/htdocs/vendor/codeigniter4/framework/system/CodeIgniter.php(398): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Dashboard))
+#4 /opt/lampp/htdocs/vendor/codeigniter4/framework/system/CodeIgniter.php(306): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#5 /opt/lampp/htdocs/public/index.php(45): CodeIgniter\CodeIgniter->run()
+#6 {main}
+CRITICAL - 2020-09-07 04:29:52 --> Trying to access array offset on value of type null
+#0 /opt/lampp/htdocs/app/Controllers/Dashboard.php(394): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Trying to acces...', '/opt/lampp/htdo...', 394, Array)
+#1 /opt/lampp/htdocs/app/Controllers/Dashboard.php(62): App\Controllers\Dashboard->checkAdmin()
+#2 /opt/lampp/htdocs/vendor/codeigniter4/framework/system/CodeIgniter.php(910): App\Controllers\Dashboard->adduser()
+#3 /opt/lampp/htdocs/vendor/codeigniter4/framework/system/CodeIgniter.php(398): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Dashboard))
+#4 /opt/lampp/htdocs/vendor/codeigniter4/framework/system/CodeIgniter.php(306): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#5 /opt/lampp/htdocs/public/index.php(45): CodeIgniter\CodeIgniter->run()
+#6 {main}
+CRITICAL - 2020-09-07 04:32:49 --> Trying to access array offset on value of type null
+#0 /opt/lampp/htdocs/app/Views/admin/templates/navbar.php(48): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Trying to acces...', '/opt/lampp/htdo...', 48, Array)
+#1 /opt/lampp/htdocs/vendor/codeigniter4/framework/system/View/View.php(236): include('/opt/lampp/htdo...')
+#2 /opt/lampp/htdocs/vendor/codeigniter4/framework/system/Common.php(1071): CodeIgniter\View\View->render('admin/templates...', Array, true)
+#3 /opt/lampp/htdocs/app/Controllers/Dashboard.php(55): view('admin/templates...', Array)
+#4 /opt/lampp/htdocs/vendor/codeigniter4/framework/system/CodeIgniter.php(910): App\Controllers\Dashboard->user()
+#5 /opt/lampp/htdocs/vendor/codeigniter4/framework/system/CodeIgniter.php(398): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Dashboard))
+#6 /opt/lampp/htdocs/vendor/codeigniter4/framework/system/CodeIgniter.php(306): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 /opt/lampp/htdocs/public/index.php(45): CodeIgniter\CodeIgniter->run()
+#8 {main}
+CRITICAL - 2020-09-07 04:35:21 --> Trying to access array offset on value of type null
+#0 /opt/lampp/htdocs/app/Views/admin/templates/navbar.php(48): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Trying to acces...', '/opt/lampp/htdo...', 48, Array)
+#1 /opt/lampp/htdocs/vendor/codeigniter4/framework/system/View/View.php(236): include('/opt/lampp/htdo...')
+#2 /opt/lampp/htdocs/vendor/codeigniter4/framework/system/Common.php(1071): CodeIgniter\View\View->render('admin/templates...', Array, true)
+#3 /opt/lampp/htdocs/app/Controllers/Dashboard.php(55): view('admin/templates...', Array)
+#4 /opt/lampp/htdocs/vendor/codeigniter4/framework/system/CodeIgniter.php(910): App\Controllers\Dashboard->user()
+#5 /opt/lampp/htdocs/vendor/codeigniter4/framework/system/CodeIgniter.php(398): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Dashboard))
+#6 /opt/lampp/htdocs/vendor/codeigniter4/framework/system/CodeIgniter.php(306): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 /opt/lampp/htdocs/public/index.php(45): CodeIgniter\CodeIgniter->run()
+#8 {main}
+CRITICAL - 2020-09-07 04:36:46 --> Trying to access array offset on value of type null
+#0 /opt/lampp/htdocs/app/Views/admin/templates/navbar.php(48): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Trying to acces...', '/opt/lampp/htdo...', 48, Array)
+#1 /opt/lampp/htdocs/vendor/codeigniter4/framework/system/View/View.php(236): include('/opt/lampp/htdo...')
+#2 /opt/lampp/htdocs/vendor/codeigniter4/framework/system/Common.php(1071): CodeIgniter\View\View->render('admin/templates...', Array, true)
+#3 /opt/lampp/htdocs/app/Controllers/Dashboard.php(55): view('admin/templates...', Array)
+#4 /opt/lampp/htdocs/vendor/codeigniter4/framework/system/CodeIgniter.php(910): App\Controllers\Dashboard->user()
+#5 /opt/lampp/htdocs/vendor/codeigniter4/framework/system/CodeIgniter.php(398): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Dashboard))
+#6 /opt/lampp/htdocs/vendor/codeigniter4/framework/system/CodeIgniter.php(306): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 /opt/lampp/htdocs/public/index.php(45): CodeIgniter\CodeIgniter->run()
+#8 {main}
+CRITICAL - 2020-09-07 04:41:14 --> Call to a member function where() on null
+#0 /opt/lampp/htdocs/vendor/codeigniter4/framework/system/CodeIgniter.php(910): App\Controllers\Dashboard->index()
+#1 /opt/lampp/htdocs/vendor/codeigniter4/framework/system/CodeIgniter.php(398): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Dashboard))
+#2 /opt/lampp/htdocs/vendor/codeigniter4/framework/system/CodeIgniter.php(306): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#3 /opt/lampp/htdocs/public/index.php(45): CodeIgniter\CodeIgniter->run()
+#4 {main}
+CRITICAL - 2020-09-07 04:41:15 --> Call to a member function where() on null
+#0 /opt/lampp/htdocs/vendor/codeigniter4/framework/system/CodeIgniter.php(910): App\Controllers\Dashboard->index()
+#1 /opt/lampp/htdocs/vendor/codeigniter4/framework/system/CodeIgniter.php(398): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Dashboard))
+#2 /opt/lampp/htdocs/vendor/codeigniter4/framework/system/CodeIgniter.php(306): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#3 /opt/lampp/htdocs/public/index.php(45): CodeIgniter\CodeIgniter->run()
+#4 {main}
+CRITICAL - 2020-09-07 04:41:34 --> Call to a member function where() on null
+#0 /opt/lampp/htdocs/vendor/codeigniter4/framework/system/CodeIgniter.php(910): App\Controllers\Dashboard->index()
+#1 /opt/lampp/htdocs/vendor/codeigniter4/framework/system/CodeIgniter.php(398): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Dashboard))
+#2 /opt/lampp/htdocs/vendor/codeigniter4/framework/system/CodeIgniter.php(306): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#3 /opt/lampp/htdocs/public/index.php(45): CodeIgniter\CodeIgniter->run()
+#4 {main}
+CRITICAL - 2020-09-07 04:41:37 --> Call to a member function where() on null
+#0 /opt/lampp/htdocs/vendor/codeigniter4/framework/system/CodeIgniter.php(910): App\Controllers\Dashboard->index()
+#1 /opt/lampp/htdocs/vendor/codeigniter4/framework/system/CodeIgniter.php(398): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Dashboard))
+#2 /opt/lampp/htdocs/vendor/codeigniter4/framework/system/CodeIgniter.php(306): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#3 /opt/lampp/htdocs/public/index.php(45): CodeIgniter\CodeIgniter->run()
+#4 {main}
+CRITICAL - 2020-09-07 04:41:38 --> Call to a member function where() on null
+#0 /opt/lampp/htdocs/vendor/codeigniter4/framework/system/CodeIgniter.php(910): App\Controllers\Dashboard->index()
+#1 /opt/lampp/htdocs/vendor/codeigniter4/framework/system/CodeIgniter.php(398): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Dashboard))
+#2 /opt/lampp/htdocs/vendor/codeigniter4/framework/system/CodeIgniter.php(306): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#3 /opt/lampp/htdocs/public/index.php(45): CodeIgniter\CodeIgniter->run()
+#4 {main}
+CRITICAL - 2020-09-07 04:41:39 --> Call to a member function where() on null
+#0 /opt/lampp/htdocs/vendor/codeigniter4/framework/system/CodeIgniter.php(910): App\Controllers\Dashboard->index()
+#1 /opt/lampp/htdocs/vendor/codeigniter4/framework/system/CodeIgniter.php(398): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Dashboard))
+#2 /opt/lampp/htdocs/vendor/codeigniter4/framework/system/CodeIgniter.php(306): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#3 /opt/lampp/htdocs/public/index.php(45): CodeIgniter\CodeIgniter->run()
+#4 {main}
+CRITICAL - 2020-09-07 04:41:54 --> Call to a member function where() on null
+#0 /opt/lampp/htdocs/vendor/codeigniter4/framework/system/CodeIgniter.php(910): App\Controllers\Dashboard->index()
+#1 /opt/lampp/htdocs/vendor/codeigniter4/framework/system/CodeIgniter.php(398): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Dashboard))
+#2 /opt/lampp/htdocs/vendor/codeigniter4/framework/system/CodeIgniter.php(306): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#3 /opt/lampp/htdocs/public/index.php(45): CodeIgniter\CodeIgniter->run()
+#4 {main}
+CRITICAL - 2020-09-07 04:42:13 --> Call to a member function where() on null
+#0 /opt/lampp/htdocs/vendor/codeigniter4/framework/system/CodeIgniter.php(910): App\Controllers\Dashboard->index()
+#1 /opt/lampp/htdocs/vendor/codeigniter4/framework/system/CodeIgniter.php(398): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Dashboard))
+#2 /opt/lampp/htdocs/vendor/codeigniter4/framework/system/CodeIgniter.php(306): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#3 /opt/lampp/htdocs/public/index.php(45): CodeIgniter\CodeIgniter->run()
+#4 {main}
+CRITICAL - 2020-09-07 04:47:39 --> Cannot call constructor
+#0 /opt/lampp/htdocs/vendor/codeigniter4/framework/system/CodeIgniter.php(882): App\Controllers\Dashboard->__construct()
+#1 /opt/lampp/htdocs/vendor/codeigniter4/framework/system/CodeIgniter.php(393): CodeIgniter\CodeIgniter->createController()
+#2 /opt/lampp/htdocs/vendor/codeigniter4/framework/system/CodeIgniter.php(306): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#3 /opt/lampp/htdocs/public/index.php(45): CodeIgniter\CodeIgniter->run()
+#4 {main}
+CRITICAL - 2020-09-07 04:54:08 --> Class 'App\Controller\Dashboard' not found
+#0 /opt/lampp/htdocs/vendor/codeigniter4/framework/system/CodeIgniter.php(882): App\Controllers\Users->__construct()
+#1 /opt/lampp/htdocs/vendor/codeigniter4/framework/system/CodeIgniter.php(393): CodeIgniter\CodeIgniter->createController()
+#2 /opt/lampp/htdocs/vendor/codeigniter4/framework/system/CodeIgniter.php(306): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#3 /opt/lampp/htdocs/public/index.php(45): CodeIgniter\CodeIgniter->run()
+#4 {main}
+CRITICAL - 2020-09-07 04:54:38 --> Class 'App\Controller\Dashboard' not found
+#0 /opt/lampp/htdocs/vendor/codeigniter4/framework/system/Autoloader/Autoloader.php(365): require_once()
+#1 /opt/lampp/htdocs/vendor/codeigniter4/framework/system/Autoloader/Autoloader.php(296): CodeIgniter\Autoloader\Autoloader->requireFile('/opt/lampp/htdo...')
+#2 /opt/lampp/htdocs/vendor/codeigniter4/framework/system/Autoloader/Autoloader.php(258): CodeIgniter\Autoloader\Autoloader->loadInNamespace('App\\Controllers...')
+#3 [internal function]: CodeIgniter\Autoloader\Autoloader->loadClass('App\\Controllers...')
+#4 [internal function]: spl_autoload_call('App\\Controllers...')
+#5 /opt/lampp/htdocs/vendor/codeigniter4/framework/system/CodeIgniter.php(861): class_exists('\\App\\Controller...', true)
+#6 /opt/lampp/htdocs/vendor/codeigniter4/framework/system/CodeIgniter.php(388): CodeIgniter\CodeIgniter->startController()
+#7 /opt/lampp/htdocs/vendor/codeigniter4/framework/system/CodeIgniter.php(306): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 /opt/lampp/htdocs/public/index.php(45): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2020-09-07 04:55:25 --> Class 'App\Controller\Dashboard' not found
+#0 /opt/lampp/htdocs/vendor/codeigniter4/framework/system/CodeIgniter.php(882): App\Controllers\Users->__construct()
+#1 /opt/lampp/htdocs/vendor/codeigniter4/framework/system/CodeIgniter.php(393): CodeIgniter\CodeIgniter->createController()
+#2 /opt/lampp/htdocs/vendor/codeigniter4/framework/system/CodeIgniter.php(306): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#3 /opt/lampp/htdocs/public/index.php(45): CodeIgniter\CodeIgniter->run()
+#4 {main}
+CRITICAL - 2020-09-07 04:55:48 --> Cannot call constructor
+#0 /opt/lampp/htdocs/app/Controllers/Users.php(19): App\Controllers\Dashboard->__construct()
+#1 /opt/lampp/htdocs/vendor/codeigniter4/framework/system/CodeIgniter.php(882): App\Controllers\Users->__construct()
+#2 /opt/lampp/htdocs/vendor/codeigniter4/framework/system/CodeIgniter.php(393): CodeIgniter\CodeIgniter->createController()
+#3 /opt/lampp/htdocs/vendor/codeigniter4/framework/system/CodeIgniter.php(306): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 /opt/lampp/htdocs/public/index.php(45): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2020-09-07 05:01:50 --> Class 'App\Controllers\User' not found
+#0 /opt/lampp/htdocs/vendor/codeigniter4/framework/system/CodeIgniter.php(882): App\Controllers\Dashboard->__construct()
+#1 /opt/lampp/htdocs/vendor/codeigniter4/framework/system/CodeIgniter.php(393): CodeIgniter\CodeIgniter->createController()
+#2 /opt/lampp/htdocs/vendor/codeigniter4/framework/system/CodeIgniter.php(306): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#3 /opt/lampp/htdocs/public/index.php(45): CodeIgniter\CodeIgniter->run()
+#4 {main}
+CRITICAL - 2020-09-07 05:03:18 --> Call to a member function where() on null
+#0 /opt/lampp/htdocs/vendor/codeigniter4/framework/system/CodeIgniter.php(910): App\Controllers\Dashboard->index()
+#1 /opt/lampp/htdocs/vendor/codeigniter4/framework/system/CodeIgniter.php(398): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Dashboard))
+#2 /opt/lampp/htdocs/vendor/codeigniter4/framework/system/CodeIgniter.php(306): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#3 /opt/lampp/htdocs/public/index.php(45): CodeIgniter\CodeIgniter->run()
+#4 {main}
+CRITICAL - 2020-09-07 05:03:53 --> Trying to access array offset on value of type null
+#0 /opt/lampp/htdocs/app/Views/admin/templates/navbar.php(48): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Trying to acces...', '/opt/lampp/htdo...', 48, Array)
+#1 /opt/lampp/htdocs/vendor/codeigniter4/framework/system/View/View.php(236): include('/opt/lampp/htdo...')
+#2 /opt/lampp/htdocs/vendor/codeigniter4/framework/system/Common.php(1071): CodeIgniter\View\View->render('admin/templates...', Array, true)
+#3 /opt/lampp/htdocs/app/Controllers/Dashboard.php(34): view('admin/templates...', Array)
+#4 /opt/lampp/htdocs/vendor/codeigniter4/framework/system/CodeIgniter.php(910): App\Controllers\Dashboard->index()
+#5 /opt/lampp/htdocs/vendor/codeigniter4/framework/system/CodeIgniter.php(398): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Dashboard))
+#6 /opt/lampp/htdocs/vendor/codeigniter4/framework/system/CodeIgniter.php(306): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 /opt/lampp/htdocs/public/index.php(45): CodeIgniter\CodeIgniter->run()
+#8 {main}
+CRITICAL - 2020-09-07 05:04:51 --> Call to a member function where() on null
+#0 /opt/lampp/htdocs/vendor/codeigniter4/framework/system/CodeIgniter.php(910): App\Controllers\Dashboard->index()
+#1 /opt/lampp/htdocs/vendor/codeigniter4/framework/system/CodeIgniter.php(398): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Dashboard))
+#2 /opt/lampp/htdocs/vendor/codeigniter4/framework/system/CodeIgniter.php(306): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#3 /opt/lampp/htdocs/public/index.php(45): CodeIgniter\CodeIgniter->run()
+#4 {main}
+CRITICAL - 2020-09-07 05:07:35 --> Trying to access array offset on value of type null
+#0 /opt/lampp/htdocs/app/Views/admin/templates/navbar.php(48): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Trying to acces...', '/opt/lampp/htdo...', 48, Array)
+#1 /opt/lampp/htdocs/vendor/codeigniter4/framework/system/View/View.php(236): include('/opt/lampp/htdo...')
+#2 /opt/lampp/htdocs/vendor/codeigniter4/framework/system/Common.php(1071): CodeIgniter\View\View->render('admin/templates...', Array, true)
+#3 /opt/lampp/htdocs/app/Controllers/Dashboard.php(35): view('admin/templates...', Array)
+#4 /opt/lampp/htdocs/vendor/codeigniter4/framework/system/CodeIgniter.php(910): App\Controllers\Dashboard->index()
+#5 /opt/lampp/htdocs/vendor/codeigniter4/framework/system/CodeIgniter.php(398): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Dashboard))
+#6 /opt/lampp/htdocs/vendor/codeigniter4/framework/system/CodeIgniter.php(306): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 /opt/lampp/htdocs/public/index.php(45): CodeIgniter\CodeIgniter->run()
+#8 {main}
+CRITICAL - 2020-09-07 05:07:47 --> Trying to access array offset on value of type null
+#0 /opt/lampp/htdocs/app/Views/admin/templates/navbar.php(48): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Trying to acces...', '/opt/lampp/htdo...', 48, Array)
+#1 /opt/lampp/htdocs/vendor/codeigniter4/framework/system/View/View.php(236): include('/opt/lampp/htdo...')
+#2 /opt/lampp/htdocs/vendor/codeigniter4/framework/system/Common.php(1071): CodeIgniter\View\View->render('admin/templates...', Array, true)
+#3 /opt/lampp/htdocs/app/Controllers/Dashboard.php(35): view('admin/templates...', Array)
+#4 /opt/lampp/htdocs/vendor/codeigniter4/framework/system/CodeIgniter.php(910): App\Controllers\Dashboard->index()
+#5 /opt/lampp/htdocs/vendor/codeigniter4/framework/system/CodeIgniter.php(398): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Dashboard))
+#6 /opt/lampp/htdocs/vendor/codeigniter4/framework/system/CodeIgniter.php(306): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 /opt/lampp/htdocs/public/index.php(45): CodeIgniter\CodeIgniter->run()
+#8 {main}
+CRITICAL - 2020-09-07 05:08:52 --> Trying to access array offset on value of type null
+#0 /opt/lampp/htdocs/app/Views/admin/templates/navbar.php(48): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Trying to acces...', '/opt/lampp/htdo...', 48, Array)
+#1 /opt/lampp/htdocs/vendor/codeigniter4/framework/system/View/View.php(236): include('/opt/lampp/htdo...')
+#2 /opt/lampp/htdocs/vendor/codeigniter4/framework/system/Common.php(1071): CodeIgniter\View\View->render('admin/templates...', Array, true)
+#3 /opt/lampp/htdocs/app/Controllers/Dashboard.php(37): view('admin/templates...', Array)
+#4 /opt/lampp/htdocs/vendor/codeigniter4/framework/system/CodeIgniter.php(910): App\Controllers\Dashboard->index()
+#5 /opt/lampp/htdocs/vendor/codeigniter4/framework/system/CodeIgniter.php(398): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Dashboard))
+#6 /opt/lampp/htdocs/vendor/codeigniter4/framework/system/CodeIgniter.php(306): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 /opt/lampp/htdocs/public/index.php(45): CodeIgniter\CodeIgniter->run()
+#8 {main}
+CRITICAL - 2020-09-07 05:08:52 --> Trying to access array offset on value of type null
+#0 /opt/lampp/htdocs/app/Views/admin/templates/navbar.php(48): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Trying to acces...', '/opt/lampp/htdo...', 48, Array)
+#1 /opt/lampp/htdocs/vendor/codeigniter4/framework/system/View/View.php(236): include('/opt/lampp/htdo...')
+#2 /opt/lampp/htdocs/vendor/codeigniter4/framework/system/Common.php(1071): CodeIgniter\View\View->render('admin/templates...', Array, true)
+#3 /opt/lampp/htdocs/app/Controllers/Dashboard.php(37): view('admin/templates...', Array)
+#4 /opt/lampp/htdocs/vendor/codeigniter4/framework/system/CodeIgniter.php(910): App\Controllers\Dashboard->index()
+#5 /opt/lampp/htdocs/vendor/codeigniter4/framework/system/CodeIgniter.php(398): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Dashboard))
+#6 /opt/lampp/htdocs/vendor/codeigniter4/framework/system/CodeIgniter.php(306): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 /opt/lampp/htdocs/public/index.php(45): CodeIgniter\CodeIgniter->run()
+#8 {main}
+CRITICAL - 2020-09-07 05:09:18 --> Trying to access array offset on value of type null
+#0 /opt/lampp/htdocs/app/Views/admin/templates/navbar.php(48): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Trying to acces...', '/opt/lampp/htdo...', 48, Array)
+#1 /opt/lampp/htdocs/vendor/codeigniter4/framework/system/View/View.php(236): include('/opt/lampp/htdo...')
+#2 /opt/lampp/htdocs/vendor/codeigniter4/framework/system/Common.php(1071): CodeIgniter\View\View->render('admin/templates...', Array, true)
+#3 /opt/lampp/htdocs/app/Controllers/Dashboard.php(37): view('admin/templates...', Array)
+#4 /opt/lampp/htdocs/vendor/codeigniter4/framework/system/CodeIgniter.php(910): App\Controllers\Dashboard->index()
+#5 /opt/lampp/htdocs/vendor/codeigniter4/framework/system/CodeIgniter.php(398): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Dashboard))
+#6 /opt/lampp/htdocs/vendor/codeigniter4/framework/system/CodeIgniter.php(306): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 /opt/lampp/htdocs/public/index.php(45): CodeIgniter\CodeIgniter->run()
+#8 {main}
+CRITICAL - 2020-09-07 05:09:18 --> Trying to access array offset on value of type null
+#0 /opt/lampp/htdocs/app/Views/admin/templates/navbar.php(48): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Trying to acces...', '/opt/lampp/htdo...', 48, Array)
+#1 /opt/lampp/htdocs/vendor/codeigniter4/framework/system/View/View.php(236): include('/opt/lampp/htdo...')
+#2 /opt/lampp/htdocs/vendor/codeigniter4/framework/system/Common.php(1071): CodeIgniter\View\View->render('admin/templates...', Array, true)
+#3 /opt/lampp/htdocs/app/Controllers/Dashboard.php(37): view('admin/templates...', Array)
+#4 /opt/lampp/htdocs/vendor/codeigniter4/framework/system/CodeIgniter.php(910): App\Controllers\Dashboard->index()
+#5 /opt/lampp/htdocs/vendor/codeigniter4/framework/system/CodeIgniter.php(398): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Dashboard))
+#6 /opt/lampp/htdocs/vendor/codeigniter4/framework/system/CodeIgniter.php(306): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 /opt/lampp/htdocs/public/index.php(45): CodeIgniter\CodeIgniter->run()
+#8 {main}
+CRITICAL - 2020-09-07 05:09:23 --> Trying to access array offset on value of type null
+#0 /opt/lampp/htdocs/app/Views/admin/templates/navbar.php(48): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Trying to acces...', '/opt/lampp/htdo...', 48, Array)
+#1 /opt/lampp/htdocs/vendor/codeigniter4/framework/system/View/View.php(236): include('/opt/lampp/htdo...')
+#2 /opt/lampp/htdocs/vendor/codeigniter4/framework/system/Common.php(1071): CodeIgniter\View\View->render('admin/templates...', Array, true)
+#3 /opt/lampp/htdocs/app/Controllers/Dashboard.php(37): view('admin/templates...', Array)
+#4 /opt/lampp/htdocs/vendor/codeigniter4/framework/system/CodeIgniter.php(910): App\Controllers\Dashboard->index()
+#5 /opt/lampp/htdocs/vendor/codeigniter4/framework/system/CodeIgniter.php(398): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Dashboard))
+#6 /opt/lampp/htdocs/vendor/codeigniter4/framework/system/CodeIgniter.php(306): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 /opt/lampp/htdocs/public/index.php(45): CodeIgniter\CodeIgniter->run()
+#8 {main}
+CRITICAL - 2020-09-07 05:09:38 --> Trying to access array offset on value of type null
+#0 /opt/lampp/htdocs/app/Views/admin/templates/navbar.php(48): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Trying to acces...', '/opt/lampp/htdo...', 48, Array)
+#1 /opt/lampp/htdocs/vendor/codeigniter4/framework/system/View/View.php(236): include('/opt/lampp/htdo...')
+#2 /opt/lampp/htdocs/vendor/codeigniter4/framework/system/Common.php(1071): CodeIgniter\View\View->render('admin/templates...', Array, true)
+#3 /opt/lampp/htdocs/app/Controllers/Dashboard.php(37): view('admin/templates...', Array)
+#4 /opt/lampp/htdocs/vendor/codeigniter4/framework/system/CodeIgniter.php(910): App\Controllers\Dashboard->index()
+#5 /opt/lampp/htdocs/vendor/codeigniter4/framework/system/CodeIgniter.php(398): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Dashboard))
+#6 /opt/lampp/htdocs/vendor/codeigniter4/framework/system/CodeIgniter.php(306): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 /opt/lampp/htdocs/public/index.php(45): CodeIgniter\CodeIgniter->run()
+#8 {main}
+CRITICAL - 2020-09-07 05:10:04 --> Trying to access array offset on value of type null
+#0 /opt/lampp/htdocs/app/Views/admin/templates/navbar.php(48): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Trying to acces...', '/opt/lampp/htdo...', 48, Array)
+#1 /opt/lampp/htdocs/vendor/codeigniter4/framework/system/View/View.php(236): include('/opt/lampp/htdo...')
+#2 /opt/lampp/htdocs/vendor/codeigniter4/framework/system/Common.php(1071): CodeIgniter\View\View->render('admin/templates...', Array, true)
+#3 /opt/lampp/htdocs/app/Controllers/Dashboard.php(37): view('admin/templates...', Array)
+#4 /opt/lampp/htdocs/vendor/codeigniter4/framework/system/CodeIgniter.php(910): App\Controllers\Dashboard->index()
+#5 /opt/lampp/htdocs/vendor/codeigniter4/framework/system/CodeIgniter.php(398): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Dashboard))
+#6 /opt/lampp/htdocs/vendor/codeigniter4/framework/system/CodeIgniter.php(306): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 /opt/lampp/htdocs/public/index.php(45): CodeIgniter\CodeIgniter->run()
+#8 {main}
+CRITICAL - 2020-09-07 05:11:06 --> 
+#0 /opt/lampp/htdocs/vendor/codeigniter4/framework/system/HTTP/RedirectResponse.php(92): CodeIgniter\HTTP\Exceptions\HTTPException::forInvalidRedirectRoute('')
+#1 /opt/lampp/htdocs/vendor/codeigniter4/framework/system/Common.php(798): CodeIgniter\HTTP\RedirectResponse->route(false)
+#2 /opt/lampp/htdocs/app/Controllers/Dashboard.php(16): redirect('login')
+#3 /opt/lampp/htdocs/vendor/codeigniter4/framework/system/CodeIgniter.php(882): App\Controllers\Dashboard->__construct()
+#4 /opt/lampp/htdocs/vendor/codeigniter4/framework/system/CodeIgniter.php(393): CodeIgniter\CodeIgniter->createController()
+#5 /opt/lampp/htdocs/vendor/codeigniter4/framework/system/CodeIgniter.php(306): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#6 /opt/lampp/htdocs/public/index.php(45): CodeIgniter\CodeIgniter->run()
+#7 {main}
+CRITICAL - 2020-09-07 05:11:28 --> 
+#0 /opt/lampp/htdocs/vendor/codeigniter4/framework/system/HTTP/RedirectResponse.php(92): CodeIgniter\HTTP\Exceptions\HTTPException::forInvalidRedirectRoute('')
+#1 /opt/lampp/htdocs/vendor/codeigniter4/framework/system/Common.php(798): CodeIgniter\HTTP\RedirectResponse->route(false)
+#2 /opt/lampp/htdocs/app/Controllers/Dashboard.php(16): redirect('/admin')
+#3 /opt/lampp/htdocs/vendor/codeigniter4/framework/system/CodeIgniter.php(882): App\Controllers\Dashboard->__construct()
+#4 /opt/lampp/htdocs/vendor/codeigniter4/framework/system/CodeIgniter.php(393): CodeIgniter\CodeIgniter->createController()
+#5 /opt/lampp/htdocs/vendor/codeigniter4/framework/system/CodeIgniter.php(306): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#6 /opt/lampp/htdocs/public/index.php(45): CodeIgniter\CodeIgniter->run()
+#7 {main}
+CRITICAL - 2020-09-07 05:12:37 --> Call to a member function where() on null
+#0 /opt/lampp/htdocs/vendor/codeigniter4/framework/system/CodeIgniter.php(910): App\Controllers\Dashboard->index()
+#1 /opt/lampp/htdocs/vendor/codeigniter4/framework/system/CodeIgniter.php(398): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Dashboard))
+#2 /opt/lampp/htdocs/vendor/codeigniter4/framework/system/CodeIgniter.php(306): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#3 /opt/lampp/htdocs/public/index.php(45): CodeIgniter\CodeIgniter->run()
+#4 {main}
+CRITICAL - 2020-09-07 05:12:59 --> Call to a member function where() on null
+#0 /opt/lampp/htdocs/vendor/codeigniter4/framework/system/CodeIgniter.php(910): App\Controllers\Dashboard->index()
+#1 /opt/lampp/htdocs/vendor/codeigniter4/framework/system/CodeIgniter.php(398): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Dashboard))
+#2 /opt/lampp/htdocs/vendor/codeigniter4/framework/system/CodeIgniter.php(306): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#3 /opt/lampp/htdocs/public/index.php(45): CodeIgniter\CodeIgniter->run()
+#4 {main}
+CRITICAL - 2020-09-07 05:15:18 --> Call to a member function where() on null
+#0 /opt/lampp/htdocs/vendor/codeigniter4/framework/system/CodeIgniter.php(910): App\Controllers\Dashboard->index()
+#1 /opt/lampp/htdocs/vendor/codeigniter4/framework/system/CodeIgniter.php(398): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Dashboard))
+#2 /opt/lampp/htdocs/vendor/codeigniter4/framework/system/CodeIgniter.php(306): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#3 /opt/lampp/htdocs/public/index.php(45): CodeIgniter\CodeIgniter->run()
+#4 {main}
+CRITICAL - 2020-09-07 05:16:11 --> Invalid file: 404.php
+#0 /opt/lampp/htdocs/vendor/codeigniter4/framework/system/View/View.php(224): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('404.php')
+#1 /opt/lampp/htdocs/vendor/codeigniter4/framework/system/Common.php(1071): CodeIgniter\View\View->render('404', Array, true)
+#2 /opt/lampp/htdocs/app/Controllers/Dashboard.php(17): view('404')
+#3 /opt/lampp/htdocs/vendor/codeigniter4/framework/system/CodeIgniter.php(882): App\Controllers\Dashboard->__construct()
+#4 /opt/lampp/htdocs/vendor/codeigniter4/framework/system/CodeIgniter.php(393): CodeIgniter\CodeIgniter->createController()
+#5 /opt/lampp/htdocs/vendor/codeigniter4/framework/system/CodeIgniter.php(306): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#6 /opt/lampp/htdocs/public/index.php(45): CodeIgniter\CodeIgniter->run()
+#7 {main}
+CRITICAL - 2020-09-07 05:17:48 --> Undefined index: argc
+#0 /opt/lampp/htdocs/vendor/codeigniter4/framework/system/CLI/CLI.php(708): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined index...', '/opt/lampp/htdo...', 708, Array)
+#1 /opt/lampp/htdocs/vendor/codeigniter4/framework/system/CLI/CLI.php(166): CodeIgniter\CLI\CLI::parseCommandLine()
+#2 /opt/lampp/htdocs/vendor/codeigniter4/framework/system/CLI/CLI.php(969): CodeIgniter\CLI\CLI::init()
+#3 /opt/lampp/htdocs/vendor/codeigniter4/framework/system/Autoloader/Autoloader.php(365): require_once('/opt/lampp/htdo...')
+#4 /opt/lampp/htdocs/vendor/codeigniter4/framework/system/Autoloader/Autoloader.php(296): CodeIgniter\Autoloader\Autoloader->requireFile('/opt/lampp/htdo...')
+#5 /opt/lampp/htdocs/vendor/codeigniter4/framework/system/Autoloader/Autoloader.php(258): CodeIgniter\Autoloader\Autoloader->loadInNamespace('CodeIgniter\\CLI...')
+#6 [internal function]: CodeIgniter\Autoloader\Autoloader->loadClass('CodeIgniter\\CLI...')
+#7 /opt/lampp/htdocs/app/Views/errors/cli/error_404.php(4): spl_autoload_call('CodeIgniter\\CLI...')
+#8 /opt/lampp/htdocs/vendor/codeigniter4/framework/system/View/View.php(236): include('/opt/lampp/htdo...')
+#9 /opt/lampp/htdocs/vendor/codeigniter4/framework/system/Common.php(1071): CodeIgniter\View\View->render('errors/cli/erro...', Array, true)
+#10 /opt/lampp/htdocs/app/Controllers/Dashboard.php(17): view('errors/cli/erro...')
+#11 /opt/lampp/htdocs/vendor/codeigniter4/framework/system/CodeIgniter.php(882): App\Controllers\Dashboard->__construct()
+#12 /opt/lampp/htdocs/vendor/codeigniter4/framework/system/CodeIgniter.php(393): CodeIgniter\CodeIgniter->createController()
+#13 /opt/lampp/htdocs/vendor/codeigniter4/framework/system/CodeIgniter.php(306): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#14 /opt/lampp/htdocs/public/index.php(45): CodeIgniter\CodeIgniter->run()
+#15 {main}
+CRITICAL - 2020-09-07 05:17:58 --> Invalid file: error_404.php
+#0 /opt/lampp/htdocs/vendor/codeigniter4/framework/system/View/View.php(224): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('error_404.php')
+#1 /opt/lampp/htdocs/vendor/codeigniter4/framework/system/Common.php(1071): CodeIgniter\View\View->render('error_404.php', Array, true)
+#2 /opt/lampp/htdocs/app/Controllers/Dashboard.php(17): view('error_404.php')
+#3 /opt/lampp/htdocs/vendor/codeigniter4/framework/system/CodeIgniter.php(882): App\Controllers\Dashboard->__construct()
+#4 /opt/lampp/htdocs/vendor/codeigniter4/framework/system/CodeIgniter.php(393): CodeIgniter\CodeIgniter->createController()
+#5 /opt/lampp/htdocs/vendor/codeigniter4/framework/system/CodeIgniter.php(306): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#6 /opt/lampp/htdocs/public/index.php(45): CodeIgniter\CodeIgniter->run()
+#7 {main}
+CRITICAL - 2020-09-07 05:19:00 --> 
+#0 /opt/lampp/htdocs/vendor/codeigniter4/framework/system/HTTP/RedirectResponse.php(92): CodeIgniter\HTTP\Exceptions\HTTPException::forInvalidRedirectRoute('')
+#1 /opt/lampp/htdocs/app/Controllers/Dashboard.php(16): CodeIgniter\HTTP\RedirectResponse->route(false)
+#2 /opt/lampp/htdocs/vendor/codeigniter4/framework/system/CodeIgniter.php(882): App\Controllers\Dashboard->__construct()
+#3 /opt/lampp/htdocs/vendor/codeigniter4/framework/system/CodeIgniter.php(393): CodeIgniter\CodeIgniter->createController()
+#4 /opt/lampp/htdocs/vendor/codeigniter4/framework/system/CodeIgniter.php(306): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#5 /opt/lampp/htdocs/public/index.php(45): CodeIgniter\CodeIgniter->run()
+#6 {main}
+CRITICAL - 2020-09-07 05:20:15 --> Call to a member function where() on null
+#0 /opt/lampp/htdocs/vendor/codeigniter4/framework/system/CodeIgniter.php(910): App\Controllers\Dashboard->index()
+#1 /opt/lampp/htdocs/vendor/codeigniter4/framework/system/CodeIgniter.php(398): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Dashboard))
+#2 /opt/lampp/htdocs/vendor/codeigniter4/framework/system/CodeIgniter.php(306): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#3 /opt/lampp/htdocs/public/index.php(45): CodeIgniter\CodeIgniter->run()
+#4 {main}
+CRITICAL - 2020-09-07 05:24:42 --> Cannot call constructor
+#0 /opt/lampp/htdocs/vendor/codeigniter4/framework/system/CodeIgniter.php(882): App\Controllers\Users->__construct()
+#1 /opt/lampp/htdocs/vendor/codeigniter4/framework/system/CodeIgniter.php(393): CodeIgniter\CodeIgniter->createController()
+#2 /opt/lampp/htdocs/vendor/codeigniter4/framework/system/CodeIgniter.php(306): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#3 /opt/lampp/htdocs/public/index.php(45): CodeIgniter\CodeIgniter->run()
+#4 {main}
+CRITICAL - 2020-09-07 05:26:35 --> Call to a member function where() on null
+#0 /opt/lampp/htdocs/vendor/codeigniter4/framework/system/CodeIgniter.php(910): App\Controllers\Dashboard->index()
+#1 /opt/lampp/htdocs/vendor/codeigniter4/framework/system/CodeIgniter.php(398): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Dashboard))
+#2 /opt/lampp/htdocs/vendor/codeigniter4/framework/system/CodeIgniter.php(306): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#3 /opt/lampp/htdocs/public/index.php(45): CodeIgniter\CodeIgniter->run()
+#4 {main}
+CRITICAL - 2020-09-07 05:28:45 --> Class 'App\Controllers\CI_Controller' not found
+#0 /opt/lampp/htdocs/vendor/codeigniter4/framework/system/Autoloader/Autoloader.php(365): require_once()
+#1 /opt/lampp/htdocs/vendor/codeigniter4/framework/system/Autoloader/Autoloader.php(296): CodeIgniter\Autoloader\Autoloader->requireFile('/opt/lampp/htdo...')
+#2 /opt/lampp/htdocs/vendor/codeigniter4/framework/system/Autoloader/Autoloader.php(258): CodeIgniter\Autoloader\Autoloader->loadInNamespace('App\\Controllers...')
+#3 [internal function]: CodeIgniter\Autoloader\Autoloader->loadClass('App\\Controllers...')
+#4 [internal function]: spl_autoload_call('App\\Controllers...')
+#5 /opt/lampp/htdocs/vendor/codeigniter4/framework/system/CodeIgniter.php(861): class_exists('\\App\\Controller...', true)
+#6 /opt/lampp/htdocs/vendor/codeigniter4/framework/system/CodeIgniter.php(388): CodeIgniter\CodeIgniter->startController()
+#7 /opt/lampp/htdocs/vendor/codeigniter4/framework/system/CodeIgniter.php(306): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 /opt/lampp/htdocs/public/index.php(45): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2020-09-07 05:28:57 --> Class 'App\Controllers\Controller' not found
+#0 /opt/lampp/htdocs/vendor/codeigniter4/framework/system/Autoloader/Autoloader.php(365): require_once()
+#1 /opt/lampp/htdocs/vendor/codeigniter4/framework/system/Autoloader/Autoloader.php(296): CodeIgniter\Autoloader\Autoloader->requireFile('/opt/lampp/htdo...')
+#2 /opt/lampp/htdocs/vendor/codeigniter4/framework/system/Autoloader/Autoloader.php(258): CodeIgniter\Autoloader\Autoloader->loadInNamespace('App\\Controllers...')
+#3 [internal function]: CodeIgniter\Autoloader\Autoloader->loadClass('App\\Controllers...')
+#4 [internal function]: spl_autoload_call('App\\Controllers...')
+#5 /opt/lampp/htdocs/vendor/codeigniter4/framework/system/CodeIgniter.php(861): class_exists('\\App\\Controller...', true)
+#6 /opt/lampp/htdocs/vendor/codeigniter4/framework/system/CodeIgniter.php(388): CodeIgniter\CodeIgniter->startController()
+#7 /opt/lampp/htdocs/vendor/codeigniter4/framework/system/CodeIgniter.php(306): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 /opt/lampp/htdocs/public/index.php(45): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2020-09-07 05:29:20 --> Class 'App\Controllers\Controllers' not found
+#0 /opt/lampp/htdocs/vendor/codeigniter4/framework/system/Autoloader/Autoloader.php(365): require_once()
+#1 /opt/lampp/htdocs/vendor/codeigniter4/framework/system/Autoloader/Autoloader.php(296): CodeIgniter\Autoloader\Autoloader->requireFile('/opt/lampp/htdo...')
+#2 /opt/lampp/htdocs/vendor/codeigniter4/framework/system/Autoloader/Autoloader.php(258): CodeIgniter\Autoloader\Autoloader->loadInNamespace('App\\Controllers...')
+#3 [internal function]: CodeIgniter\Autoloader\Autoloader->loadClass('App\\Controllers...')
+#4 [internal function]: spl_autoload_call('App\\Controllers...')
+#5 /opt/lampp/htdocs/vendor/codeigniter4/framework/system/CodeIgniter.php(861): class_exists('\\App\\Controller...', true)
+#6 /opt/lampp/htdocs/vendor/codeigniter4/framework/system/CodeIgniter.php(388): CodeIgniter\CodeIgniter->startController()
+#7 /opt/lampp/htdocs/vendor/codeigniter4/framework/system/CodeIgniter.php(306): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 /opt/lampp/htdocs/public/index.php(45): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2020-09-07 05:31:05 --> Call to a member function where() on null
+#0 /opt/lampp/htdocs/vendor/codeigniter4/framework/system/CodeIgniter.php(910): App\Controllers\Dashboard->index()
+#1 /opt/lampp/htdocs/vendor/codeigniter4/framework/system/CodeIgniter.php(398): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Dashboard))
+#2 /opt/lampp/htdocs/vendor/codeigniter4/framework/system/CodeIgniter.php(306): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#3 /opt/lampp/htdocs/public/index.php(45): CodeIgniter\CodeIgniter->run()
+#4 {main}
+CRITICAL - 2020-09-07 05:32:32 --> Trying to access array offset on value of type null
+#0 /opt/lampp/htdocs/app/Views/admin/templates/navbar.php(48): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Trying to acces...', '/opt/lampp/htdo...', 48, Array)
+#1 /opt/lampp/htdocs/vendor/codeigniter4/framework/system/View/View.php(236): include('/opt/lampp/htdo...')
+#2 /opt/lampp/htdocs/vendor/codeigniter4/framework/system/Common.php(1071): CodeIgniter\View\View->render('admin/templates...', Array, true)
+#3 /opt/lampp/htdocs/app/Controllers/Dashboard.php(35): view('admin/templates...', Array)
+#4 /opt/lampp/htdocs/vendor/codeigniter4/framework/system/CodeIgniter.php(910): App\Controllers\Dashboard->index()
+#5 /opt/lampp/htdocs/vendor/codeigniter4/framework/system/CodeIgniter.php(398): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Dashboard))
+#6 /opt/lampp/htdocs/vendor/codeigniter4/framework/system/CodeIgniter.php(306): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 /opt/lampp/htdocs/public/index.php(45): CodeIgniter\CodeIgniter->run()
+#8 {main}
+CRITICAL - 2020-09-07 05:33:43 --> Trying to access array offset on value of type null
+#0 /opt/lampp/htdocs/app/Views/admin/templates/navbar.php(48): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Trying to acces...', '/opt/lampp/htdo...', 48, Array)
+#1 /opt/lampp/htdocs/vendor/codeigniter4/framework/system/View/View.php(236): include('/opt/lampp/htdo...')
+#2 /opt/lampp/htdocs/vendor/codeigniter4/framework/system/Common.php(1071): CodeIgniter\View\View->render('admin/templates...', Array, true)
+#3 /opt/lampp/htdocs/app/Controllers/Dashboard.php(35): view('admin/templates...', Array)
+#4 /opt/lampp/htdocs/vendor/codeigniter4/framework/system/CodeIgniter.php(910): App\Controllers\Dashboard->index()
+#5 /opt/lampp/htdocs/vendor/codeigniter4/framework/system/CodeIgniter.php(398): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Dashboard))
+#6 /opt/lampp/htdocs/vendor/codeigniter4/framework/system/CodeIgniter.php(306): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 /opt/lampp/htdocs/public/index.php(45): CodeIgniter\CodeIgniter->run()
+#8 {main}
+CRITICAL - 2020-09-07 05:34:05 --> Trying to access array offset on value of type null
+#0 /opt/lampp/htdocs/app/Views/admin/templates/navbar.php(48): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Trying to acces...', '/opt/lampp/htdo...', 48, Array)
+#1 /opt/lampp/htdocs/vendor/codeigniter4/framework/system/View/View.php(236): include('/opt/lampp/htdo...')
+#2 /opt/lampp/htdocs/vendor/codeigniter4/framework/system/Common.php(1071): CodeIgniter\View\View->render('admin/templates...', Array, true)
+#3 /opt/lampp/htdocs/app/Controllers/Dashboard.php(35): view('admin/templates...', Array)
+#4 /opt/lampp/htdocs/vendor/codeigniter4/framework/system/CodeIgniter.php(910): App\Controllers\Dashboard->index()
+#5 /opt/lampp/htdocs/vendor/codeigniter4/framework/system/CodeIgniter.php(398): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Dashboard))
+#6 /opt/lampp/htdocs/vendor/codeigniter4/framework/system/CodeIgniter.php(306): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 /opt/lampp/htdocs/public/index.php(45): CodeIgniter\CodeIgniter->run()
+#8 {main}
+CRITICAL - 2020-09-07 05:34:41 --> Trying to access array offset on value of type null
+#0 /opt/lampp/htdocs/app/Views/admin/templates/navbar.php(48): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Trying to acces...', '/opt/lampp/htdo...', 48, Array)
+#1 /opt/lampp/htdocs/vendor/codeigniter4/framework/system/View/View.php(236): include('/opt/lampp/htdo...')
+#2 /opt/lampp/htdocs/vendor/codeigniter4/framework/system/Common.php(1071): CodeIgniter\View\View->render('admin/templates...', Array, true)
+#3 /opt/lampp/htdocs/app/Controllers/Dashboard.php(35): view('admin/templates...', Array)
+#4 /opt/lampp/htdocs/vendor/codeigniter4/framework/system/CodeIgniter.php(910): App\Controllers\Dashboard->index()
+#5 /opt/lampp/htdocs/vendor/codeigniter4/framework/system/CodeIgniter.php(398): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Dashboard))
+#6 /opt/lampp/htdocs/vendor/codeigniter4/framework/system/CodeIgniter.php(306): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 /opt/lampp/htdocs/public/index.php(45): CodeIgniter\CodeIgniter->run()
+#8 {main}
+CRITICAL - 2020-09-07 05:36:35 --> Call to a member function getMethod() on null
+#0 /opt/lampp/htdocs/app/Controllers/Dashboard.php(17): App\Controllers\Users->index()
+#1 /opt/lampp/htdocs/vendor/codeigniter4/framework/system/CodeIgniter.php(882): App\Controllers\Dashboard->__construct()
+#2 /opt/lampp/htdocs/vendor/codeigniter4/framework/system/CodeIgniter.php(393): CodeIgniter\CodeIgniter->createController()
+#3 /opt/lampp/htdocs/vendor/codeigniter4/framework/system/CodeIgniter.php(306): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 /opt/lampp/htdocs/public/index.php(45): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2020-09-07 05:37:05 --> Call to a member function getMethod() on null
+#0 /opt/lampp/htdocs/app/Controllers/Dashboard.php(17): App\Controllers\Users->index()
+#1 /opt/lampp/htdocs/vendor/codeigniter4/framework/system/CodeIgniter.php(882): App\Controllers\Dashboard->__construct()
+#2 /opt/lampp/htdocs/vendor/codeigniter4/framework/system/CodeIgniter.php(393): CodeIgniter\CodeIgniter->createController()
+#3 /opt/lampp/htdocs/vendor/codeigniter4/framework/system/CodeIgniter.php(306): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 /opt/lampp/htdocs/public/index.php(45): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2020-09-07 05:37:50 --> Call to a member function getMethod() on null
+#0 /opt/lampp/htdocs/app/Controllers/Dashboard.php(17): App\Controllers\Users->index()
+#1 /opt/lampp/htdocs/vendor/codeigniter4/framework/system/CodeIgniter.php(882): App\Controllers\Dashboard->__construct()
+#2 /opt/lampp/htdocs/vendor/codeigniter4/framework/system/CodeIgniter.php(393): CodeIgniter\CodeIgniter->createController()
+#3 /opt/lampp/htdocs/vendor/codeigniter4/framework/system/CodeIgniter.php(306): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 /opt/lampp/htdocs/public/index.php(45): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2020-09-07 05:40:05 --> Call to undefined method App\Controllers\Users::login()
+#0 /opt/lampp/htdocs/vendor/codeigniter4/framework/system/CodeIgniter.php(882): App\Controllers\Users->__construct()
+#1 /opt/lampp/htdocs/vendor/codeigniter4/framework/system/CodeIgniter.php(393): CodeIgniter\CodeIgniter->createController()
+#2 /opt/lampp/htdocs/vendor/codeigniter4/framework/system/CodeIgniter.php(306): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#3 /opt/lampp/htdocs/public/index.php(45): CodeIgniter\CodeIgniter->run()
+#4 {main}
+CRITICAL - 2020-09-07 05:40:15 --> Call to a member function getMethod() on null
+#0 /opt/lampp/htdocs/app/Controllers/Users.php(16): App\Controllers\Users->index()
+#1 /opt/lampp/htdocs/vendor/codeigniter4/framework/system/CodeIgniter.php(882): App\Controllers\Users->__construct()
+#2 /opt/lampp/htdocs/vendor/codeigniter4/framework/system/CodeIgniter.php(393): CodeIgniter\CodeIgniter->createController()
+#3 /opt/lampp/htdocs/vendor/codeigniter4/framework/system/CodeIgniter.php(306): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 /opt/lampp/htdocs/public/index.php(45): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2020-09-07 05:41:05 --> Call to a member function getMethod() on null
+#0 /opt/lampp/htdocs/app/Controllers/Users.php(16): App\Controllers\Users->index()
+#1 /opt/lampp/htdocs/vendor/codeigniter4/framework/system/CodeIgniter.php(882): App\Controllers\Users->__construct()
+#2 /opt/lampp/htdocs/vendor/codeigniter4/framework/system/CodeIgniter.php(393): CodeIgniter\CodeIgniter->createController()
+#3 /opt/lampp/htdocs/vendor/codeigniter4/framework/system/CodeIgniter.php(306): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 /opt/lampp/htdocs/public/index.php(45): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2020-09-07 05:42:33 --> Call to a member function getMethod() on null
+#0 /opt/lampp/htdocs/app/Controllers/Users.php(16): App\Controllers\Users->index()
+#1 /opt/lampp/htdocs/vendor/codeigniter4/framework/system/CodeIgniter.php(882): App\Controllers\Users->__construct()
+#2 /opt/lampp/htdocs/vendor/codeigniter4/framework/system/CodeIgniter.php(393): CodeIgniter\CodeIgniter->createController()
+#3 /opt/lampp/htdocs/vendor/codeigniter4/framework/system/CodeIgniter.php(306): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 /opt/lampp/htdocs/public/index.php(45): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2020-09-07 05:43:22 --> Cannot call constructor
+#0 /opt/lampp/htdocs/vendor/codeigniter4/framework/system/CodeIgniter.php(882): App\Controllers\Users->__construct()
+#1 /opt/lampp/htdocs/vendor/codeigniter4/framework/system/CodeIgniter.php(393): CodeIgniter\CodeIgniter->createController()
+#2 /opt/lampp/htdocs/vendor/codeigniter4/framework/system/CodeIgniter.php(306): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#3 /opt/lampp/htdocs/public/index.php(45): CodeIgniter\CodeIgniter->run()
+#4 {main}
+CRITICAL - 2020-09-07 05:47:37 --> Cannot call constructor
+#0 /opt/lampp/htdocs/vendor/codeigniter4/framework/system/CodeIgniter.php(882): App\Controllers\Users->__construct()
+#1 /opt/lampp/htdocs/vendor/codeigniter4/framework/system/CodeIgniter.php(393): CodeIgniter\CodeIgniter->createController()
+#2 /opt/lampp/htdocs/vendor/codeigniter4/framework/system/CodeIgniter.php(306): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#3 /opt/lampp/htdocs/public/index.php(45): CodeIgniter\CodeIgniter->run()
+#4 {main}
+CRITICAL - 2020-09-07 05:49:04 --> 
+#0 /opt/lampp/htdocs/vendor/codeigniter4/framework/system/HTTP/RedirectResponse.php(92): CodeIgniter\HTTP\Exceptions\HTTPException::forInvalidRedirectRoute('')
+#1 /opt/lampp/htdocs/vendor/codeigniter4/framework/system/Common.php(798): CodeIgniter\HTTP\RedirectResponse->route(false)
+#2 /opt/lampp/htdocs/app/Controllers/Users.php(19): redirect('http://localhos...')
+#3 /opt/lampp/htdocs/vendor/codeigniter4/framework/system/CodeIgniter.php(882): App\Controllers\Users->__construct()
+#4 /opt/lampp/htdocs/vendor/codeigniter4/framework/system/CodeIgniter.php(393): CodeIgniter\CodeIgniter->createController()
+#5 /opt/lampp/htdocs/vendor/codeigniter4/framework/system/CodeIgniter.php(306): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#6 /opt/lampp/htdocs/public/index.php(45): CodeIgniter\CodeIgniter->run()
+#7 {main}
+CRITICAL - 2020-09-07 05:50:00 --> 
+#0 /opt/lampp/htdocs/vendor/codeigniter4/framework/system/HTTP/RedirectResponse.php(92): CodeIgniter\HTTP\Exceptions\HTTPException::forInvalidRedirectRoute('')
+#1 /opt/lampp/htdocs/vendor/codeigniter4/framework/system/Common.php(798): CodeIgniter\HTTP\RedirectResponse->route(false)
+#2 /opt/lampp/htdocs/app/Controllers/Users.php(19): redirect('http://localhos...')
+#3 /opt/lampp/htdocs/vendor/codeigniter4/framework/system/CodeIgniter.php(882): App\Controllers\Users->__construct()
+#4 /opt/lampp/htdocs/vendor/codeigniter4/framework/system/CodeIgniter.php(393): CodeIgniter\CodeIgniter->createController()
+#5 /opt/lampp/htdocs/vendor/codeigniter4/framework/system/CodeIgniter.php(306): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#6 /opt/lampp/htdocs/public/index.php(45): CodeIgniter\CodeIgniter->run()
+#7 {main}
+CRITICAL - 2020-09-07 05:50:10 --> 
+#0 /opt/lampp/htdocs/vendor/codeigniter4/framework/system/HTTP/RedirectResponse.php(92): CodeIgniter\HTTP\Exceptions\HTTPException::forInvalidRedirectRoute('')
+#1 /opt/lampp/htdocs/vendor/codeigniter4/framework/system/Common.php(798): CodeIgniter\HTTP\RedirectResponse->route(false)
+#2 /opt/lampp/htdocs/app/Controllers/Users.php(19): redirect('http://localhos...')
+#3 /opt/lampp/htdocs/vendor/codeigniter4/framework/system/CodeIgniter.php(882): App\Controllers\Users->__construct()
+#4 /opt/lampp/htdocs/vendor/codeigniter4/framework/system/CodeIgniter.php(393): CodeIgniter\CodeIgniter->createController()
+#5 /opt/lampp/htdocs/vendor/codeigniter4/framework/system/CodeIgniter.php(306): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#6 /opt/lampp/htdocs/public/index.php(45): CodeIgniter\CodeIgniter->run()
+#7 {main}
+CRITICAL - 2020-09-07 05:51:41 --> 
+#0 /opt/lampp/htdocs/vendor/codeigniter4/framework/system/HTTP/RedirectResponse.php(92): CodeIgniter\HTTP\Exceptions\HTTPException::forInvalidRedirectRoute('')
+#1 /opt/lampp/htdocs/vendor/codeigniter4/framework/system/Common.php(798): CodeIgniter\HTTP\RedirectResponse->route(false)
+#2 /opt/lampp/htdocs/app/Controllers/Users.php(19): redirect('http://localhos...')
+#3 /opt/lampp/htdocs/vendor/codeigniter4/framework/system/CodeIgniter.php(882): App\Controllers\Users->__construct()
+#4 /opt/lampp/htdocs/vendor/codeigniter4/framework/system/CodeIgniter.php(393): CodeIgniter\CodeIgniter->createController()
+#5 /opt/lampp/htdocs/vendor/codeigniter4/framework/system/CodeIgniter.php(306): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#6 /opt/lampp/htdocs/public/index.php(45): CodeIgniter\CodeIgniter->run()
+#7 {main}
+CRITICAL - 2020-09-07 05:52:47 --> Trying to access array offset on value of type null
+#0 /opt/lampp/htdocs/app/Views/admin/templates/navbar.php(48): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Trying to acces...', '/opt/lampp/htdo...', 48, Array)
+#1 /opt/lampp/htdocs/vendor/codeigniter4/framework/system/View/View.php(236): include('/opt/lampp/htdo...')
+#2 /opt/lampp/htdocs/vendor/codeigniter4/framework/system/Common.php(1071): CodeIgniter\View\View->render('admin/templates...', Array, true)
+#3 /opt/lampp/htdocs/app/Controllers/Dashboard.php(37): view('admin/templates...', Array)
+#4 /opt/lampp/htdocs/vendor/codeigniter4/framework/system/CodeIgniter.php(910): App\Controllers\Dashboard->index()
+#5 /opt/lampp/htdocs/vendor/codeigniter4/framework/system/CodeIgniter.php(398): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Dashboard))
+#6 /opt/lampp/htdocs/vendor/codeigniter4/framework/system/CodeIgniter.php(306): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 /opt/lampp/htdocs/public/index.php(45): CodeIgniter\CodeIgniter->run()
+#8 {main}
+CRITICAL - 2020-09-07 05:59:38 --> Undefined property: App\Controllers\Users::$UserModel
+#0 /opt/lampp/htdocs/app/Controllers/Users.php(134): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined prope...', '/opt/lampp/htdo...', 134, Array)
+#1 /opt/lampp/htdocs/app/Controllers/Dashboard.php(15): App\Controllers\Users->checkAdmin()
+#2 /opt/lampp/htdocs/vendor/codeigniter4/framework/system/CodeIgniter.php(882): App\Controllers\Dashboard->__construct()
+#3 /opt/lampp/htdocs/vendor/codeigniter4/framework/system/CodeIgniter.php(393): CodeIgniter\CodeIgniter->createController()
+#4 /opt/lampp/htdocs/vendor/codeigniter4/framework/system/CodeIgniter.php(306): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#5 /opt/lampp/htdocs/public/index.php(45): CodeIgniter\CodeIgniter->run()
+#6 {main}
+CRITICAL - 2020-09-07 06:00:12 --> Undefined property: App\Controllers\Users::$UserModel
+#0 /opt/lampp/htdocs/app/Controllers/Users.php(134): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined prope...', '/opt/lampp/htdo...', 134, Array)
+#1 /opt/lampp/htdocs/app/Controllers/Dashboard.php(16): App\Controllers\Users->checkAdmin()
+#2 /opt/lampp/htdocs/vendor/codeigniter4/framework/system/CodeIgniter.php(882): App\Controllers\Dashboard->__construct()
+#3 /opt/lampp/htdocs/vendor/codeigniter4/framework/system/CodeIgniter.php(393): CodeIgniter\CodeIgniter->createController()
+#4 /opt/lampp/htdocs/vendor/codeigniter4/framework/system/CodeIgniter.php(306): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#5 /opt/lampp/htdocs/public/index.php(45): CodeIgniter\CodeIgniter->run()
+#6 {main}
+CRITICAL - 2020-09-07 06:01:04 --> Undefined property: App\Controllers\Users::$UserModel
+#0 /opt/lampp/htdocs/app/Controllers/Users.php(134): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined prope...', '/opt/lampp/htdo...', 134, Array)
+#1 /opt/lampp/htdocs/app/Controllers/Dashboard.php(19): App\Controllers\Users->checkAdmin()
+#2 /opt/lampp/htdocs/vendor/codeigniter4/framework/system/CodeIgniter.php(882): App\Controllers\Dashboard->__construct()
+#3 /opt/lampp/htdocs/vendor/codeigniter4/framework/system/CodeIgniter.php(393): CodeIgniter\CodeIgniter->createController()
+#4 /opt/lampp/htdocs/vendor/codeigniter4/framework/system/CodeIgniter.php(306): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#5 /opt/lampp/htdocs/public/index.php(45): CodeIgniter\CodeIgniter->run()
+#6 {main}
+CRITICAL - 2020-09-07 06:01:21 --> Undefined property: App\Controllers\Users::$UserModel
+#0 /opt/lampp/htdocs/app/Controllers/Users.php(134): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined prope...', '/opt/lampp/htdo...', 134, Array)
+#1 /opt/lampp/htdocs/app/Controllers/Users.php(26): App\Controllers\Users->checkAdmin()
+#2 /opt/lampp/htdocs/vendor/codeigniter4/framework/system/CodeIgniter.php(910): App\Controllers\Users->index()
+#3 /opt/lampp/htdocs/vendor/codeigniter4/framework/system/CodeIgniter.php(398): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Users))
+#4 /opt/lampp/htdocs/vendor/codeigniter4/framework/system/CodeIgniter.php(306): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#5 /opt/lampp/htdocs/public/index.php(45): CodeIgniter\CodeIgniter->run()
+#6 {main}
+CRITICAL - 2020-09-07 06:02:21 --> Undefined property: App\Controllers\Users::$UserModel
+#0 /opt/lampp/htdocs/app/Controllers/Users.php(134): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined prope...', '/opt/lampp/htdo...', 134, Array)
+#1 /opt/lampp/htdocs/app/Controllers/Users.php(26): App\Controllers\Users->checkAdmin()
+#2 /opt/lampp/htdocs/vendor/codeigniter4/framework/system/CodeIgniter.php(910): App\Controllers\Users->index()
+#3 /opt/lampp/htdocs/vendor/codeigniter4/framework/system/CodeIgniter.php(398): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Users))
+#4 /opt/lampp/htdocs/vendor/codeigniter4/framework/system/CodeIgniter.php(306): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#5 /opt/lampp/htdocs/public/index.php(45): CodeIgniter\CodeIgniter->run()
+#6 {main}
+CRITICAL - 2020-09-07 06:02:47 --> Undefined property: App\Controllers\Users::$UserModel
+#0 /opt/lampp/htdocs/app/Controllers/Users.php(134): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined prope...', '/opt/lampp/htdo...', 134, Array)
+#1 /opt/lampp/htdocs/app/Controllers/Dashboard.php(19): App\Controllers\Users->checkAdmin()
+#2 /opt/lampp/htdocs/vendor/codeigniter4/framework/system/CodeIgniter.php(882): App\Controllers\Dashboard->__construct()
+#3 /opt/lampp/htdocs/vendor/codeigniter4/framework/system/CodeIgniter.php(393): CodeIgniter\CodeIgniter->createController()
+#4 /opt/lampp/htdocs/vendor/codeigniter4/framework/system/CodeIgniter.php(306): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#5 /opt/lampp/htdocs/public/index.php(45): CodeIgniter\CodeIgniter->run()
+#6 {main}
+CRITICAL - 2020-09-07 06:02:48 --> Undefined property: App\Controllers\Users::$UserModel
+#0 /opt/lampp/htdocs/app/Controllers/Users.php(134): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined prope...', '/opt/lampp/htdo...', 134, Array)
+#1 /opt/lampp/htdocs/app/Controllers/Users.php(26): App\Controllers\Users->checkAdmin()
+#2 /opt/lampp/htdocs/vendor/codeigniter4/framework/system/CodeIgniter.php(910): App\Controllers\Users->index()
+#3 /opt/lampp/htdocs/vendor/codeigniter4/framework/system/CodeIgniter.php(398): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Users))
+#4 /opt/lampp/htdocs/vendor/codeigniter4/framework/system/CodeIgniter.php(306): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#5 /opt/lampp/htdocs/public/index.php(45): CodeIgniter\CodeIgniter->run()
+#6 {main}
+CRITICAL - 2020-09-07 06:02:50 --> Undefined property: App\Controllers\Users::$UserModel
+#0 /opt/lampp/htdocs/app/Controllers/Users.php(134): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined prope...', '/opt/lampp/htdo...', 134, Array)
+#1 /opt/lampp/htdocs/app/Controllers/Users.php(26): App\Controllers\Users->checkAdmin()
+#2 /opt/lampp/htdocs/vendor/codeigniter4/framework/system/CodeIgniter.php(910): App\Controllers\Users->index()
+#3 /opt/lampp/htdocs/vendor/codeigniter4/framework/system/CodeIgniter.php(398): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Users))
+#4 /opt/lampp/htdocs/vendor/codeigniter4/framework/system/CodeIgniter.php(306): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#5 /opt/lampp/htdocs/public/index.php(45): CodeIgniter\CodeIgniter->run()
+#6 {main}
+CRITICAL - 2020-09-07 06:04:54 --> Undefined property: App\Controllers\Users::$UserModel
+#0 /opt/lampp/htdocs/app/Controllers/Users.php(134): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined prope...', '/opt/lampp/htdo...', 134, Array)
+#1 /opt/lampp/htdocs/app/Controllers/Dashboard.php(19): App\Controllers\Users->checkAdmin()
+#2 /opt/lampp/htdocs/vendor/codeigniter4/framework/system/CodeIgniter.php(882): App\Controllers\Dashboard->__construct()
+#3 /opt/lampp/htdocs/vendor/codeigniter4/framework/system/CodeIgniter.php(393): CodeIgniter\CodeIgniter->createController()
+#4 /opt/lampp/htdocs/vendor/codeigniter4/framework/system/CodeIgniter.php(306): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#5 /opt/lampp/htdocs/public/index.php(45): CodeIgniter\CodeIgniter->run()
+#6 {main}
+CRITICAL - 2020-09-07 06:05:24 --> Undefined property: App\Controllers\Users::$UserModel
+#0 /opt/lampp/htdocs/app/Controllers/Users.php(134): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined prope...', '/opt/lampp/htdo...', 134, Array)
+#1 /opt/lampp/htdocs/app/Controllers/Dashboard.php(19): App\Controllers\Users->checkAdmin()
+#2 /opt/lampp/htdocs/vendor/codeigniter4/framework/system/CodeIgniter.php(882): App\Controllers\Dashboard->__construct()
+#3 /opt/lampp/htdocs/vendor/codeigniter4/framework/system/CodeIgniter.php(393): CodeIgniter\CodeIgniter->createController()
+#4 /opt/lampp/htdocs/vendor/codeigniter4/framework/system/CodeIgniter.php(306): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#5 /opt/lampp/htdocs/public/index.php(45): CodeIgniter\CodeIgniter->run()
+#6 {main}
+CRITICAL - 2020-09-07 06:06:21 --> Call to undefined method App\Controllers\Dashboard::checkAdmin()
+#0 /opt/lampp/htdocs/vendor/codeigniter4/framework/system/CodeIgniter.php(910): App\Controllers\Dashboard->index()
+#1 /opt/lampp/htdocs/vendor/codeigniter4/framework/system/CodeIgniter.php(398): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Dashboard))
+#2 /opt/lampp/htdocs/vendor/codeigniter4/framework/system/CodeIgniter.php(306): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#3 /opt/lampp/htdocs/public/index.php(45): CodeIgniter\CodeIgniter->run()
+#4 {main}
+CRITICAL - 2020-09-07 06:06:35 --> Undefined property: App\Controllers\Users::$UserModel
+#0 /opt/lampp/htdocs/app/Controllers/Users.php(134): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined prope...', '/opt/lampp/htdo...', 134, Array)
+#1 /opt/lampp/htdocs/app/Controllers/Dashboard.php(29): App\Controllers\Users->checkAdmin()
+#2 /opt/lampp/htdocs/vendor/codeigniter4/framework/system/CodeIgniter.php(910): App\Controllers\Dashboard->index()
+#3 /opt/lampp/htdocs/vendor/codeigniter4/framework/system/CodeIgniter.php(398): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Dashboard))
+#4 /opt/lampp/htdocs/vendor/codeigniter4/framework/system/CodeIgniter.php(306): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#5 /opt/lampp/htdocs/public/index.php(45): CodeIgniter\CodeIgniter->run()
+#6 {main}
+CRITICAL - 2020-09-07 06:06:47 --> Undefined property: App\Controllers\Users::$UserModel
+#0 /opt/lampp/htdocs/app/Controllers/Users.php(134): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined prope...', '/opt/lampp/htdo...', 134, Array)
+#1 /opt/lampp/htdocs/app/Controllers/Dashboard.php(29): App\Controllers\Users->checkAdmin()
+#2 /opt/lampp/htdocs/vendor/codeigniter4/framework/system/CodeIgniter.php(910): App\Controllers\Dashboard->index()
+#3 /opt/lampp/htdocs/vendor/codeigniter4/framework/system/CodeIgniter.php(398): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Dashboard))
+#4 /opt/lampp/htdocs/vendor/codeigniter4/framework/system/CodeIgniter.php(306): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#5 /opt/lampp/htdocs/public/index.php(45): CodeIgniter\CodeIgniter->run()
+#6 {main}
+CRITICAL - 2020-09-07 06:08:45 --> Undefined property: App\Controllers\Users::$UserModel
+#0 /opt/lampp/htdocs/app/Controllers/Users.php(134): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined prope...', '/opt/lampp/htdo...', 134, Array)
+#1 /opt/lampp/htdocs/app/Controllers/Dashboard.php(29): App\Controllers\Users->checkAdmin()
+#2 /opt/lampp/htdocs/vendor/codeigniter4/framework/system/CodeIgniter.php(910): App\Controllers\Dashboard->index()
+#3 /opt/lampp/htdocs/vendor/codeigniter4/framework/system/CodeIgniter.php(398): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Dashboard))
+#4 /opt/lampp/htdocs/vendor/codeigniter4/framework/system/CodeIgniter.php(306): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#5 /opt/lampp/htdocs/public/index.php(45): CodeIgniter\CodeIgniter->run()
+#6 {main}
+CRITICAL - 2020-09-07 06:09:46 --> Undefined property: App\Controllers\Users::$UserModel
+#0 /opt/lampp/htdocs/app/Controllers/Users.php(134): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined prope...', '/opt/lampp/htdo...', 134, Array)
+#1 /opt/lampp/htdocs/app/Controllers/Dashboard.php(29): App\Controllers\Users->checkAdmin()
+#2 /opt/lampp/htdocs/vendor/codeigniter4/framework/system/CodeIgniter.php(910): App\Controllers\Dashboard->index()
+#3 /opt/lampp/htdocs/vendor/codeigniter4/framework/system/CodeIgniter.php(398): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Dashboard))
+#4 /opt/lampp/htdocs/vendor/codeigniter4/framework/system/CodeIgniter.php(306): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#5 /opt/lampp/htdocs/public/index.php(45): CodeIgniter\CodeIgniter->run()
+#6 {main}
+CRITICAL - 2020-09-07 06:11:04 --> Undefined property: App\Controllers\Users::$UserModel
+#0 /opt/lampp/htdocs/app/Controllers/Users.php(134): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined prope...', '/opt/lampp/htdo...', 134, Array)
+#1 /opt/lampp/htdocs/app/Controllers/Dashboard.php(29): App\Controllers\Users->checkAdmin()
+#2 /opt/lampp/htdocs/vendor/codeigniter4/framework/system/CodeIgniter.php(910): App\Controllers\Dashboard->index()
+#3 /opt/lampp/htdocs/vendor/codeigniter4/framework/system/CodeIgniter.php(398): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Dashboard))
+#4 /opt/lampp/htdocs/vendor/codeigniter4/framework/system/CodeIgniter.php(306): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#5 /opt/lampp/htdocs/public/index.php(45): CodeIgniter\CodeIgniter->run()
+#6 {main}
+CRITICAL - 2020-09-07 06:12:59 --> Trying to access array offset on value of type null
+#0 /opt/lampp/htdocs/app/Controllers/Users.php(136): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Trying to acces...', '/opt/lampp/htdo...', 136, Array)
+#1 /opt/lampp/htdocs/app/Controllers/Users.php(26): App\Controllers\Users->checkAdmin()
+#2 /opt/lampp/htdocs/vendor/codeigniter4/framework/system/CodeIgniter.php(910): App\Controllers\Users->index()
+#3 /opt/lampp/htdocs/vendor/codeigniter4/framework/system/CodeIgniter.php(398): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Users))
+#4 /opt/lampp/htdocs/vendor/codeigniter4/framework/system/CodeIgniter.php(306): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#5 /opt/lampp/htdocs/public/index.php(45): CodeIgniter\CodeIgniter->run()
+#6 {main}
+CRITICAL - 2020-09-07 06:13:28 --> Trying to access array offset on value of type null
+#0 /opt/lampp/htdocs/app/Controllers/Users.php(136): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Trying to acces...', '/opt/lampp/htdo...', 136, Array)
+#1 /opt/lampp/htdocs/app/Controllers/Users.php(26): App\Controllers\Users->checkAdmin()
+#2 /opt/lampp/htdocs/vendor/codeigniter4/framework/system/CodeIgniter.php(910): App\Controllers\Users->index()
+#3 /opt/lampp/htdocs/vendor/codeigniter4/framework/system/CodeIgniter.php(398): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Users))
+#4 /opt/lampp/htdocs/vendor/codeigniter4/framework/system/CodeIgniter.php(306): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#5 /opt/lampp/htdocs/public/index.php(45): CodeIgniter\CodeIgniter->run()
+#6 {main}
+CRITICAL - 2020-09-07 06:14:21 --> Undefined property: App\Controllers\Users::$model
+#0 /opt/lampp/htdocs/app/Controllers/Users.php(59): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined prope...', '/opt/lampp/htdo...', 59, Array)
+#1 /opt/lampp/htdocs/vendor/codeigniter4/framework/system/CodeIgniter.php(910): App\Controllers\Users->index()
+#2 /opt/lampp/htdocs/vendor/codeigniter4/framework/system/CodeIgniter.php(398): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Users))
+#3 /opt/lampp/htdocs/vendor/codeigniter4/framework/system/CodeIgniter.php(306): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 /opt/lampp/htdocs/public/index.php(45): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2020-09-07 06:14:58 --> Undefined property: App\Controllers\Users::$mUserModel
+#0 /opt/lampp/htdocs/app/Controllers/Users.php(59): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined prope...', '/opt/lampp/htdo...', 59, Array)
+#1 /opt/lampp/htdocs/vendor/codeigniter4/framework/system/CodeIgniter.php(910): App\Controllers\Users->index()
+#2 /opt/lampp/htdocs/vendor/codeigniter4/framework/system/CodeIgniter.php(398): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Users))
+#3 /opt/lampp/htdocs/vendor/codeigniter4/framework/system/CodeIgniter.php(306): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 /opt/lampp/htdocs/public/index.php(45): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2020-09-07 06:16:12 --> Call to undefined method App\Controllers\Dashboard::checkAdmin()
+#0 /opt/lampp/htdocs/vendor/codeigniter4/framework/system/CodeIgniter.php(910): App\Controllers\Dashboard->user()
+#1 /opt/lampp/htdocs/vendor/codeigniter4/framework/system/CodeIgniter.php(398): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Dashboard))
+#2 /opt/lampp/htdocs/vendor/codeigniter4/framework/system/CodeIgniter.php(306): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#3 /opt/lampp/htdocs/public/index.php(45): CodeIgniter\CodeIgniter->run()
+#4 {main}
+CRITICAL - 2020-09-07 06:21:48 --> Call to undefined method App\Controllers\Dashboard::checkAdmin()
+#0 /opt/lampp/htdocs/vendor/codeigniter4/framework/system/CodeIgniter.php(910): App\Controllers\Dashboard->userdelete('4')
+#1 /opt/lampp/htdocs/vendor/codeigniter4/framework/system/CodeIgniter.php(398): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Dashboard))
+#2 /opt/lampp/htdocs/vendor/codeigniter4/framework/system/CodeIgniter.php(306): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#3 /opt/lampp/htdocs/public/index.php(45): CodeIgniter\CodeIgniter->run()
+#4 {main}
+CRITICAL - 2020-09-07 06:25:41 --> Class '404' not found
+#0 /opt/lampp/htdocs/vendor/codeigniter4/framework/system/CodeIgniter.php(945): CodeIgniter\CodeIgniter->createController()
+#1 /opt/lampp/htdocs/vendor/codeigniter4/framework/system/CodeIgniter.php(322): CodeIgniter\CodeIgniter->display404errors(Object(CodeIgniter\Exceptions\PageNotFoundException))
+#2 /opt/lampp/htdocs/public/index.php(45): CodeIgniter\CodeIgniter->run()
+#3 {main}
+CRITICAL - 2020-09-07 06:26:30 --> Class '404' not found
+#0 /opt/lampp/htdocs/vendor/codeigniter4/framework/system/CodeIgniter.php(945): CodeIgniter\CodeIgniter->createController()
+#1 /opt/lampp/htdocs/vendor/codeigniter4/framework/system/CodeIgniter.php(322): CodeIgniter\CodeIgniter->display404errors(Object(CodeIgniter\Exceptions\PageNotFoundException))
+#2 /opt/lampp/htdocs/public/index.php(45): CodeIgniter\CodeIgniter->run()
+#3 {main}
+CRITICAL - 2020-09-07 06:40:19 --> Class '404' not found
+#0 /opt/lampp/htdocs/vendor/codeigniter4/framework/system/CodeIgniter.php(945): CodeIgniter\CodeIgniter->createController()
+#1 /opt/lampp/htdocs/vendor/codeigniter4/framework/system/CodeIgniter.php(322): CodeIgniter\CodeIgniter->display404errors(Object(CodeIgniter\Exceptions\PageNotFoundException))
+#2 /opt/lampp/htdocs/public/index.php(45): CodeIgniter\CodeIgniter->run()
+#3 {main}
+CRITICAL - 2020-09-07 06:41:30 --> Class '404' not found
+#0 /opt/lampp/htdocs/vendor/codeigniter4/framework/system/CodeIgniter.php(945): CodeIgniter\CodeIgniter->createController()
+#1 /opt/lampp/htdocs/vendor/codeigniter4/framework/system/CodeIgniter.php(322): CodeIgniter\CodeIgniter->display404errors(Object(CodeIgniter\Exceptions\PageNotFoundException))
+#2 /opt/lampp/htdocs/public/index.php(45): CodeIgniter\CodeIgniter->run()
+#3 {main}
+CRITICAL - 2020-09-07 06:44:33 --> Class '404' not found
+#0 /opt/lampp/htdocs/vendor/codeigniter4/framework/system/CodeIgniter.php(945): CodeIgniter\CodeIgniter->createController()
+#1 /opt/lampp/htdocs/vendor/codeigniter4/framework/system/CodeIgniter.php(322): CodeIgniter\CodeIgniter->display404errors(Object(CodeIgniter\Exceptions\PageNotFoundException))
+#2 /opt/lampp/htdocs/public/index.php(45): CodeIgniter\CodeIgniter->run()
+#3 {main}

@@ -1,4 +1,3 @@
-<?php if (session()->get('isLoggedIn')): ?>
 <?php if (isset($validation)): ?>
 <div class="col-12">
     <div class="alert alert-danger" role="alert">
@@ -6,7 +5,7 @@
     </div>
 </div>
 <?php endif; ?>
-<form class="form-group" action="/public/postedit/<?=$postedit['id'] ?>" method="post" enctype="multipart/form-data">
+<form class="form-group" action="/postedit/<?=$postedit['id'] ?>" method="post" enctype="multipart/form-data">
     <?= csrf_field(); ?>
     <div class="form-group">
         <label>Tiêu để bài viết</label>
@@ -219,6 +218,3 @@ tinymce.init({
 <a href="javascript:void(0);" class="right-bar-toggle demos-show-btn">
     <i class="mdi mdi-settings-outline mdi-spin"></i> &nbsp;Choose Demos
 </a>
-<?php else: ?>
-<?php return redirect()->to('/public/'); ?>
-<?php endif; ?>

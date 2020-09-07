@@ -11,7 +11,7 @@
                 </div>
                 <?php endif; ?>
                 <div class="mt-4">
-                    <form action="/public/useredit/<?=$useredit['id'] ?>" method="post">
+                    <form action="/useredit/<?=$useredit['id'] ?>" method="post">
 
                         <div class="form-group">
                             <label>Họ</label>

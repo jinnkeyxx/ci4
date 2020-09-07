@@ -6,7 +6,7 @@
         </div>
     </div>
     <?php endif; ?>
-    <?php if (session()->get('isLoggedIn')): ?>
+
     <form class="form-group" action="vietbai" method="post" enctype="multipart/form-data">
         <?= csrf_field(); ?>
         <div class="form-group">
@@ -220,6 +220,3 @@
     <a href="javascript:void(0);" class="right-bar-toggle demos-show-btn">
         <i class="mdi mdi-settings-outline mdi-spin"></i> &nbsp;Choose Demos
     </a>
-    <?php else: ?>
-    <?php return redirect()->to('/public/'); ?>
-    <?php endif; ?>

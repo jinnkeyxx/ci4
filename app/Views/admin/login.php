@@ -24,7 +24,7 @@
                                     <h5 class="text-muted text-uppercase py-3 font-16">Sign In</h5>
                                 </div>
 
-                                <form action="/public/" class="mt-2" method="post">
+                                <form action="#" class="mt-2" method="post">
 
                                     <div class="form-group mb-3">
                                         <input class="form-control" type="email" required="" name="email"
@@ -50,7 +50,7 @@
                                         <button class="btn btn-success btn-block waves-effect waves-light"
                                             type="submit"> Log In </button>
                                     </div>
-                                    <?php if (isset($validation)): ?>
+                                    <?php if(isset($validation)): ?>
                                     <div class="col-12">
                                         <div class="alert alert-danger" role="alert">
                                             <?= $validation->listErrors() ?>
