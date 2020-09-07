@@ -24,7 +24,7 @@
                                     <h5 class="text-muted text-uppercase py-3 font-16">Sign In</h5>
                                 </div>
 
-                                <form action="#" class="mt-2" method="post">
+                                <form action="/admin" class="mt-2" method="post">
 
                                     <div class="form-group mb-3">
                                         <input class="form-control" type="email" required="" name="email"

@@ -142,25 +142,25 @@
                  <ul class="metismenu" id="side-menu">
                      <li class="menu-title">Navigation</li>
                      <li>
-                         <a href="/public/dashboard">
+                         <a href="dashboard">
                              <i class="mdi mdi-view-dashboard"></i>
                              <span> Dashboard </span>
                          </a>
                      </li>
                      <li>
-                         <a href="/public/vietbai">
+                         <a href="vietbai">
                              <i class="mdi mdi-view-dashboard"></i>
                              <span> Thêm bài mới </span>
                          </a>
                      </li>
                      <li>
-                         <a href="/public/user">
+                         <a href="user">
                              <i class="mdi mdi-calendar-month"></i>
                              <span> Quản lí người dùng </span>
                          </a>
                      </li>
                      <li>
-                         <a href="/public/post">
+                         <a href="post">
                              <i class=" mdi mdi-calendar-month"></i>
                              <span> Quản lí bải viết</span>
                          </a>

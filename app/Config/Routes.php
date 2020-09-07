@@ -20,7 +20,7 @@ $routes->setDefaultNamespace('App\Controllers');
 $routes->setDefaultController('Users');
 $routes->setDefaultMethod('index');
 $routes->setTranslateURIDashes(false);
-$routes->set404Override('404');
+$routes->set404Override();
 $routes->setAutoRoute(true);
 
 /**
@@ -34,7 +34,7 @@ $routes->setAutoRoute(true);
 $routes->get('/', 'Users::index');
 $routes->get('admin', 'Users::index');
 $routes->get('logout', 'Users::logout');
-$routes->match(['get','post'],'register', 'Users::register');
+$routes->match(['get','post'],'/admin', 'Users::index');
 $routes->match(['get','post'],'profile', 'Users::profile');
 $routes->get('dashboard', 'Dashboard::index');
 $routes->get('user', 'Dashboard::user');

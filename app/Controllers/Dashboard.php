@@ -25,6 +25,7 @@ class Dashboard extends BaseController
 	// Hiển thị 
 	public function index()
 	{
+		
 		if($this->checkUser->checkAdmin() == NULL):
 			
 			return redirect()->to(base_url().'/admin');

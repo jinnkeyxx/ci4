@@ -61,10 +61,7 @@ class Users extends BaseController
 				$user = $this->UserModel->where('email', $this->request->getVar('email'))->first();
 				
 				$this->setUserSession($user);
-				
-				
-				
-				return redirect()->to(base_url().'/dashboard');
+				return redirect()->to('dashboard');
 			endif;
 		endif;
 
@@ -140,12 +137,14 @@ class Users extends BaseController
 			
 			elseif($this->data['user']['role'] == '0'):
 				$type = "admin";
+				
 			else:
-				$type = NULL;
+				$type = 1;
+				// var_dump($this->data['user']['role']);
 			endif;
 		
 		else :
-			$type = NULL;
+			$type = 2;
 		endif;
 		
 		return $type;
