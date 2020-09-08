@@ -142,7 +142,7 @@
 
          <!-- LOGO -->
          <div class="logo-box">
-             <a href="index.html" class="logo text-center logo-dark">
+             <a href="" class="logo text-center logo-dark">
                  <span class="logo-lg">
                      <img src="<?= base_url(); ?>\assets\images\logo.png" alt="" height="22">
 
@@ -153,7 +153,7 @@
                  </span>
              </a>
 
-             <a href="index.html" class="logo text-center logo-light">
+             <a href="" class="logo text-center logo-light">
                  <span class="logo-lg">
                      <img src="<?= base_url(); ?>\assets\images\logo-light.png" alt="" height="22">
 
@@ -194,25 +194,25 @@
                  <ul class="metismenu" id="side-menu">
                      <li class="menu-title">Navigation</li>
                      <li>
-                         <a href="dashboard">
+                         <a href="/dashboard">
                              <i class="mdi mdi-view-dashboard"></i>
                              <span> Dashboard </span>
                          </a>
                      </li>
                      <li>
-                         <a href="vietbai">
+                         <a href="/vietbai">
                              <i class="mdi mdi-view-dashboard"></i>
                              <span> Thêm bài mới </span>
                          </a>
                      </li>
                      <li>
-                         <a href="user">
+                         <a href="/user">
                              <i class="mdi mdi-calendar-month"></i>
                              <span> Quản lí người dùng </span>
                          </a>
                      </li>
                      <li>
-                         <a href="post">
+                         <a href="/post">
                              <i class=" mdi mdi-calendar-month"></i>
                              <span> Quản lí bải viết</span>
                          </a>

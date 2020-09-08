@@ -8,7 +8,7 @@ class Dashboard extends BaseController
 {
 	public $UserModel;
 	public $PostModel;
-	public $KhachHangModel;
+	
 	public $ContactModel;
 	public $data;
 	public $checkUser;
@@ -21,7 +21,7 @@ class Dashboard extends BaseController
 		endif;
 		$this->UserModel = new UserModel();
 		$this->PostModel = new PostModel();
-		$this->KhachHangModel = new KhachHangModel();
+		
 		$this->ContactModel = new ContactModel();
 		$this->data = [];
 		$this->data['contact'] = $this->ContactModel->findAll();
@@ -37,11 +37,11 @@ class Dashboard extends BaseController
 		$this->data['user'] = $this->UserModel->where('id', session()->get('id'))->first();
 		$this->data['users'] = $this->UserModel->findAll();
 		$this->data['posts'] = $this->PostModel->findAll();
-		$this->data['khachhang'] = $this->KhachHangModel->findAll();
-		echo view('admin/templates/header' , $this->data);
-		echo view('admin/templates/navbar',$this->data);
+		
+	
+		
 		echo view('admin/dashboard', $this->data);
-		echo view('admin/templates/footer');
+		
 	}
 	
 	//----------------------------------------------------
@@ -59,11 +59,21 @@ class Dashboard extends BaseController
 		endif;
 		$this->data['title'] = 'Admin';
 		helper(['form']);
-		if ($this->request->getMethod() == 'post') :
+		$this->data['user'] = $this->UserModel->where('id', session()->get('id'))->first();
+		$this->data['users'] = $this->UserModel->orderBy('id', 'DESC')->findAll();
+		
+		echo view('admin/user' , $this->data);
+			
+	}
+	public function adduser() 
+	{
+		if ($this->request->isAJAX()) :
 			if($this->checkUser->checkAdmin() == NULL || $this->checkUser->checkAdmin() == "mod"):
 			
 				exit();
 			endif;
+			$status = false;
+			$messages = "";
 			$rules = [
 				'fullname' => 'required|min_length[2]|max_length[20]',
 				'email' => 'required|min_length[6]|max_length[50]|valid_email|is_unique[users.email]',
@@ -114,12 +124,13 @@ class Dashboard extends BaseController
 					'required' => 'Tuổi không được để trống' ,
 					'min_length' => 'Tuổi không được nhỏ hơn 2 ký tự',
 					'max_length' => 'Tuổi không được lớn hơn 3 kí tự',
-					'integer' => 'Tuổi bị sai',
-					
+					'integer' => 'Tuổi bị sai',	
 				]
 			];
 			if (! $this->validate($rules , $errors)) :
 				$this->data['validation'] = $this->validator;
+				$status = false;
+				$messages = $this->data['validation']->listErros();
 			else : 
 				$newData = [
 					'fullname' => $this->request->getVar('fullname'),
@@ -129,23 +140,18 @@ class Dashboard extends BaseController
 					'role' => $this->request->getvar('role'),
 					'number_phone' => $this->request->getVar('number_phone'),
 					'old' => $this->request->getvar('old'),
-					'addr1' => $this->request->getvar('addr1'),
-					'addr2' => $this->request->getvar('addr2'),
+					'addr1' => $this->request->getvar('calc_shipping_provinces'),
 					'gender' => $this->request->getvar('gender'),
 				];
-				// $this->UserModel->save($newData);
-				die(var_dump($this->request->getvar('addr1')));
+				$this->UserModel->save($newData);
 				$session = session();
 				$session->setFlashdata('success', 'Thêm người dùng thành công ');
-				return redirect()->to('user');
+				// return redirect()->to('user');
+				$status = true;
+				$messages = "Thêm mới user thành công";
 			endif;
+			echo json_encode(array('status' => $status , 'messages' => $messages ));
 		endif;
-		$this->data['user'] = $this->UserModel->where('id', session()->get('id'))->first();
-		$this->data['users'] = $this->UserModel->orderBy('id', 'DESC')->findAll();
-		echo view('admin/templates/header',$this->data);
-		echo view('admin/templates/navbar',$this->data );
-		echo view('admin/user' , $this->data);
-		echo view('admin/templates/footer');	
 	}
 	public function userdelete($id)
 	{
@@ -189,10 +195,9 @@ class Dashboard extends BaseController
 						return redirect()->to(base_url().'/user');
 					endif;
 			endif;
-		echo view('admin/templates/header' , $this->data);
-		echo view('admin/templates/navbar', $this->data);
+		
 		echo view('admin/useredit', $this->data);
-		echo view('admin/templates/footer');
+		
 	}
 	//--------------------------------------------------------
 
@@ -250,10 +255,10 @@ class Dashboard extends BaseController
 				$images_title->move('images' , $file_name);
 				$newData = [
 					'title' => $this->request->getVar('title'),
-					'user_post' => $user['firstname'].' '.$user['lastname'],
+					'user_post' => $user['fullname'],
 					'images' =>  base_url().'/images/'.$file_name,
 					'status' => 0,
-					'user_update' => $user['firstname'].' '.$user['lastname'],
+					'user_update' =>$user['fullname'],
 					'slug' => base_url().$slug,
 					'content' => $this->request->getVar('content')
 				];
@@ -264,10 +269,9 @@ class Dashboard extends BaseController
 				return redirect()->to(base_url().'/post');
 			endif;
 		endif;
-		echo view('admin/templates/header' ,$this->data);
-		echo view('admin/templates/navbar',$this->data);
+		
 		echo view('admin/vietbai' , $this->data);
-		echo view('admin/templates/footer');
+		
 	}
 	public function post()
 	{
@@ -279,10 +283,9 @@ class Dashboard extends BaseController
 		$this->data['title'] = "Admin";
 		$this->data['user'] = $this->UserModel->where('id', session()->get('id'))->first();
 		$this->data['post'] = $this->PostModel->orderBy('id', 'DESC')->findAll();
-		echo view('admin/templates/header' ,$this->data);
-		echo view('admin/templates/navbar', $this->data);
+		
 		echo view('admin/post' , $this->data);
-		echo view('admin/templates/footer');
+		
 		endif;
 	}
 	public function postedit($id)
@@ -355,10 +358,9 @@ class Dashboard extends BaseController
 				endif;
 			endif;
 		
-		echo view('admin/templates/header' , $this->data);
-		echo view('admin/templates/navbar', $this->data);
+		
 		echo view('admin/postedit', $this->data);
-		echo view('admin/templates/footer');
+		
 		
 	}
 	//---------------------------------------------------------

@@ -1,3 +1,5 @@
+<?= view('admin/templates/header'); ?>
+<?= view('admin/templates/navbar'); ?>
 <div class="card-box">
     <div>
         <div class="row">
@@ -15,15 +17,10 @@
 
                         <div class="form-group">
                             <label>Họ</label>
-                            <input class="form-control" type="text" placeholder="<?= $useredit['firstname']; ?>"
-                                name=" firstname" value="<?=  $useredit['firstname'];  ?>">
+                            <input class="form-control" type="text" placeholder="<?= $useredit['fullname']; ?>"
+                                name=" firstname" value="<?=  $useredit['fullname'];  ?>">
                         </div>
-                        <div class="form-group">
-                            <label>Tên</label>
-                            <input class="form-control" type="text" placeholder="<?= $useredit['lastname'];?>"
-                                name="lastname" value="<?= $useredit['lastname']; ?>">
 
-                        </div>
                         <div class="form-group">
                             <label>Email</label>
                             <input class="form-control" type="email" name="email"
@@ -50,3 +47,4 @@
         </div>
     </div>
 </div>
+<?= view('admin/templates/footer'); ?>

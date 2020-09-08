@@ -13,6 +13,8 @@ class Users extends BaseController
 		helper(['url']);
 		$this->data = [];
 		$this->UserModel = new UserModel();
+		$this->data['user'] = $this->UserModel->where('id', session()->get('id'))->first();
+
 	}
 	public function index()
 	{
@@ -21,7 +23,18 @@ class Users extends BaseController
 		endif;
 		$this->data['title'] = "Admin";
 		helper(['form']);
-		if($this->request->getMethod() == 'post') :
+		
+	
+		echo view('admin/login', $this->data);
+		
+	}
+	public function login()
+	{
+		$status = false;
+		$messages = "";
+		if($this->request->isAJAX()) :
+			
+			
 			$rules = [
 				'email' => 'required|min_length[6]|max_length[50]|valid_email',
 				'password' => 'required|min_length[8]|max_length[255]|validateUser[email,password]',
@@ -41,21 +54,25 @@ class Users extends BaseController
 			];
 			if (!$this->validate($rules, $errors)) :
 				$this->data['validation'] = $this->validator;
+				$status = false;
+				$messages = $this->data['validation']->listErrors();
 			else :
 				$user = $this->UserModel->where('email', $this->request->getVar('email'))->first();
 				$this->setUserSession($user);
-				return redirect()->to('dashboard');
+				$status = true;
+				$messages = "Đăng nhập thành công";
+				// return redirect()->to('dashboard');
 			endif;
+			echo json_encode(array('status' => $status , 'messages' => $messages ));
 		endif;
-		echo view('admin/templates/header' ,$this->data);
-		echo view('admin/login', $this->data);
-		echo view('admin/templates/footer');
 	}
 	private function setUserSession($user)
 	{
 		$data = [
 			'id' => $user['id'],
 			'isLoggedIn' => true,
+			'role' => $user['role'],
+			 
 		];
 		session()->set($data);
 		return true;
@@ -64,8 +81,8 @@ class Users extends BaseController
 	{
 		$type = "";
 		if(session()->get('id')):
-			$this->data['user'] = $this->UserModel->where('id', session()->get('id'))->first();
 			$this->data['count'] = $this->UserModel->findAll();
+			
 			if($this->data['user']['role'] == '1'):
 				$type = "mod";
 			

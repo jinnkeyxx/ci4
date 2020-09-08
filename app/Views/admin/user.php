@@ -1,3 +1,5 @@
+<?= view('admin/templates/header'); ?>
+<?= view('admin/templates/navbar'); ?>
 <div class="row">
     <div class="col-12">
 
@@ -6,13 +8,8 @@
             <div class="text-left">
                 <button type="button" class="btn btn-primary my-3" data-toggle="modal"
                     data-target=".bd-example-modal-lg">Thêm mơí thành viên</button>
-                <?php if (isset($validation)): ?>
-                <div class="col-12">
-                    <div class="alert alert-danger" role="alert">
-                        <?= $validation->listErrors() ?>
-                    </div>
-                </div>
-                <?php endif; ?>
+
+
                 <?php if (session()->get('success')): ?>
                 <div class="alert alert-success" role="alert">
                     <?= session()->get('success') ?>
@@ -92,8 +89,8 @@
                                     <?php if($user['role'] == 0): ?>
                                     <td style="">
 
-                                        <a class="btn-danger btn" href="/userdelete/<?= $value['id']; ?>">Xóa</a>
-                                        <a class="btn-primary btn" href="/useredit/<?= $value['id']; ?>">Sửa</a>
+                                        <a class="btn-danger btn" href="/userdelete/<?= $value['id'];?>">Xóa</a>
+                                        <a class=" btn-primary btn" href="/useredit/<?= $value['id']; ?>">Sửa</a>
                                     </td>
                                     <?php endif; ?>
                                 </tr>
@@ -119,47 +116,46 @@
         <div class="modal-content py-3 px-3">
             <h4>Thêm Mới thành viên</h4>
 
-            <form action="" method="post" id="" name="">
+            <form action="user" method="post" name="">
                 <div class="form-row my-2">
                     <div class="col">
                         <label for="">Họ Tên</label>
                         <input type="text" class="form-control" placeholder="Nguyễn Quang Bảo" name="fullname"
-                            value="<?= set_value('fullname'); ?>">
+                            id="fullname" value="<?= set_value('fullname'); ?>">
                     </div>
                     <div class="col">
                         <label for="">Email</label>
                         <input type="text" class="form-control" name="email" placeholder="nguyenquangbaoxtnd@gmail.com"
-                            value="<?= set_value('email'); ?>">
+                            id="email" value="<?= set_value('email'); ?>">
                     </div>
                 </div>
                 <div class="form-row my-2">
                     <div class="col">
                         <label for="">Mật Khâủ</label>
-                        <input type="password" class="form-control" placeholder="******" name="password"
+                        <input type="password" class="form-control" placeholder="******" name="password" id="password"
                             value="<?= set_value('password'); ?>">
                     </div>
                     <div class="col">
                         <label for="">Chức vụ</label>
-                        <select class="custom-select mr-sm-2" class="custom-select mr-sm-2" name="role">
+                        <select class="custom-select mr-sm-2" class="custom-select mr-sm-2" name="role" id="role">
                             <option value="member" <?= set_select('role' , 'member') ?>>Khách hàng</option>
                             <option value="admin" <?= set_select('role' , 'admin') ?>>Quản trị viên</option>
                             <option value="mod" <?= set_select('role' , 'mod') ?>>Kiểm duyệt viên</option>
                         </select>
                     </div>
                 </div>
-                <div class="form-row my-2">
+                <div class="my-2">
                     <div class="col">
                         <label for="">Nơi Sống</label>
-                        <select name="calc_shipping_provinces" required="" class="custom-select mr-sm-2" name="addr1">
-                            <option value="" <?= set_select('addr2'); ?>>Tỉnh
-                                / Thành
-                                phố</option>
-
+                        <select name="calc_shipping_provinces" required="" class="custom-select mr-sm-2" id="add1">
+                            <option value="" <?= set_select('addr2'); ?>>Tỉnh/ Thànhphố</option>
                         </select>
+
                     </div>
                     <div class="col">
                         <label for="">Quận Huyện</label>
-                        <select name="calc_shipping_district" class="custom-select mr-sm-2" required="" name="addr2">
+                        <select name="calc_shipping_district" class="custom-select mr-sm-2" required="" name="addr2"
+                            id="addr2">
                             <option value="" <?= set_select('addr2') ?>>Quận / Huyện</option>
                         </select>
                     </div>
@@ -167,31 +163,33 @@
                 <div class="form-row my-2">
                     <div class="col">
                         <label for="">Số chứng minh nhân dân</label>
-                        <input type="number" class="form-control" placeholder="5465455445" name="cmnd"
+                        <input type="number" class="form-control" placeholder="5465455445" name="cmnd" id="cmnd"
                             value="<?= set_value('cmnd'); ?>">
                     </div>
                     <div class="col">
                         <label for="">Số điện thoaị</label>
                         <input type="number" class="form-control" placeholder="Last name" name="number_phone"
-                            value="<?= set_value('number_phone'); ?>">
+                            id="number_phone" value="<?= set_value('number_phone'); ?>">
                     </div>
                 </div>
                 <div class="form-row my-2">
                     <div class="col">
                         <label for="">Tuôỉ</label>
-                        <input type="number" class="form-control" placeholder="First name" name="old"
+                        <input type="number" class="form-control" placeholder="First name" name="old" id="old"
                             value="<?= set_value('old'); ?>">
                     </div>
                     <div class="col">
                         <label for="">Giơí tính</label>
-                        <select class="custom-select mr-sm-2" class="custom-select mr-sm-2" name="gender">
+                        <select class="custom-select mr-sm-2" id="gender" class="custom-select mr-sm-2" name="gender">
                             <option value="1"> Nam</option>
                             <option value="2">Nữ</option>
 
                         </select>
                     </div>
                 </div>
-                <button class="form-control btn btn-primary" type="submit"> Thêm mơí </button>
+                <button class="form-control btn btn-primary" type="button" id=" adduser"> Thêm mơí </button>
+                <div class="col-md-10 ml-auto mr-auto " role="alert" id='error'>
+                </div>
 
         </div>
         </form>
@@ -228,7 +226,7 @@ $('select[name="calc_shipping_provinces"]').each(function() {
         stc = ''
     c.forEach(function(i, e) {
         e += +1
-        stc += '<option value=' + e + '>' + i + '</option>'
+        stc += `<option value='${i}'>${i}</option>`
         $this.html('<option value="">Tỉnh / Thành phố</option>' + stc)
         if (address_1 = localStorage.getItem('address_1_saved')) {
             $('select[name="calc_shipping_provinces"] option').each(function() {
@@ -275,3 +273,5 @@ $('select[name="calc_shipping_provinces"]').each(function() {
 })
 //]]>
 </script>
+
+<?= view('admin/templates/footer'); ?>

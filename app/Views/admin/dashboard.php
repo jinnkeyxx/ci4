@@ -1,3 +1,5 @@
+<?= view('admin/templates/header'); ?>
+<?= view('admin/templates/navbar'); ?>
 <div class="row">
     <?php if (session()->get('success')): ?>
     <div class="alert alert-success" role="alert">
@@ -22,14 +24,7 @@
         </div>
     </div>
 
-    <div class="col-md-6 col-xl-3">
-        <div class="card-box tilebox-one">
-            <i class="icon-chart float-right m-0 h2 text-muted"></i>
-            <h6 class="text-muted text-uppercase mt-0">Tôngr khách hàng</h6>
-            <h3 class="my-3"><span data-plugin="counterup"><?= count($khachhang); ?></span></h3>
-            <span class="badge badge-pink mr-1"> 0% </span> <span class="text-muted">From previous period</span>
-        </div>
-    </div>
+
 
     <div class="col-md-6 col-xl-3">
         <div class="card-box tilebox-one">
@@ -40,3 +35,4 @@
         </div>
     </div>
 </div>
+<?= view('admin/templates/footer'); ?>

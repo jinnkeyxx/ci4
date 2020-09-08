@@ -1,3 +1,5 @@
+<?= view('admin/templates/header'); ?>
+<?= view('admin/templates/navbar'); ?>
 <?php if (isset($validation)): ?>
 <div class="col-12">
     <div class="alert alert-danger" role="alert">
@@ -218,3 +220,4 @@ tinymce.init({
 <a href="javascript:void(0);" class="right-bar-toggle demos-show-btn">
     <i class="mdi mdi-settings-outline mdi-spin"></i> &nbsp;Choose Demos
 </a>
+<?= view('admin/templates/footer'); ?>

@@ -2,7 +2,7 @@
 
 use CodeIgniter\Model;
 class ContactModel extends Model{
-  protected $table = 'khachhang';
+  protected $table = 'contact';
   protected $allowedFields = ['email_contact', 'user_contact', 'content_contact'];
   protected $beforeInsert = ['beforeInsert'];
   protected $beforeUpdate = ['beforeUpdate'];

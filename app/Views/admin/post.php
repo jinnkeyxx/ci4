@@ -1,3 +1,5 @@
+<?= view('admin/templates/header'); ?>
+<?= view('admin/templates/navbar'); ?>
 <div class="row">
     <div class="col-12">
 
@@ -121,3 +123,4 @@
 
     </div>
 </div>
+<?= view('admin/templates/footer'); ?>
