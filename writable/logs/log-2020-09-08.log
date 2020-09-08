@@ -1,0 +1,208 @@
+CRITICAL - 2020-09-08 01:42:40 --> Call to a member function checkAdmin() on null
+#0 /opt/lampp/htdocs/vendor/codeigniter4/framework/system/CodeIgniter.php(882): App\Controllers\Dashboard->__construct()
+#1 /opt/lampp/htdocs/vendor/codeigniter4/framework/system/CodeIgniter.php(393): CodeIgniter\CodeIgniter->createController()
+#2 /opt/lampp/htdocs/vendor/codeigniter4/framework/system/CodeIgniter.php(306): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#3 /opt/lampp/htdocs/public/index.php(45): CodeIgniter\CodeIgniter->run()
+#4 {main}
+CRITICAL - 2020-09-08 01:51:45 --> Class 'App\Controllers\ContactModel' not found
+#0 /opt/lampp/htdocs/vendor/codeigniter4/framework/system/CodeIgniter.php(882): App\Controllers\Dashboard->__construct()
+#1 /opt/lampp/htdocs/vendor/codeigniter4/framework/system/CodeIgniter.php(393): CodeIgniter\CodeIgniter->createController()
+#2 /opt/lampp/htdocs/vendor/codeigniter4/framework/system/CodeIgniter.php(306): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#3 /opt/lampp/htdocs/public/index.php(45): CodeIgniter\CodeIgniter->run()
+#4 {main}
+CRITICAL - 2020-09-08 01:52:11 --> Class 'App\Controllers\ContactModel' not found
+#0 /opt/lampp/htdocs/vendor/codeigniter4/framework/system/CodeIgniter.php(882): App\Controllers\Dashboard->__construct()
+#1 /opt/lampp/htdocs/vendor/codeigniter4/framework/system/CodeIgniter.php(393): CodeIgniter\CodeIgniter->createController()
+#2 /opt/lampp/htdocs/vendor/codeigniter4/framework/system/CodeIgniter.php(306): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#3 /opt/lampp/htdocs/public/index.php(45): CodeIgniter\CodeIgniter->run()
+#4 {main}
+CRITICAL - 2020-09-08 02:00:34 --> count(): Parameter must be an array or an object that implements Countable
+#0 /opt/lampp/htdocs/app/Views/admin/templates/navbar.php(41): CodeIgniter\Debug\Exceptions->errorHandler(2, 'count(): Parame...', '/opt/lampp/htdo...', 41, Array)
+#1 /opt/lampp/htdocs/vendor/codeigniter4/framework/system/View/View.php(236): include('/opt/lampp/htdo...')
+#2 /opt/lampp/htdocs/vendor/codeigniter4/framework/system/Common.php(1071): CodeIgniter\View\View->render('admin/templates...', Array, true)
+#3 /opt/lampp/htdocs/app/Controllers/Dashboard.php(43): view('admin/templates...', Array)
+#4 /opt/lampp/htdocs/vendor/codeigniter4/framework/system/CodeIgniter.php(910): App\Controllers\Dashboard->index()
+#5 /opt/lampp/htdocs/vendor/codeigniter4/framework/system/CodeIgniter.php(398): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Dashboard))
+#6 /opt/lampp/htdocs/vendor/codeigniter4/framework/system/CodeIgniter.php(306): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 /opt/lampp/htdocs/public/index.php(45): CodeIgniter\CodeIgniter->run()
+#8 {main}
+CRITICAL - 2020-09-08 02:01:13 --> count(): Parameter must be an array or an object that implements Countable
+#0 /opt/lampp/htdocs/app/Views/admin/templates/navbar.php(41): CodeIgniter\Debug\Exceptions->errorHandler(2, 'count(): Parame...', '/opt/lampp/htdo...', 41, Array)
+#1 /opt/lampp/htdocs/vendor/codeigniter4/framework/system/View/View.php(236): include('/opt/lampp/htdo...')
+#2 /opt/lampp/htdocs/vendor/codeigniter4/framework/system/Common.php(1071): CodeIgniter\View\View->render('admin/templates...', Array, true)
+#3 /opt/lampp/htdocs/app/Controllers/Dashboard.php(43): view('admin/templates...', Array)
+#4 /opt/lampp/htdocs/vendor/codeigniter4/framework/system/CodeIgniter.php(910): App\Controllers\Dashboard->index()
+#5 /opt/lampp/htdocs/vendor/codeigniter4/framework/system/CodeIgniter.php(398): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Dashboard))
+#6 /opt/lampp/htdocs/vendor/codeigniter4/framework/system/CodeIgniter.php(306): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 /opt/lampp/htdocs/public/index.php(45): CodeIgniter\CodeIgniter->run()
+#8 {main}
+CRITICAL - 2020-09-08 02:02:21 --> count(): Parameter must be an array or an object that implements Countable
+#0 /opt/lampp/htdocs/app/Views/admin/templates/navbar.php(41): CodeIgniter\Debug\Exceptions->errorHandler(2, 'count(): Parame...', '/opt/lampp/htdo...', 41, Array)
+#1 /opt/lampp/htdocs/vendor/codeigniter4/framework/system/View/View.php(236): include('/opt/lampp/htdo...')
+#2 /opt/lampp/htdocs/vendor/codeigniter4/framework/system/Common.php(1071): CodeIgniter\View\View->render('admin/templates...', Array, true)
+#3 /opt/lampp/htdocs/app/Controllers/Dashboard.php(43): view('admin/templates...', Array)
+#4 /opt/lampp/htdocs/vendor/codeigniter4/framework/system/CodeIgniter.php(910): App\Controllers\Dashboard->index()
+#5 /opt/lampp/htdocs/vendor/codeigniter4/framework/system/CodeIgniter.php(398): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Dashboard))
+#6 /opt/lampp/htdocs/vendor/codeigniter4/framework/system/CodeIgniter.php(306): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 /opt/lampp/htdocs/public/index.php(45): CodeIgniter\CodeIgniter->run()
+#8 {main}
+CRITICAL - 2020-09-08 02:04:54 --> Undefined variable: contactNew
+#0 /opt/lampp/htdocs/app/Views/admin/templates/navbar.php(41): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined varia...', '/opt/lampp/htdo...', 41, Array)
+#1 /opt/lampp/htdocs/vendor/codeigniter4/framework/system/View/View.php(236): include('/opt/lampp/htdo...')
+#2 /opt/lampp/htdocs/vendor/codeigniter4/framework/system/Common.php(1071): CodeIgniter\View\View->render('admin/templates...', Array, true)
+#3 /opt/lampp/htdocs/app/Controllers/Dashboard.php(121): view('admin/templates...', Array)
+#4 /opt/lampp/htdocs/vendor/codeigniter4/framework/system/CodeIgniter.php(910): App\Controllers\Dashboard->user()
+#5 /opt/lampp/htdocs/vendor/codeigniter4/framework/system/CodeIgniter.php(398): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Dashboard))
+#6 /opt/lampp/htdocs/vendor/codeigniter4/framework/system/CodeIgniter.php(306): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 /opt/lampp/htdocs/public/index.php(45): CodeIgniter\CodeIgniter->run()
+#8 {main}
+CRITICAL - 2020-09-08 02:09:27 --> Undefined variable: contact
+#0 /opt/lampp/htdocs/app/Views/admin/templates/navbar.php(60): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined varia...', '/opt/lampp/htdo...', 60, Array)
+#1 /opt/lampp/htdocs/vendor/codeigniter4/framework/system/View/View.php(236): include('/opt/lampp/htdo...')
+#2 /opt/lampp/htdocs/vendor/codeigniter4/framework/system/Common.php(1071): CodeIgniter\View\View->render('admin/templates...', Array, true)
+#3 /opt/lampp/htdocs/app/Controllers/Dashboard.php(122): view('admin/templates...', Array)
+#4 /opt/lampp/htdocs/vendor/codeigniter4/framework/system/CodeIgniter.php(910): App\Controllers\Dashboard->user()
+#5 /opt/lampp/htdocs/vendor/codeigniter4/framework/system/CodeIgniter.php(398): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Dashboard))
+#6 /opt/lampp/htdocs/vendor/codeigniter4/framework/system/CodeIgniter.php(306): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 /opt/lampp/htdocs/public/index.php(45): CodeIgniter\CodeIgniter->run()
+#8 {main}
+CRITICAL - 2020-09-08 02:32:03 --> Undefined index: firstname
+#0 /opt/lampp/htdocs/app/Views/admin/templates/navbar.php(101): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined index...', '/opt/lampp/htdo...', 101, Array)
+#1 /opt/lampp/htdocs/vendor/codeigniter4/framework/system/View/View.php(236): include('/opt/lampp/htdo...')
+#2 /opt/lampp/htdocs/vendor/codeigniter4/framework/system/Common.php(1071): CodeIgniter\View\View->render('admin/templates...', Array, true)
+#3 /opt/lampp/htdocs/app/Controllers/Dashboard.php(120): view('admin/templates...', Array)
+#4 /opt/lampp/htdocs/vendor/codeigniter4/framework/system/CodeIgniter.php(910): App\Controllers\Dashboard->user()
+#5 /opt/lampp/htdocs/vendor/codeigniter4/framework/system/CodeIgniter.php(398): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Dashboard))
+#6 /opt/lampp/htdocs/vendor/codeigniter4/framework/system/CodeIgniter.php(306): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 /opt/lampp/htdocs/public/index.php(45): CodeIgniter\CodeIgniter->run()
+#8 {main}
+CRITICAL - 2020-09-08 02:32:50 --> Undefined index: firstname
+#0 /opt/lampp/htdocs/app/Views/admin/templates/navbar.php(101): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined index...', '/opt/lampp/htdo...', 101, Array)
+#1 /opt/lampp/htdocs/vendor/codeigniter4/framework/system/View/View.php(236): include('/opt/lampp/htdo...')
+#2 /opt/lampp/htdocs/vendor/codeigniter4/framework/system/Common.php(1071): CodeIgniter\View\View->render('admin/templates...', Array, true)
+#3 /opt/lampp/htdocs/app/Controllers/Dashboard.php(120): view('admin/templates...', Array)
+#4 /opt/lampp/htdocs/vendor/codeigniter4/framework/system/CodeIgniter.php(910): App\Controllers\Dashboard->user()
+#5 /opt/lampp/htdocs/vendor/codeigniter4/framework/system/CodeIgniter.php(398): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Dashboard))
+#6 /opt/lampp/htdocs/vendor/codeigniter4/framework/system/CodeIgniter.php(306): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 /opt/lampp/htdocs/public/index.php(45): CodeIgniter\CodeIgniter->run()
+#8 {main}
+CRITICAL - 2020-09-08 02:33:58 --> Undefined index: firstname
+#0 /opt/lampp/htdocs/app/Views/admin/user.php(60): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined index...', '/opt/lampp/htdo...', 60, Array)
+#1 /opt/lampp/htdocs/vendor/codeigniter4/framework/system/View/View.php(236): include('/opt/lampp/htdo...')
+#2 /opt/lampp/htdocs/vendor/codeigniter4/framework/system/Common.php(1071): CodeIgniter\View\View->render('admin/user', Array, true)
+#3 /opt/lampp/htdocs/app/Controllers/Dashboard.php(121): view('admin/user', Array)
+#4 /opt/lampp/htdocs/vendor/codeigniter4/framework/system/CodeIgniter.php(910): App\Controllers\Dashboard->user()
+#5 /opt/lampp/htdocs/vendor/codeigniter4/framework/system/CodeIgniter.php(398): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Dashboard))
+#6 /opt/lampp/htdocs/vendor/codeigniter4/framework/system/CodeIgniter.php(306): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 /opt/lampp/htdocs/public/index.php(45): CodeIgniter\CodeIgniter->run()
+#8 {main}
+CRITICAL - 2020-09-08 05:54:45 --> Undefined index: firstname
+#0 /opt/lampp/htdocs/app/Controllers/Users.php(58): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined index...', '/opt/lampp/htdo...', 58, Array)
+#1 /opt/lampp/htdocs/app/Controllers/Users.php(46): App\Controllers\Users->setUserSession(Array)
+#2 /opt/lampp/htdocs/vendor/codeigniter4/framework/system/CodeIgniter.php(910): App\Controllers\Users->index()
+#3 /opt/lampp/htdocs/vendor/codeigniter4/framework/system/CodeIgniter.php(398): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Users))
+#4 /opt/lampp/htdocs/vendor/codeigniter4/framework/system/CodeIgniter.php(306): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#5 /opt/lampp/htdocs/public/index.php(45): CodeIgniter\CodeIgniter->run()
+#6 {main}
+CRITICAL - 2020-09-08 05:58:35 --> valid_number is not a valid rule.
+#0 /opt/lampp/htdocs/vendor/codeigniter4/framework/system/Validation/Validation.php(287): CodeIgniter\Validation\Exceptions\ValidationException::forRuleNotFound('valid_number')
+#1 /opt/lampp/htdocs/vendor/codeigniter4/framework/system/Validation/Validation.php(175): CodeIgniter\Validation\Validation->processRules('cmnd', 'cmnd', '663614444444', Array, Array)
+#2 /opt/lampp/htdocs/vendor/codeigniter4/framework/system/Controller.php(220): CodeIgniter\Validation\Validation->run()
+#3 /opt/lampp/htdocs/app/Controllers/Dashboard.php(121): CodeIgniter\Controller->validate(Array, Array)
+#4 /opt/lampp/htdocs/vendor/codeigniter4/framework/system/CodeIgniter.php(910): App\Controllers\Dashboard->user()
+#5 /opt/lampp/htdocs/vendor/codeigniter4/framework/system/CodeIgniter.php(398): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Dashboard))
+#6 /opt/lampp/htdocs/vendor/codeigniter4/framework/system/CodeIgniter.php(306): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 /opt/lampp/htdocs/public/index.php(45): CodeIgniter\CodeIgniter->run()
+#8 {main}
+CRITICAL - 2020-09-08 06:07:40 --> valid_number is not a valid rule.
+#0 /opt/lampp/htdocs/vendor/codeigniter4/framework/system/Validation/Validation.php(287): CodeIgniter\Validation\Exceptions\ValidationException::forRuleNotFound('valid_number')
+#1 /opt/lampp/htdocs/vendor/codeigniter4/framework/system/Validation/Validation.php(175): CodeIgniter\Validation\Validation->processRules('cmnd', 'cmnd', '663614444444', Array, Array)
+#2 /opt/lampp/htdocs/vendor/codeigniter4/framework/system/Controller.php(220): CodeIgniter\Validation\Validation->run()
+#3 /opt/lampp/htdocs/app/Controllers/Dashboard.php(121): CodeIgniter\Controller->validate(Array, Array)
+#4 /opt/lampp/htdocs/vendor/codeigniter4/framework/system/CodeIgniter.php(910): App\Controllers\Dashboard->user()
+#5 /opt/lampp/htdocs/vendor/codeigniter4/framework/system/CodeIgniter.php(398): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Dashboard))
+#6 /opt/lampp/htdocs/vendor/codeigniter4/framework/system/CodeIgniter.php(306): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 /opt/lampp/htdocs/public/index.php(45): CodeIgniter\CodeIgniter->run()
+#8 {main}
+CRITICAL - 2020-09-08 06:08:27 --> valid_number is not a valid rule.
+#0 /opt/lampp/htdocs/vendor/codeigniter4/framework/system/Validation/Validation.php(287): CodeIgniter\Validation\Exceptions\ValidationException::forRuleNotFound('valid_number')
+#1 /opt/lampp/htdocs/vendor/codeigniter4/framework/system/Validation/Validation.php(175): CodeIgniter\Validation\Validation->processRules('cmnd', 'cmnd', '663614444444', Array, Array)
+#2 /opt/lampp/htdocs/vendor/codeigniter4/framework/system/Controller.php(220): CodeIgniter\Validation\Validation->run()
+#3 /opt/lampp/htdocs/app/Controllers/Dashboard.php(121): CodeIgniter\Controller->validate(Array)
+#4 /opt/lampp/htdocs/vendor/codeigniter4/framework/system/CodeIgniter.php(910): App\Controllers\Dashboard->user()
+#5 /opt/lampp/htdocs/vendor/codeigniter4/framework/system/CodeIgniter.php(398): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Dashboard))
+#6 /opt/lampp/htdocs/vendor/codeigniter4/framework/system/CodeIgniter.php(306): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 /opt/lampp/htdocs/public/index.php(45): CodeIgniter\CodeIgniter->run()
+#8 {main}
+CRITICAL - 2020-09-08 06:14:13 --> Column 'fullname' cannot be null
+#0 /opt/lampp/htdocs/vendor/codeigniter4/framework/system/Database/MySQLi/Connection.php(330): mysqli->query('INSERT INTO `us...')
+#1 /opt/lampp/htdocs/vendor/codeigniter4/framework/system/Database/BaseConnection.php(738): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `us...')
+#2 /opt/lampp/htdocs/vendor/codeigniter4/framework/system/Database/BaseConnection.php(666): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `us...')
+#3 /opt/lampp/htdocs/vendor/codeigniter4/framework/system/Database/BaseBuilder.php(2206): CodeIgniter\Database\BaseConnection->query('INSERT INTO `us...', Array, false)
+#4 /opt/lampp/htdocs/vendor/codeigniter4/framework/system/Model.php(722): CodeIgniter\Database\BaseBuilder->insert()
+#5 /opt/lampp/htdocs/vendor/codeigniter4/framework/system/Model.php(550): CodeIgniter\Model->insert(Array, false)
+#6 /opt/lampp/htdocs/app/Controllers/Dashboard.php(136): CodeIgniter\Model->save(Array)
+#7 /opt/lampp/htdocs/vendor/codeigniter4/framework/system/CodeIgniter.php(910): App\Controllers\Dashboard->user()
+#8 /opt/lampp/htdocs/vendor/codeigniter4/framework/system/CodeIgniter.php(398): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Dashboard))
+#9 /opt/lampp/htdocs/vendor/codeigniter4/framework/system/CodeIgniter.php(306): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 /opt/lampp/htdocs/public/index.php(45): CodeIgniter\CodeIgniter->run()
+#11 {main}
+CRITICAL - 2020-09-08 06:15:11 --> Column 'addr1' cannot be null
+#0 /opt/lampp/htdocs/vendor/codeigniter4/framework/system/Database/MySQLi/Connection.php(330): mysqli->query('INSERT INTO `us...')
+#1 /opt/lampp/htdocs/vendor/codeigniter4/framework/system/Database/BaseConnection.php(738): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `us...')
+#2 /opt/lampp/htdocs/vendor/codeigniter4/framework/system/Database/BaseConnection.php(666): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `us...')
+#3 /opt/lampp/htdocs/vendor/codeigniter4/framework/system/Database/BaseBuilder.php(2206): CodeIgniter\Database\BaseConnection->query('INSERT INTO `us...', Array, false)
+#4 /opt/lampp/htdocs/vendor/codeigniter4/framework/system/Model.php(722): CodeIgniter\Database\BaseBuilder->insert()
+#5 /opt/lampp/htdocs/vendor/codeigniter4/framework/system/Model.php(550): CodeIgniter\Model->insert(Array, false)
+#6 /opt/lampp/htdocs/app/Controllers/Dashboard.php(136): CodeIgniter\Model->save(Array)
+#7 /opt/lampp/htdocs/vendor/codeigniter4/framework/system/CodeIgniter.php(910): App\Controllers\Dashboard->user()
+#8 /opt/lampp/htdocs/vendor/codeigniter4/framework/system/CodeIgniter.php(398): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Dashboard))
+#9 /opt/lampp/htdocs/vendor/codeigniter4/framework/system/CodeIgniter.php(306): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 /opt/lampp/htdocs/public/index.php(45): CodeIgniter\CodeIgniter->run()
+#11 {main}
+CRITICAL - 2020-09-08 06:16:37 --> Column 'addr1' cannot be null
+#0 /opt/lampp/htdocs/vendor/codeigniter4/framework/system/Database/MySQLi/Connection.php(330): mysqli->query('INSERT INTO `us...')
+#1 /opt/lampp/htdocs/vendor/codeigniter4/framework/system/Database/BaseConnection.php(738): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `us...')
+#2 /opt/lampp/htdocs/vendor/codeigniter4/framework/system/Database/BaseConnection.php(666): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `us...')
+#3 /opt/lampp/htdocs/vendor/codeigniter4/framework/system/Database/BaseBuilder.php(2206): CodeIgniter\Database\BaseConnection->query('INSERT INTO `us...', Array, false)
+#4 /opt/lampp/htdocs/vendor/codeigniter4/framework/system/Model.php(722): CodeIgniter\Database\BaseBuilder->insert()
+#5 /opt/lampp/htdocs/vendor/codeigniter4/framework/system/Model.php(550): CodeIgniter\Model->insert(Array, false)
+#6 /opt/lampp/htdocs/app/Controllers/Dashboard.php(136): CodeIgniter\Model->save(Array)
+#7 /opt/lampp/htdocs/vendor/codeigniter4/framework/system/CodeIgniter.php(910): App\Controllers\Dashboard->user()
+#8 /opt/lampp/htdocs/vendor/codeigniter4/framework/system/CodeIgniter.php(398): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Dashboard))
+#9 /opt/lampp/htdocs/vendor/codeigniter4/framework/system/CodeIgniter.php(306): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 /opt/lampp/htdocs/public/index.php(45): CodeIgniter\CodeIgniter->run()
+#11 {main}
+CRITICAL - 2020-09-08 06:18:50 --> Column 'addr1' cannot be null
+#0 /opt/lampp/htdocs/vendor/codeigniter4/framework/system/Database/MySQLi/Connection.php(330): mysqli->query('INSERT INTO `us...')
+#1 /opt/lampp/htdocs/vendor/codeigniter4/framework/system/Database/BaseConnection.php(738): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `us...')
+#2 /opt/lampp/htdocs/vendor/codeigniter4/framework/system/Database/BaseConnection.php(666): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `us...')
+#3 /opt/lampp/htdocs/vendor/codeigniter4/framework/system/Database/BaseBuilder.php(2206): CodeIgniter\Database\BaseConnection->query('INSERT INTO `us...', Array, false)
+#4 /opt/lampp/htdocs/vendor/codeigniter4/framework/system/Model.php(722): CodeIgniter\Database\BaseBuilder->insert()
+#5 /opt/lampp/htdocs/vendor/codeigniter4/framework/system/Model.php(550): CodeIgniter\Model->insert(Array, false)
+#6 /opt/lampp/htdocs/app/Controllers/Dashboard.php(136): CodeIgniter\Model->save(Array)
+#7 /opt/lampp/htdocs/vendor/codeigniter4/framework/system/CodeIgniter.php(910): App\Controllers\Dashboard->user()
+#8 /opt/lampp/htdocs/vendor/codeigniter4/framework/system/CodeIgniter.php(398): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Dashboard))
+#9 /opt/lampp/htdocs/vendor/codeigniter4/framework/system/CodeIgniter.php(306): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 /opt/lampp/htdocs/public/index.php(45): CodeIgniter\CodeIgniter->run()
+#11 {main}
+CRITICAL - 2020-09-08 06:20:57 --> Column 'addr1' cannot be null
+#0 /opt/lampp/htdocs/vendor/codeigniter4/framework/system/Database/MySQLi/Connection.php(330): mysqli->query('INSERT INTO `us...')
+#1 /opt/lampp/htdocs/vendor/codeigniter4/framework/system/Database/BaseConnection.php(738): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `us...')
+#2 /opt/lampp/htdocs/vendor/codeigniter4/framework/system/Database/BaseConnection.php(666): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `us...')
+#3 /opt/lampp/htdocs/vendor/codeigniter4/framework/system/Database/BaseBuilder.php(2206): CodeIgniter\Database\BaseConnection->query('INSERT INTO `us...', Array, false)
+#4 /opt/lampp/htdocs/vendor/codeigniter4/framework/system/Model.php(722): CodeIgniter\Database\BaseBuilder->insert()
+#5 /opt/lampp/htdocs/vendor/codeigniter4/framework/system/Model.php(550): CodeIgniter\Model->insert(Array, false)
+#6 /opt/lampp/htdocs/app/Controllers/Dashboard.php(136): CodeIgniter\Model->save(Array)
+#7 /opt/lampp/htdocs/vendor/codeigniter4/framework/system/CodeIgniter.php(910): App\Controllers\Dashboard->user()
+#8 /opt/lampp/htdocs/vendor/codeigniter4/framework/system/CodeIgniter.php(398): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Dashboard))
+#9 /opt/lampp/htdocs/vendor/codeigniter4/framework/system/CodeIgniter.php(306): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 /opt/lampp/htdocs/public/index.php(45): CodeIgniter\CodeIgniter->run()
+#11 {main}
+CRITICAL - 2020-09-08 06:23:55 --> Undefined property: App\Controllers\Dashboard::$input
+#0 /opt/lampp/htdocs/app/Controllers/Dashboard.php(137): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined prope...', '/opt/lampp/htdo...', 137, Array)
+#1 /opt/lampp/htdocs/vendor/codeigniter4/framework/system/CodeIgniter.php(910): App\Controllers\Dashboard->user()
+#2 /opt/lampp/htdocs/vendor/codeigniter4/framework/system/CodeIgniter.php(398): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Dashboard))
+#3 /opt/lampp/htdocs/vendor/codeigniter4/framework/system/CodeIgniter.php(306): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 /opt/lampp/htdocs/public/index.php(45): CodeIgniter\CodeIgniter->run()
+#5 {main}

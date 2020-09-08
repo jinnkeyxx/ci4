@@ -34,6 +34,59 @@
 
                  </div>
              </li>
+             <li class="dropdown notification-list">
+                 <a class="nav-link dropdown-toggle  waves-effect waves-light" data-toggle="dropdown" href="#"
+                     role="button" aria-haspopup="false" aria-expanded="false">
+                     <i class="mdi mdi-email-outline noti-icon"></i>
+                     <?php if(count($contactNew) > 0): ?>
+                     <span class="noti-icon-badge"></span>
+                     <?php endif; ?>
+                 </a>
+                 <div class="dropdown-menu dropdown-menu-right dropdown-lg" x-placement="top-end"
+                     style="position: absolute; transform: translate3d(-268px, 5px, 0px); top: 0px; left: 0px; will-change: transform;">
+
+                     <!-- item-->
+                     <div class="dropdown-item noti-title">
+                         <h5 class="font-16 text-white m-0">
+                             Messages
+                         </h5>
+                     </div>
+
+                     <div class="slimScrollDiv"
+                         style="position: relative; overflow: hidden; width: auto; height: 310px;">
+                         <div class="slimscroll noti-scroll" style="overflow: hidden; width: auto; height: 310px;">
+
+                             <div class="inbox-widget">
+                                 <?php foreach($contact as $value): ?>
+                                 <a href="#">
+                                     <div class="inbox-item">
+                                         <div class="inbox-item-img"><img src="assets\images\users\avatar-1.jpg"
+                                                 class="rounded-circle" alt=""></div>
+                                         <p class="inbox-item-author"><?= $value['user_contact'] ?></p>
+                                         <p class="inbox-item-text text-truncate"><?= $value['content']; ?></p>
+                                     </div>
+                                 </a>
+                                 <?php endforeach; ?>
+
+                             </div>
+                             <!-- end inbox-widget -->
+
+                         </div>
+                         <div class="slimScrollBar"
+                             style="background: rgb(158, 165, 171); width: 5px; position: absolute; top: 0px; opacity: 0.4; display: none; border-radius: 7px; z-index: 99; right: 1px;">
+                         </div>
+                         <div class="slimScrollRail"
+                             style="width: 5px; height: 100%; position: absolute; top: 0px; display: none; border-radius: 7px; background: rgb(51, 51, 51); opacity: 0.2; z-index: 90; right: 1px;">
+                         </div>
+                     </div>
+                     <!-- All-->
+                     <a href="javascript:void(0);" class="dropdown-item text-primary notify-item notify-all">
+                         View all
+                         <i class="fi-arrow-right"></i>
+                     </a>
+
+                 </div>
+             </li>
 
 
 
@@ -44,8 +97,7 @@
                      href="#" role="button" aria-haspopup="false" aria-expanded="false">
                      <img src="<?= base_url(); ?>\assets\images\users\avatar-1.jpg" alt="user-image"
                          class="rounded-circle">
-                     <span
-                         class="d-none d-sm-inline-block ml-1 font-weight-medium"><?= $user['firstname'] . " " .$user['lastname']; ?></span>
+                     <span class="d-none d-sm-inline-block ml-1 font-weight-medium"><?= $user['fullname'];?></span>
                      <i class="mdi mdi-chevron-down d-none d-sm-inline-block"></i>
                  </a>
                  <div class="dropdown-menu dropdown-menu-right profile-dropdown" x-placement="bottom-end"

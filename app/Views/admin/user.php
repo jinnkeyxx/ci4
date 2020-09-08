@@ -4,8 +4,8 @@
         <div class="card-box">
             <h4 class="header-title">Quản lí Thành viên</h4>
             <div class="text-left">
-                <a href="adduser" class="btn btn-primary my-2" data-toggle="modal" data-target="#themuser">Thêm mới
-                    Thành viên</a>
+                <button type="button" class="btn btn-primary my-3" data-toggle="modal"
+                    data-target=".bd-example-modal-lg">Thêm mơí thành viên</button>
                 <?php if (isset($validation)): ?>
                 <div class="col-12">
                     <div class="alert alert-danger" role="alert">
@@ -57,7 +57,7 @@
                                 <?php $sorting = -1; foreach($users as $key => $value): $sorting++ ?>
                                 <tr role="row" class="even text-center">
                                     <td class="sorting_<?= $sorting; ?>" tabindex="0">
-                                        <?= $value['firstname'] . " " .$value['lastname']; ?></td>
+                                        <?= $value['fullname']; ?></td>
                                     <td class="
                                      <?php if($value['role'] == 0)
                                             {
@@ -109,68 +109,169 @@
 
     </div>
 </div>
-<div class="modal fade" id="themuser" tabindex="-1" role="dialog" aria-labelledby="themuserTitle" aria-hidden="true">
-    <div class="modal-dialog modal-dialog-centered" role="document">
-        <div class="modal-content">
-            <div class="modal-header">
-                <h5 class="modal-title" id="exampleModalLongTitle">Thêm mới Thành viên</h5>
-                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                    <span aria-hidden="true">&times;</span>
-                </button>
 
-            </div>
-            <div class="modal-body">
-                <form action="#" method="post">
-                    <div class="form-group">
-                        <label>Họ</label>
-                        <input class="form-control" type="text" required="" placeholder="" name=" firstname"
-                            value="<?= set_value('firstname') ?>">
 
+
+<div class="modal fade bd-example-modal-lg" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel"
+    aria-hidden="true">
+
+    <div class="modal-dialog modal-lg">
+        <div class="modal-content py-3 px-3">
+            <h4>Thêm Mới thành viên</h4>
+
+            <form action="" method="post" id="" name="">
+                <div class="form-row my-2">
+                    <div class="col">
+                        <label for="">Họ Tên</label>
+                        <input type="text" class="form-control" placeholder="Nguyễn Quang Bảo" name="fullname"
+                            value="<?= set_value('fullname'); ?>">
                     </div>
-                    <div class="form-group">
-                        <label>Tên</label>
-                        <input class="form-control" type="text" required="" placeholder="" name="lastname"
-                            value="<?= set_value('lastname') ?>">
-
+                    <div class="col">
+                        <label for="">Email</label>
+                        <input type="text" class="form-control" name="email" placeholder="nguyenquangbaoxtnd@gmail.com"
+                            value="<?= set_value('email'); ?>">
                     </div>
-                    <div class="form-group">
-                        <label>Email</label>
-                        <input class="form-control" type="email" required="" name="email" placeholder=""
-                            value="<?= set_value('email') ?>">
-
+                </div>
+                <div class="form-row my-2">
+                    <div class="col">
+                        <label for="">Mật Khâủ</label>
+                        <input type="password" class="form-control" placeholder="******" name="password"
+                            value="<?= set_value('password'); ?>">
                     </div>
-                    <div class="form-group">
-                        <label>Chức vụ</label>
-                        <select class="form-control" name='role'>
-                            <option value="0" <?= set_select('role', '0'); ?>> Admin </option>
-                            <option value="1" <?= set_select('role', '1'); ?>> Mod </option>
-                            <option value="2" <?= set_select('role', '2'); ?>> Nguời dùng </option>
+                    <div class="col">
+                        <label for="">Chức vụ</label>
+                        <select class="custom-select mr-sm-2" class="custom-select mr-sm-2" name="role">
+                            <option value="member" <?= set_select('role' , 'member') ?>>Khách hàng</option>
+                            <option value="admin" <?= set_select('role' , 'admin') ?>>Quản trị viên</option>
+                            <option value="mod" <?= set_select('role' , 'mod') ?>>Kiểm duyệt viên</option>
                         </select>
-
                     </div>
-                    <div class="form-group">
-                        <label>Mật khẩu</label>
-                        <input class="form-control" type="password" required="" id="password" placeholder=""
-                            name="password" value="<?= set_value('password') ?>">
+                </div>
+                <div class="form-row my-2">
+                    <div class="col">
+                        <label for="">Nơi Sống</label>
+                        <select name="calc_shipping_provinces" required="" class="custom-select mr-sm-2" name="addr1">
+                            <option value="" <?= set_select('addr2'); ?>>Tỉnh
+                                / Thành
+                                phố</option>
 
+                        </select>
                     </div>
-                    <div class="form-group">
-                        <label>Nhập lại mật khẩu</label>
-                        <input class="form-control" type="password" required="" id="password_confirm" placeholder=""
-                            name="password_confirm" value="">
-
+                    <div class="col">
+                        <label for="">Quận Huyện</label>
+                        <select name="calc_shipping_district" class="custom-select mr-sm-2" required="" name="addr2">
+                            <option value="" <?= set_select('addr2') ?>>Quận / Huyện</option>
+                        </select>
                     </div>
-                    <div class="form-group">
-                        <button class="btn btn-primary form-control" type="submit">Thêm mới</button>
-
+                </div>
+                <div class="form-row my-2">
+                    <div class="col">
+                        <label for="">Số chứng minh nhân dân</label>
+                        <input type="number" class="form-control" placeholder="5465455445" name="cmnd"
+                            value="<?= set_value('cmnd'); ?>">
                     </div>
+                    <div class="col">
+                        <label for="">Số điện thoaị</label>
+                        <input type="number" class="form-control" placeholder="Last name" name="number_phone"
+                            value="<?= set_value('number_phone'); ?>">
+                    </div>
+                </div>
+                <div class="form-row my-2">
+                    <div class="col">
+                        <label for="">Tuôỉ</label>
+                        <input type="number" class="form-control" placeholder="First name" name="old"
+                            value="<?= set_value('old'); ?>">
+                    </div>
+                    <div class="col">
+                        <label for="">Giơí tính</label>
+                        <select class="custom-select mr-sm-2" class="custom-select mr-sm-2" name="gender">
+                            <option value="1"> Nam</option>
+                            <option value="2">Nữ</option>
 
-                </form>
-            </div>
-            <div class="modal-footer">
-                <button type="button" class="btn btn-secondary" data-dismiss="modal">Quay về</button>
+                        </select>
+                    </div>
+                </div>
+                <button class="form-control btn btn-primary" type="submit"> Thêm mơí </button>
 
-            </div>
         </div>
+        </form>
     </div>
 </div>
+</div>
+<script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js'></script>
+<script src='https://cdn.jsdelivr.net/gh/vietblogdao/js/districts.min.js'></script>
+<script>
+//<![CDATA[
+if (address_2 = localStorage.getItem('address_2_saved')) {
+    $('select[name="calc_shipping_district"] option').each(function() {
+        if ($(this).text() == address_2) {
+            $(this).attr('selected', '')
+        }
+    })
+    $('input.billing_address_2').attr('value', address_2)
+}
+if (district = localStorage.getItem('district')) {
+    $('select[name="calc_shipping_district"]').html(district)
+    $('select[name="calc_shipping_district"]').on('change', function() {
+        var target = $(this).children('option:selected')
+        target.attr('selected', '')
+        $('select[name="calc_shipping_district"] option').not(target).removeAttr('selected')
+        address_2 = target.text()
+        $('input.billing_address_2').attr('value', address_2)
+        district = $('select[name="calc_shipping_district"]').html()
+        localStorage.setItem('district', district)
+        localStorage.setItem('address_2_saved', address_2)
+    })
+}
+$('select[name="calc_shipping_provinces"]').each(function() {
+    var $this = $(this),
+        stc = ''
+    c.forEach(function(i, e) {
+        e += +1
+        stc += '<option value=' + e + '>' + i + '</option>'
+        $this.html('<option value="">Tỉnh / Thành phố</option>' + stc)
+        if (address_1 = localStorage.getItem('address_1_saved')) {
+            $('select[name="calc_shipping_provinces"] option').each(function() {
+                if ($(this).text() == address_1) {
+                    $(this).attr('selected', '')
+                }
+            })
+            $('input.billing_address_1').attr('value', address_1)
+        }
+        $this.on('change', function(i) {
+            i = $this.children('option:selected').index() - 1
+            var str = '',
+                r = $this.val()
+            if (r != '') {
+                arr[i].forEach(function(el) {
+                    str += '<option value="' + el + '">' + el + '</option>'
+                    $('select[name="calc_shipping_district"]').html(
+                        '<option value="">Quận / Huyện</option>' + str)
+                })
+                var address_1 = $this.children('option:selected').text()
+                var district = $('select[name="calc_shipping_district"]').html()
+                localStorage.setItem('address_1_saved', address_1)
+                localStorage.setItem('district', district)
+                $('select[name="calc_shipping_district"]').on('change', function() {
+                    var target = $(this).children('option:selected')
+                    target.attr('selected', '')
+                    $('select[name="calc_shipping_district"] option').not(target)
+                        .removeAttr('selected')
+                    var address_2 = target.text()
+                    $('input.billing_address_2').attr('value', address_2)
+                    district = $('select[name="calc_shipping_district"]').html()
+                    localStorage.setItem('district', district)
+                    localStorage.setItem('address_2_saved', address_2)
+                })
+            } else {
+                $('select[name="calc_shipping_district"]').html(
+                    '<option value="">Quận / Huyện</option>')
+                district = $('select[name="calc_shipping_district"]').html()
+                localStorage.setItem('district', district)
+                localStorage.removeItem('address_1_saved', address_1)
+            }
+        })
+    })
+})
+//]]>
+</script>

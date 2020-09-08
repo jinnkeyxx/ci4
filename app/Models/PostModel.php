@@ -17,10 +17,4 @@ class PostModel extends Model{
     return $data;
   }
 
-
-  
-
-  
-
-
 }

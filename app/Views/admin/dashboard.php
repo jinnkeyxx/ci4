@@ -17,7 +17,7 @@
         <div class="card-box tilebox-one">
             <i class="icon-paypal float-right m-0 h2 text-muted"></i>
             <h6 class="text-muted text-uppercase mt-0">Tổng số bài viết</h6>
-            <h3 class="my-3">$<span data-plugin="counterup"><?= count($posts); ?></span></h3>
+            <h3 class="my-3"><span data-plugin="counterup"><?= count($posts); ?></span></h3>
             <span class="badge badge-danger mr-1"> -29% </span> <span class="text-muted">From previous period</span>
         </div>
     </div>
@@ -25,8 +25,8 @@
     <div class="col-md-6 col-xl-3">
         <div class="card-box tilebox-one">
             <i class="icon-chart float-right m-0 h2 text-muted"></i>
-            <h6 class="text-muted text-uppercase mt-0">Average Price</h6>
-            <h3 class="my-3">$<span data-plugin="counterup">15.9</span></h3>
+            <h6 class="text-muted text-uppercase mt-0">Tôngr khách hàng</h6>
+            <h3 class="my-3"><span data-plugin="counterup"><?= count($khachhang); ?></span></h3>
             <span class="badge badge-pink mr-1"> 0% </span> <span class="text-muted">From previous period</span>
         </div>
     </div>
@@ -34,8 +34,8 @@
     <div class="col-md-6 col-xl-3">
         <div class="card-box tilebox-one">
             <i class="icon-rocket float-right m-0 h2 text-muted"></i>
-            <h6 class="text-muted text-uppercase mt-0">Product Sold</h6>
-            <h3 class="my-3" data-plugin="counterup">1,890</h3>
+            <h6 class="text-muted text-uppercase mt-0">Tổng liên hệ</h6>
+            <h3 class="my-3" data-plugin="counterup"><?= count($contact); ?></h3>
             <span class="badge badge-warning mr-1"> +89% </span> <span class="text-muted">Last year</span>
         </div>
     </div>
