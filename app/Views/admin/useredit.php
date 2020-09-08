@@ -4,7 +4,7 @@
     <div>
         <div class="row">
             <div class="col-sm-12 col-md-6 offset-md-3 offset-sm-3 text-center">
-                <h4 class="header-title text-primary">Thêm mới người dùng</h4>
+                <h4 class="header-title text-primary">Sửa người dùng</h4>
                 <?php if (isset($validation)): ?>
                 <div class="col-12">
                     <div class="alert alert-danger" role="alert">
@@ -14,7 +14,6 @@
                 <?php endif; ?>
                 <div class="mt-4">
                     <form action="/useredit/<?=$useredit['id'] ?>" method="post">
-
                         <div class="form-group">
                             <label>Họ</label>
                             <input class="form-control" type="text" placeholder="<?= $useredit['fullname']; ?>"
@@ -30,13 +29,11 @@
                         <div class="form-group">
                             <label>Chức vụ</label>
                             <select class="form-control" name='role'>
-                                <option value="0" <?= set_select('role', '0'); ?>> Admin </option>
-                                <option value="1" <?= set_select('role', '1'); ?>> Mod </option>
-                                <option value="2" <?= set_select('role', '2'); ?>> Nguời dùng </option>
+                                <option value="0" <?= set_select('role', '0'); ?>> Quản trị viên </option>
+                                <option value="1" <?= set_select('role', '1'); ?>> Kiểm duyệt viên </option>
+                                <option value="2" <?= set_select('role', '2'); ?>> Khách Hàng </option>
                             </select>
-
                         </div>
-
                         <div class="form-group">
                             <button class="btn btn-primary form-control" type="submit">Lưu lại</button>
                         </div>

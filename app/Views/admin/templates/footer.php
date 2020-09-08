@@ -1,6 +1,7 @@
    <script src="<?= base_url(); ?>\assets\js\vendor.min.js"></script>
    <script src="<?= base_url(); ?>\assets\libs\dropify\dropify.min.js"></script>
 
+
    <!-- Init js-->
    <script src="<?= base_url(); ?>\assets\js\pages\form-fileuploads.init.js"></script>
    <script src="<?= base_url(); ?>\assets\js/main.js"></script>

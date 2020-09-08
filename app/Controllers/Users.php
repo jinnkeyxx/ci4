@@ -33,8 +33,6 @@ class Users extends BaseController
 		$status = false;
 		$messages = "";
 		if($this->request->isAJAX()) :
-			
-			
 			$rules = [
 				'email' => 'required|min_length[6]|max_length[50]|valid_email',
 				'password' => 'required|min_length[8]|max_length[255]|validateUser[email,password]',

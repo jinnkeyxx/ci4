@@ -4,12 +4,14 @@ use App\Models\UserModel;
 use App\Models\PostModel;
 use App\Models\KhachHangModel;
 use App\Models\ContactModel;
+use App\Models\feedbackSpModel;
 class Dashboard extends BaseController
 {
 	public $UserModel;
 	public $PostModel;
 	
 	public $ContactModel;
+	public $feedbackSpModel;
 	public $data;
 	public $checkUser;
 	public function __construct()
@@ -21,11 +23,13 @@ class Dashboard extends BaseController
 		endif;
 		$this->UserModel = new UserModel();
 		$this->PostModel = new PostModel();
-		
+		$this->feedbackSpModel = new feedbackSpModel();
 		$this->ContactModel = new ContactModel();
 		$this->data = [];
 		$this->data['contact'] = $this->ContactModel->findAll();
 		$this->data['contactNew'] = $this->ContactModel->where('status' , '0')->orderBy('id' , 'DESC')->findAll();
+		$this->data['user'] = $this->UserModel->where('id', session()->get('id'))->first();
+		$this->data['contactLimit'] = $this->ContactModel->orderBy('id', 'DESC')->findAll(5);
 	} 
 	// Hiển thị 
 	public function index()
@@ -34,7 +38,7 @@ class Dashboard extends BaseController
 			return redirect()->to(base_url().'/admin');
 		endif;
 		$this->data['title'] = 'Admin';
-		$this->data['user'] = $this->UserModel->where('id', session()->get('id'))->first();
+		
 		$this->data['users'] = $this->UserModel->findAll();
 		$this->data['posts'] = $this->PostModel->findAll();
 		
@@ -67,11 +71,12 @@ class Dashboard extends BaseController
 	}
 	public function adduser() 
 	{
-		if ($this->request->isAJAX()) :
+		if($this->request->isAJAX()) :
 			if($this->checkUser->checkAdmin() == NULL || $this->checkUser->checkAdmin() == "mod"):
-			
+
 				exit();
 			endif;
+			// die($this->request->getVar('fullname'));
 			$status = false;
 			$messages = "";
 			$rules = [
@@ -130,7 +135,7 @@ class Dashboard extends BaseController
 			if (! $this->validate($rules , $errors)) :
 				$this->data['validation'] = $this->validator;
 				$status = false;
-				$messages = $this->data['validation']->listErros();
+				$messages = $this->data['validation']->listErrors();
 			else : 
 				$newData = [
 					'fullname' => $this->request->getVar('fullname'),
@@ -140,13 +145,13 @@ class Dashboard extends BaseController
 					'role' => $this->request->getvar('role'),
 					'number_phone' => $this->request->getVar('number_phone'),
 					'old' => $this->request->getvar('old'),
-					'addr1' => $this->request->getvar('calc_shipping_provinces'),
+					'addr1' => $this->request->getvar('addr1'),
+					'addr2' => $this->request->getvar('addr2'),
 					'gender' => $this->request->getvar('gender'),
 				];
 				$this->UserModel->save($newData);
 				$session = session();
 				$session->setFlashdata('success', 'Thêm người dùng thành công ');
-				// return redirect()->to('user');
 				$status = true;
 				$messages = "Thêm mới user thành công";
 			endif;
@@ -157,7 +162,6 @@ class Dashboard extends BaseController
 	{
 		if($this->checkUser->checkAdmin() == NULL || $this->checkUser->checkAdmin() == "mod") :
 			$this->data['title'] = "Không có quyền truy cập";
-
 			exit();
 		endif;
 		$this->data = $this->UserModel->delete($id);
@@ -363,12 +367,23 @@ class Dashboard extends BaseController
 		
 		
 	}
-	//---------------------------------------------------------
-	
-	// kiểm tra admin
+ //...............................................................................
 
-	//-------------------------------------------------------
-	
+
+	public function contact()
+	{
+		
+		$this->data['contact'] = $this->ContactModel->orderBy('id', 'DESC')->findAll();
+		$this->data['title'] = 'Admin';
+		echo view('admin/contact' , $this->data);
+	}
+	public function feedbackSp()
+	{
+		$this->data['title'] = 'Admin';
+		
+		$this->data['feedbackSp'] = $this->feedbackSpModel->orderBy('id', 'DESC')->findAll();
+		echo view('admin/feedbackSp' , $this->data);
+	}
 
 	
 	//--------------------------------------------------------------------

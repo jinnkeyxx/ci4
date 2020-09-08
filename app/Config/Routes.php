@@ -49,6 +49,8 @@ $routes->get('post', 'Dashboard::post');
 $routes->get('postdelete/(:num)', 'Dashboard::postdelete/$1');
 $routes->match(['get','post'],'postedit/(:num)','Dashboard::postedit/$1');
 $routes->get('postedit/(:num)', 'Dashboard::postedit/$1');
+$routes->get('contact', 'Dashboard::contact');
+$routes->get('feedbackSp', 'Dashboard::feedbackSp');
 
 
 

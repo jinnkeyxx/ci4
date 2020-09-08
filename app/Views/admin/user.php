@@ -116,7 +116,7 @@
         <div class="modal-content py-3 px-3">
             <h4>Thêm Mới thành viên</h4>
 
-            <form action="user" method="post" name="">
+            <form action="" method="post" name=""  id="adduser">
                 <div class="form-row my-2">
                     <div class="col">
                         <label for="">Họ Tên</label>
@@ -168,8 +168,7 @@
                     </div>
                     <div class="col">
                         <label for="">Số điện thoaị</label>
-                        <input type="number" class="form-control" placeholder="Last name" name="number_phone"
-                            id="number_phone" value="<?= set_value('number_phone'); ?>">
+                        <input type="number" class="form-control" placeholder="Last name" name="number_phone" id="number_phone" value="<?= set_value('number_phone'); ?>">
                     </div>
                 </div>
                 <div class="form-row my-2">
@@ -187,8 +186,8 @@
                         </select>
                     </div>
                 </div>
-                <button class="form-control btn btn-primary" type="button" id=" adduser"> Thêm mơí </button>
-                <div class="col-md-10 ml-auto mr-auto " role="alert" id='error'>
+                <button class="form-control btn btn-primary" type="submit" id="btn-adduser"> Thêm mơí </button>
+                <div class="col-md-10 ml-auto mr-auto my-2" role="alert" id='error'>
                 </div>
 
         </div>

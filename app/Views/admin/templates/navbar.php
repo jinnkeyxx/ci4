@@ -57,13 +57,13 @@
                          <div class="slimscroll noti-scroll" style="overflow: hidden; width: auto; height: 310px;">
 
                              <div class="inbox-widget">
-                                 <?php foreach($contact as $value): ?>
-                                 <a href="#">
+                                 <?php foreach($contactLimit as $value): ?>
+                                 <a href="detail-contact/<?= $value['id']; ?>">
                                      <div class="inbox-item">
                                          <div class="inbox-item-img"><img src="assets\images\users\avatar-1.jpg"
                                                  class="rounded-circle" alt=""></div>
                                          <p class="inbox-item-author"><?= $value['user_contact'] ?></p>
-                                         <p class="inbox-item-text text-truncate"><?= $value['content']; ?></p>
+                                         <p class="inbox-item-text text-truncate"><?= $value['content_contact']; ?></p>
                                      </div>
                                  </a>
                                  <?php endforeach; ?>
@@ -215,6 +215,18 @@
                          <a href="/post">
                              <i class=" mdi mdi-calendar-month"></i>
                              <span> Quản lí bải viết</span>
+                         </a>
+                     </li>
+                     <li>
+                         <a href="/contact">
+                             <i class=" mdi mdi-calendar-month"></i>
+                             <span> Quản lí liên hệ</span>
+                         </a>
+                     </li>
+                     <li>
+                         <a href="/feedbackSp">
+                             <i class=" mdi mdi-calendar-month"></i>
+                             <span> Quản lí phản hồi sản phẩm</span>
                          </a>
                      </li>
                  </ul>

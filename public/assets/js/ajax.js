@@ -59,39 +59,41 @@ $(document).ready(() => {
             }
         })
     })
-    $(document).on('click', '#adduser', () => {
-
-        // e.preventDefault();
-        let url = 'http://localhost:8080/user'
-        let role = $("#role option:selected").text();
+    // $(document).on('click', '#btn-adduser', (e) => {
+        $('#adduser').submit((e) => {
+        e.preventDefault();
+        let url = $('#adduser').attr('action')
+        
+     
+        let role = $("#role option:selected");
         let gender = $("#gender option:selected").text();
-        let fullname = $('#fullname').val()
-        let email = $('#email').val()
-        let addr1 = $('#addr1 option:selected').text()
-        let addr2 = $('#addr2 option:selected').text()
-        let cmnd = $('#cmnd').val()
-        let number_phone = $('#numbe_phone').val()
-        let old = $('#old').val()
+        let fullname = $('#fullname')
+        let email = $('#email')
+        let addr1 = $('#addr1 option:selected')
+        let addr2 = $('#addr2 option:selected')
+        let cmnd = $('#cmnd')
+        let number_phone = $('#number_phone')
+        let old = $('#old')
+       let password = $('#password')
+        let formdata = new FormData();
+        formdata.append('role' , role)
+        formdata.append('gender' , gender)
+        formdata.append('email' , email)
+        formdata.append('addr1 ' , addr1 )
+        formdata.append('addr2' , addr2)
+        formdata.append('cmnd' , cmnd)
+        formdata.append('number_phone' , number_phone)
+        formdata.append('old' , old)
+       
         $.ajax({
             url: url,
             type: 'post',
-            data: {
-                'fullname': fullname,
-                'email': email,
-                'password': password,
-                'role': role,
-                'addr1': addr1,
-                'addr2': addr2,
-                'cmnd': cmnd,
-                'number_phone': number_phone,
-                'old': old,
-                'gender': gender
-            },
+            data: {'role' : role.text() , 'fullname' : fullname.val() , "gender" : gender ,  "email"  : email.val()  , "addr1" : addr1.text() , "addr2" : addr2.text() , "cmnd" : cmnd.val(), "number_phone" : number_phone.val() , "old" :old.val() , "password" : password.val()},
             dataType: 'json',
             // processData: false,
             // contentType: false,
             beforeSend: () => {
-
+                
             },
             success: (data) => {
                 // alert(data.messages)
@@ -99,11 +101,12 @@ $(document).ready(() => {
                     sleep(2000)
                     toastr["success"]("Thêm mới user thành công xin chờ tải lại trang")
                 } else {
-                    alert('abc')
-                        // $('#error').html(data.messages)
-                        // $('#error').addClass('alert alert-danger')
+                   
+                        $('#error').html(data.messages)
+                        $('#error').addClass('alert alert-danger')
                 }
-            }
+            },
+            'error': function () { console.log('error'); },
         })
     })
 })
